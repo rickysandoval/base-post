@@ -612,8 +612,12 @@
         position:absolute}._xl-u-fixed{
         position:fixed}._xl-u-sticky{
         position:-webkit-sticky;
-        position:sticky}}.cf{
-    overflow:auto}.float-r{
+        position:sticky}}.cf:after,.cf:before{
+    content:" ";
+    /* 1 */
+    display:table
+    /* 2 */}.cf:after{
+    clear:both}.float-r{
     float:right}.float-l{
     float:left}
 /*

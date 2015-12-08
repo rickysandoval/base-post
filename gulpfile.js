@@ -9,6 +9,9 @@ var postcss = require('gulp-postcss')
 var stylelint = require('stylelint')
 var reporter = require('postcss-reporter')
 
+// Local imports
+var config = require('./config')
+
 gulp.task('serve', ['compileCss'], function() {
   browserSync.init({
     server: {
@@ -21,20 +24,19 @@ gulp.task('serve', ['compileCss'], function() {
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-// gulp.task('csslint', function () {
-//   return gulp.src('./src/**/*.css')
-//   .pipe(postcss([
-//     require('precss'),
-//     stylelint({
-//       'rules': config.rules
-//     }),
-//     reporter({
-//       clearMessages: true
-//     })
-//   ]))
-// })
+gulp.task('csslint', function () {
+  return gulp.src('./src/**/*.css')
+  .pipe(postcss([
+    stylelint({
+      'rules': config.rules
+    }),
+    reporter({
+      clearMessages: true
+    })
+  ]))
+});
 
-gulp.task('compileCss', function() {
+gulp.task('compileCss', ['csslint'], function() {
   return gulp.src('./styles/src/main.css')
     .pipe(postcss([
       require('precss')({}),
@@ -42,11 +44,11 @@ gulp.task('compileCss', function() {
         compress: true
       })
     ]))
-    .pipe(gulp.dest('./styles/dist'));
+    .pipe(gulp.dest('./styles/dist'))
     .pipe(browserSync.stream());
 });
 
-gulp.task('compileCss', function() {
+gulp.task('compileAndMinCss', function() {
   return gulp.src('./styles/src/main.css')
     .pipe(postcss([
       require('precss')({}),
@@ -54,12 +56,6 @@ gulp.task('compileCss', function() {
         compress: true
       })
     ]))
-    .pipe(gulp.dest('./styles/dist'));
-    //.pipe(browserSync.stream());
-});
-
-gulp.task('compileAndMinCss', function() {
-  return gulp.src('./styles/src/main.scss')
     .pipe(cssmin())
     .pipe(rename({
       suffix: '.min'
