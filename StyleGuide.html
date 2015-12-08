@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Style Guide</title>
+	<link rel="stylesheet" href="styles/dist/main.css">
+	<style>
+		/* Styleguide specific styles */
+		.color-block {
+			display: inline-block;
+			float: left;
+			width: 20%;
+			height: 25px;
+		}
+
+		.test-grid {
+			height: 25px;
+			border: 1px solid #fff;
+			background: #10B587;
+		}
+	</style>
+</head>
+<body>
+<div class="site-container u-ph2">
+	<p class="breakpoint-display">BP: </p>
+	<p class="u-mb-1"></p>
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4 <a>link</a></h4>
+	<p><a>Paragraph</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perferendis optio harum veniam, ea ducimus voluptatibus numquam blanditiis impedit assumenda, dignissimos eligendi. Quia voluptate temporibus, pariatur ullam quidem! Sunt, maiores?</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga error ad obcaecati deleniti aliquid iure accusamus velit id, earum, at quisquam accusantium quis, ipsum ipsa repudiandae illum eligendi? Provident, sit.</p>
+	
+
+	<div class="block-2">
+		<h2>Colors : 100-900</h2>
+		<div class="cf">
+			<div class="color-block s-bg-red-100">red</div>
+			<div class="color-block s-bg-red-300"></div>
+			<div class="color-block s-bg-red-500"></div>
+			<div class="color-block s-bg-red-700"></div>
+			<div class="color-block s-bg-red-900"></div>
+
+			<div class="color-block s-bg-yellow-100">yellow</div>
+			<div class="color-block s-bg-yellow-300"></div>
+			<div class="color-block s-bg-yellow-500"></div>
+			<div class="color-block s-bg-yellow-700"></div>
+			<div class="color-block s-bg-yellow-900"></div>
+
+			<div class="color-block s-bg-green-100">green</div>
+			<div class="color-block s-bg-green-300"></div>
+			<div class="color-block s-bg-green-500"></div>
+			<div class="color-block s-bg-green-700"></div>
+			<div class="color-block s-bg-green-900"></div>
+
+			<div class="color-block s-bg-aqua-100">aqua</div>
+			<div class="color-block s-bg-aqua-300"></div>
+			<div class="color-block s-bg-aqua-500"></div>
+			<div class="color-block s-bg-aqua-700"></div>
+			<div class="color-block s-bg-aqua-900"></div>
+
+			<div class="color-block s-bg-cyan-100">cyan</div>
+			<div class="color-block s-bg-cyan-300"></div>
+			<div class="color-block s-bg-cyan-500"></div>
+			<div class="color-block s-bg-cyan-700"></div>
+			<div class="color-block s-bg-cyan-900"></div>
+
+			<div class="color-block s-bg-blue-100">blue</div>
+			<div class="color-block s-bg-blue-300"></div>
+			<div class="color-block s-bg-blue-500"></div>
+			<div class="color-block s-bg-blue-700"></div>
+			<div class="color-block s-bg-blue-900"></div>
+
+			<div class="color-block s-bg-purple-100">purple</div>
+			<div class="color-block s-bg-purple-300"></div>
+			<div class="color-block s-bg-purple-500"></div>
+			<div class="color-block s-bg-purple-700"></div>
+			<div class="color-block s-bg-purple-900"></div>
+
+			<div class="color-block s-bg-violet-100">violet</div>
+			<div class="color-block s-bg-violet-300"></div>
+			<div class="color-block s-bg-violet-500"></div>
+			<div class="color-block s-bg-violet-700"></div>
+			<div class="color-block s-bg-violet-900"></div>
+
+			<div class="color-block s-bg-magenta-100">magenta</div>
+			<div class="color-block s-bg-magenta-300"></div>
+			<div class="color-block s-bg-magenta-500"></div>
+			<div class="color-block s-bg-magenta-700"></div>
+			<div class="color-block s-bg-magenta-900"></div>
+			
+			<div class="color-block s-bg-gray-100">gray</div>
+			<div class="color-block s-bg-gray-300"></div>
+			<div class="color-block s-bg-gray-500"></div>
+			<div class="color-block s-bg-gray-700"></div>
+			<div class="color-block s-bg-gray-900"></div>
+
+			<div class="color-block s-bg-warmGray-100">warmGray</div>
+			<div class="color-block s-bg-warmGray-300"></div>
+			<div class="color-block s-bg-warmGray-500"></div>
+			<div class="color-block s-bg-warmGray-700"></div>
+			<div class="color-block s-bg-warmGray-900"></div>
+
+			<div class="color-block s-bg-coolGray-100">coolGray</div>
+			<div class="color-block s-bg-coolGray-300"></div>
+			<div class="color-block s-bg-coolGray-500"></div>
+			<div class="color-block s-bg-coolGray-700"></div>
+			<div class="color-block s-bg-coolGray-900"></div>
+
+			<div class="color-block s-bg-white">white</div>
+			<div class="color-block s-bg-black s-white">black</div>
+			<div class="color-block s-bg-nearBlack s-white">nearBlack</div>
+
+		</div>
+	</div>
+
+	<div class="block-2">
+		<h2>Buttons</h2>
+		<button onclick="this.blur();">Default</button>
+		<button class="btn-primary" onclick="this.blur();">Primary</button>
+		<button class="btn-error" onclick="this.blur();" disabled>Error</button>
+		<button onclick="this.blur();" disabled>Disabled</button>
+		<button class="btn-ghost" onclick="this.blur();">Ghost</button>
+
+	</div>
+
+	<div class="block-2">
+		<h2>Grid</h2>
+		<div class="row">
+			<div class="col-xs-12">xs-12 sm-6 md-4 lg-3</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="test-grid"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block-2">
+		<h3>Form Elements</h3>
+		<div class="row">
+			<div class="form-block col-md-6">
+				<label for="textInput">Text</label>
+				<input type="text" name="textInput">
+			</div>
+			<div class="form-block col-md-6">
+				<label for="textInput">Text</label>
+				<input type="text" name="textInput">
+			</div>
+		</div>
+		<div class="form-block">
+			<label for="textInput">Text area</label>
+			<textarea rows="1" onkeyup="auto_grow(this)"></textarea>
+		</div>
+	</div>
+	<script>
+		function auto_grow(element) {
+			if (element.scrollHeight > element.clientHeight) {
+			    element.style.height = element.scrollHeight + 5 + "px";
+			  }
+		}
+	</script>
+
+
+</div>
+</body>
+</html>

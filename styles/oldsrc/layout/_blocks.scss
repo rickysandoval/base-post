@@ -1,0 +1,27 @@
+.block-1 {
+	margin-top: $sp-1;
+	margin-bottom: $sp-1;
+}
+.block-2 {
+	margin-top: $sp-2;
+	margin-bottom: $sp-2;
+}
+.block-3 {
+	margin-top: $sp-3;
+	margin-bottom: $sp-4;
+}
+
+@media screen and (min-width: $screen-md-min) {
+	.block-1 {
+		margin-top: $sp-2;
+		margin-bottom: $sp-2;
+	}
+	.block-2 {
+		margin-top: $sp-3;
+		margin-bottom: $sp-3;
+	}
+	.block-3 {
+		margin-top: $sp-4;
+		margin-bottom: $sp-4;
+	}
+}

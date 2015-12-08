@@ -1,0 +1,54 @@
+/*
+ * GEMMA/MEDIA QUERIES
+ *
+ * Custom media queries for quick reference.
+ * Used as follows:
+ *
+ * @media (--screen-md) {
+ *   .myClass {
+ *     foo: bar;  
+ *   }
+ * }
+ *
+ */
+
+@custom-media --screen-sm screen and (min-width: 32rem);
+@custom-media --screen-md screen and (min-width: 48rem);
+@custom-media --screen-lg screen and (min-width: 64rem);
+@custom-media --screen-xl screen and (min-width: 90rem);
+
+
+$screen-xs-min: 16rem;
+$screen-sm-min: 32rem;   /* 512px  */
+$screen-md-min: 48rem;   /* 768px  */
+$screen-lg-min: 64rem;	 /* 1024px */
+$screen-xl-min: 90rem;   /* 1441px */
+$screen-2xl-min: 120rem; /* 1921px */
+
+
+.breakpoint-display {
+	position: fixed;
+	top: 0;
+	background: rgba(255,255,255,.9);
+	border-radius: 0 0 2px 2px;
+	&:after {
+		content: "x-small";
+		display: inline-block;
+		@media screen and (min-width: $screen-sm-min) {
+			content: "small";
+		}
+		@media screen and (min-width: $screen-md-min) {
+			content: "medium";
+		}
+		@media screen and (min-width: $screen-lg-min) {
+			content: "large";
+		}
+		@media screen and (min-width: $screen-xl-min) {
+			content: "x-large";
+		}
+		@media screen and (min-width: $screen-2xl-min) {
+			content: "2x-large";
+		}
+	}
+}
+

@@ -1,0 +1,10 @@
+.site-container {
+	max-width: 72rem;
+	margin: auto;
+}
+
+@media screen and (--screen-xl) {
+	.site-container {
+		max-width: 80rem;
+	}
+}
