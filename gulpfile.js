@@ -35,7 +35,19 @@ gulp.task('serve', ['compileCss'], function() {
 // })
 
 gulp.task('compileCss', function() {
-  return gulp.src('./styles/src/main.scss')
+  return gulp.src('./styles/src/main.css')
+    .pipe(postcss([
+      require('precss')({}),
+      cssnext({
+        compress: true
+      })
+    ]))
+    .pipe(gulp.dest('./styles/dist'));
+    .pipe(browserSync.stream());
+});
+
+gulp.task('compileCss', function() {
+  return gulp.src('./styles/src/main.css')
     .pipe(postcss([
       require('precss')({}),
       cssnext({
