@@ -48,21 +48,21 @@ h6 {
 
 /* NOTE: If you change heading styles here, ensure they are also
  * changed in the respective s- (surface) classes. */
-h1 { font-size: 2em; letter-spacing: -0.06em; }
-h2 { font-size: 1.5em; letter-spacing: -0.04em; }
-h3 { font-size: 1.25em; letter-spacing: -0.02em; }
+h1 { font-size: 2em; letter-spacing: -0.06em; margin-bottom: $sp-2;}
+h2 { font-size: 1.5em; letter-spacing: -0.04em; margin-bottom: $sp-2;}
+h3 { font-size: 1.25em; letter-spacing: -0.02em; margin-bottom: $sp-2;}
 
 h4,
 h5,
-h6 { font-size: 1em; }
+h6 { font-size: 1em; margin-bottom: $sp-1;}
 
 @media (--screen-lg) {
-  h1 { font-size: 3em; }
-  h2 { font-size: 2em; }
-  h3 { font-size: 1.5em; }
-  h4 { font-size: 1.25em; }
+  h1 { font-size: 3em; margin-bottom: $sp-2;}
+  h2 { font-size: 2em; margin-bottom: $sp-2;}
+  h3 { font-size: 1.5em; margin-bottom: $sp-2;}
+  h4 { font-size: 1.25em; margin-bottom: $sp-2;}
   h5,
-  h6 { font-size: 1em; }
+  h6 { font-size: 1em; margin-bottom: $sp-2;}
 }
 
 /* Reset paragraph margins */
@@ -73,7 +73,7 @@ p {
 /* Create a line break between subsequent paragaphs;
  * use em units for matching to breakpoint font-size */
 p + p {
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 /* Definition list terms are set in bold */

@@ -1,7 +1,10 @@
+:root {
+  --outer-margin: 1rem;
+}
+
 $gutter-width: 1rem;
-$outer-margin: 2rem;
-$gutter-compensation: ($gutter-width * 0.5) * -1;
-$half-gutter-width: $gutter-width * 0.5;
+$gutter-compensation: calc(($gutter-width * 0.5) * -1);
+$half-gutter-width: calc($gutter-width * 0.5);
 
 $xs-min: 16;
 $sm-min: 32;   /* 512px  */
@@ -18,8 +21,8 @@ $container-lg: calc($lg-min + $gutter-width);
 }
 
 .container-fluid {
-  padding-right: $outer-margin;
-  padding-left: $outer-margin;
+  padding-right: var(--outer-margin);
+  padding-left: var(--outer-margin);
 }
 
 .row {
@@ -224,7 +227,7 @@ $container-lg: calc($lg-min + $gutter-width);
   order: 1;
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@media (--screen-sm) {
   .container {
     width: $container-sm;
   }
@@ -414,7 +417,7 @@ $container-lg: calc($lg-min + $gutter-width);
   }
 }
 
-@media screen and (min-width: $screen-md-min) {
+@media (--screen-md) {
   .container {
     width: $container-md;
   }
@@ -604,7 +607,7 @@ $container-lg: calc($lg-min + $gutter-width);
   }
 }
 
-@media screen and (min-width: $screen-lg-min) {
+@media (--screen-lg) {
   .container {
     width: $container-lg;
   }

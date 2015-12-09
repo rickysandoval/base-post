@@ -1,14 +1,22 @@
 .form-block {
 	margin: var(--sp-2) 0;
-	label {
-		display: block;
-		font-size: .75em;
-	}
+}
+label.form-block__label {
+	display: block;
+	font-size: .75em;
 }
 
 /* Input */
+input:not([type]) {
+	background: $color-red-500;
+}
 
-input, textarea {
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="password"],
+input[type="search"]
+textarea {
 	position: relative;
 	border-top: 0;
 	border-left: 0;
@@ -17,6 +25,7 @@ input, textarea {
 	padding: 2px 5px;
 	display: block;
 	width: 100%;
+	box-sizing: border-box;
 	&:before {
 		content: '';
 		display: block;
@@ -38,5 +47,67 @@ textarea {
 	overflow: hidden;
 	resize: vertical;
 }
+
+/* Check boxes */
+.checkbox-toggle {
+	width: 3.5em;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	user-select: none;
+	padding: 0 .125em;
+}
+
+.checkbox-toggle input[type="checkbox"]{
+	visibility: hidden;
+	position: absolute;
+
+	& + label {
+		display: inline-block;
+		color: transparent;
+		position: relative;
+		width: 100%;
+		height: auto;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: calc(100% - 10px);
+			height: 0;
+			padding-top: calc(100%/3);
+			left: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: $color-coolGray-900;
+			border-radius: 500px;
+		}
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 50%;
+			height: 0;
+			padding-top: 50%;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%) translateY(0);
+			border-radius: 50%;
+			background: $color-aqua-300;
+			transition: transform .25s;
+		}
+	}
+	&:checked + label {
+		&::after {
+			transform: translateY(-50%) translateX(100%);
+		}
+	}
+}
+
+
+
+
+
 
 

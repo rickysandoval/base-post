@@ -21,7 +21,7 @@
 	</style>
 </head>
 <body>
-<div class="site-container u-ph2">
+<div class="site-container u-ph2 container-fluid">
 	<p class="breakpoint-display">BP: </p>
 	<p class="u-mb-1"></p>
 	<h1>Heading 1</h1>
@@ -172,18 +172,25 @@
 	<div class="block-2">
 		<h3>Form Elements</h3>
 		<div class="row">
-			<div class="form-block col-md-6">
-				<label for="textInput">Text</label>
+			<div class="form-block col-xs-6">
+				<label class="form-block__label" for="textInput">Text</label>
 				<input type="text" name="textInput">
 			</div>
-			<div class="form-block col-md-6">
-				<label for="textInput">Text</label>
+			<div class="form-block col-xs-6">
+				<label class="form-block__label" for="textInput">Text</label>
 				<input type="text" name="textInput">
 			</div>
 		</div>
 		<div class="form-block">
-			<label for="textInput">Text area</label>
+			<label class="form-block__label" for="textInput">Text area</label>
 			<textarea rows="1" onkeyup="auto_grow(this)"></textarea>
+		</div>
+		<div class="form-block">
+			<div class="checkbox-toggle">
+				<input type="checkbox" id="toggleMe" name="toggleMe">
+				<label for="toggleMe">Label</label>
+			</div>
+			<span class="checkbox-toggle-label">Label</span>
 		</div>
 	</div>
 	<script>

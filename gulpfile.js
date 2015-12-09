@@ -1,18 +1,15 @@
 // NPM modules
 var gulp = require('gulp')
-var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 var browserSync = require('browser-sync').create();
-var cssnext = require('cssnext')
-var postcss = require('gulp-postcss')
-var stylelint = require('stylelint')
-var reporter = require('postcss-reporter')
+var cssnext = require('postcss-cssnext');
+var postcss = require('gulp-postcss');
+var sourcemaps = require('gulp-sourcemaps');
+var plumber = require('gulp-plumber');
 
-// Local imports
-var config = require('./config')
 
-gulp.task('serve', ['compileCss'], function() {
+gulp.task('serve', ['buildCss'], function() {
   browserSync.init({
     server: {
       baseDir: './',
@@ -20,45 +17,24 @@ gulp.task('serve', ['compileCss'], function() {
     }
   });
 
-  gulp.watch('styles/src/**/*.css', ['compileCss']);
+  gulp.watch('styles/src/**/*.css', ['buildCss']);
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-gulp.task('csslint', function () {
-  return gulp.src('./src/**/*.css')
-  .pipe(postcss([
-    stylelint({
-      'rules': config.rules
-    }),
-    reporter({
-      clearMessages: true
-    })
-  ]))
-});
-
-gulp.task('compileCss', ['csslint'], function() {
+gulp.task('buildCss', function() {
   return gulp.src('./styles/src/main.css')
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
     .pipe(postcss([
       require('precss')({}),
+      require('autoprefixer'),
       cssnext({
-        compress: true
+        compress: true,
+        sourcemap: true
       })
     ]))
+    .on('error', function(e){ console.log(e.message); this.emit('end'); })
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./styles/dist'))
     .pipe(browserSync.stream());
-});
-
-gulp.task('compileAndMinCss', function() {
-  return gulp.src('./styles/src/main.css')
-    .pipe(postcss([
-      require('precss')({}),
-      cssnext({
-        compress: true
-      })
-    ]))
-    .pipe(cssmin())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./styles/dist'));
 });
