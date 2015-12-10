@@ -49,8 +49,9 @@ textarea {
 }
 
 /* Check boxes */
-.checkbox-toggle {
-	width: 3.5em;
+.checkbox-toggle, 
+.checkbox-round, 
+.checkbox-square {
 	height: auto;
 	display: inline-block;
 	vertical-align: top;
@@ -58,7 +59,9 @@ textarea {
 	padding: 0 .125em;
 }
 
-.checkbox-toggle input[type="checkbox"]{
+.checkbox-toggle input[type="checkbox"],
+.checkbox-round input[type="checkbox"],
+.checkbox-square input[type="checkbox"] {
 	visibility: hidden;
 	position: absolute;
 
@@ -74,39 +77,103 @@ textarea {
 			content: '';
 			display: block;
 			position: absolute;
-			width: calc(100% - 10px);
-			height: 0;
-			padding-top: calc(100%/3);
-			left: 5px;
+			background-color: $color-coolGray-900;
 			top: 50%;
 			transform: translateY(-50%);
-			background-color: $color-coolGray-900;
-			border-radius: 500px;
 		}
 		&::after {
 			content: '';
 			display: block;
 			position: absolute;
-			width: 50%;
-			height: 0;
-			padding-top: 50%;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%) translateY(0);
-			border-radius: 50%;
-			background: $color-aqua-300;
-			transition: transform .25s;
-		}
-	}
-	&:checked + label {
-		&::after {
-			transform: translateY(-50%) translateX(100%);
+			background-color: $color-aqua-300;
 		}
 	}
 }
 
+/* Toggle Checkbox*/
+.checkbox-toggle {
+	width: 3.5em;
+}
 
+.checkbox-toggle input[type="checkbox"] {
 
+	& + label {
+		&::before {
+			width: calc(100% - 10px);
+			height: 0;
+			padding-top: calc(100%/4);
+			left: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			border-radius: 500px;
+		}
+		&::after {
+			width: 45%;
+			height: 0;
+			padding-top: 45%;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%) translateX(0);
+			border-radius: 50%;
+			transition: left .2s, transform .2s;
+		}
+	}
+	&:checked + label {
+		&::after {
+			left: 100%;
+			transform: translateY(-50%) translateX(-100%);
+		}
+	}
+}
+
+/* Round/Square Checkbox*/
+
+.checkbox-round, .checkbox-square {
+	width: 1.625em;
+}
+.checkbox-square {
+	padding: 0 .15em;
+}
+
+.checkbox-round input[type="checkbox"],
+.checkbox-square input[type="checkbox"] {
+
+	& + label {
+		&::before {
+			width: 100%;
+			height: 0;
+			padding-top: 100%;
+			left: 0;
+		}
+		&::after {
+			width: calc(100% - .25em);
+			height: 0;
+			padding-top: calc(100% - .25em);
+			left: 50%;
+			top: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			background-color: $color-coolGray-100;
+			transition: background-color .1s
+		}
+	}
+	&:checked + label {
+		&::after {
+			background-color: $color-aqua-300;
+		}
+	}
+}
+
+.checkbox-round input[type="checkbox"] + label {
+	&::before, &::after {
+		border-radius: 50%;
+	}
+}
+
+.checkbox-square input[type="checkbox"] + label {
+	&::before, &::after {
+		border-radius: 5%;
+	}
+}
 
 
 
