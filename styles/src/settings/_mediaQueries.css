@@ -16,6 +16,7 @@
 @custom-media --screen-md screen and (min-width: 48rem);
 @custom-media --screen-lg screen and (min-width: 64rem);
 @custom-media --screen-xl screen and (min-width: 90rem);
+@custom-media --screen-2xl screen and (min-width: 120rem);
 
 
 $screen-xs-min: 16rem;
@@ -31,23 +32,25 @@ $screen-2xl-min: 120rem; /* 1921px */
 	top: 0;
 	background: rgba(255,255,255,.9);
 	border-radius: 0 0 2px 2px;
+	padding: 0 5px 0 0;
+	font-size: 22px;
 	&:after {
-		content: "x-small";
+		content: "x-small (default)";
 		display: inline-block;
-		@media screen and (min-width: $screen-sm-min) {
-			content: "small";
+		@media (--screen-sm) {
+			content: "--screen-sm";
 		}
-		@media screen and (min-width: $screen-md-min) {
-			content: "medium";
+		@media (--screen-md) {
+			content: "--screen-md";
 		}
-		@media screen and (min-width: $screen-lg-min) {
-			content: "large";
+		@media (--screen-lg) {
+			content: "--screen-lg";
 		}
-		@media screen and (min-width: $screen-xl-min) {
-			content: "x-large";
+		@media (--screen-xl) {
+			content: "--screen-xl";
 		}
-		@media screen and (min-width: $screen-2xl-min) {
-			content: "2x-large";
+		@media (--screen-2xl) {
+			content: "--screen-2xl";
 		}
 	}
 }

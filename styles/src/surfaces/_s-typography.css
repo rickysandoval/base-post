@@ -12,36 +12,59 @@
  * changed in the respective element definitions.
  *
  */
-.s-h1 { font-size: 2em; letter-spacing: -0.06em; }
-.s-h2 { font-size: 1.5em; letter-spacing: -0.04em; }
-.s-h3 { font-size: 1.25em; letter-spacing: -0.02em; }
+.s-h6 { font-size: calc(var(--base-em) / var(--ms1)); }
+.s-h5 { font-size: calc(var(--base-em) * var(--ms0)); }
+.s-h4 { font-size: calc(var(--base-em) * var(--ms1)); }
+.s-h3 { font-size: calc(var(--base-em) * var(--ms2)); letter-spacing: -0.02em;}
+.s-h2 { font-size: calc(var(--base-em) * var(--ms3)); letter-spacing: -0.04em;}
+.s-h1 { font-size: calc(var(--base-em) * var(--ms4)); letter-spacing: -0.06em;}
 
-.s-h4,
-.s-h5,
-.s-h6 { font-size: 1em; }
 
-@media (--screen-lg) {
-  .s-h1 { font-size: 3em; }
-  .s-h2 { font-size: 2em; }
-  .s-h3 { font-size: 1.5em; }
-  .s-h4 { font-size: 1.25em; }
-  .s-h5,
-  .s-h6 { font-size: 1em; }
+@media (--screen-md) {
+  .s-h3 { font-size: calc(var(--base-em) * var(--ms3)); }
+  .s-h2 { font-size: calc(var(--base-em) * var(--ms4)); }
+  .s-h1 { font-size: calc(var(--base-em) * var(--ms5)); }
 }
+ 
+@media (--screen-xl) {
+  .s-h2 { font-size: calc(var(--base-em) * var(--ms5)); }
+  .s-h1 { font-size: calc(var(--base-em) * var(--ms6)); }
+}
+
+/*
+ * FONT-SIZE
+ */
+
+.s-fsn1 { font-size: calc(var(--base-em) / var(--ms1)); };
+.s-fs0 { font-size: calc(var(--base-em) * var(--ms0)); };
+.s-fs1 { font-size: calc(var(--base-em) * var(--ms1)); };
+.s-fs2 { font-size: calc(var(--base-em) * var(--ms2)); };
+.s-fs3 { font-size: calc(var(--base-em) * var(--ms3)); };
+.s-fs4 { font-size: calc(var(--base-em) * var(--ms4)); };
+.s-fs5 { font-size: calc(var(--base-em) * var(--ms5)); };
+.s-fs6 { font-size: calc(var(--base-em) * var(--ms6)); };
+.s-fs7 { font-size: calc(var(--base-em) * var(--ms7)); };
 
 /*
  * FONT-WEIGHT
  */
-.s-100 { font-weight: 100; }
-.s-200 { font-weight: 200; }
-.s-300 { font-weight: 300; }
-.s-400 { font-weight: 400; }
-.s-500 { font-weight: 500; }
-.s-600 { font-weight: 600; }
-.s-700 { font-weight: 700; }
-.s-800 { font-weight: 800; }
-.s-900 { font-weight: 900; }
+.s-100w { font-weight: 100; }
+.s-200w { font-weight: 200; }
+.s-300w { font-weight: 300; }
+.s-400w { font-weight: 400; }
+.s-500w { font-weight: 500; }
+.s-600w { font-weight: 600; }
+.s-700w { font-weight: 700; }
+.s-800w { font-weight: 800; }
+.s-900w { font-weight: 900; }
 
+/*
+ * LINE-HEIGHT
+ */
+.s-lh0{ line-height: calc(var(--base) * var(--ms0)); };
+.s-lh1{ line-height: calc(var(--base) * var(--ms1)); };
+.s-lh2{ line-height: calc(var(--base) * var(--ms2)); };
+.s-lh3{ line-height: calc(var(--base) * var(--ms3)); };
 /*
  * SMALL CAPS
  */

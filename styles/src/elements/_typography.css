@@ -25,13 +25,13 @@ html {
 /* Set <body> font size a little larger than normal.
  * We like readability in our text. */
 body {
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: calc(var(--base-em) * var(--ms0));
+  line-height: calc(var(--base) * var(--ms2));
 }
 
 @media (--screen-md) {
   body {
-    font-size: 1.25em;
+    font-size: calc(var(--base-em) * var(--ms1));;
   }
 }
 
@@ -48,22 +48,24 @@ h6 {
 
 /* NOTE: If you change heading styles here, ensure they are also
  * changed in the respective s- (surface) classes. */
-h1 { font-size: 2em; letter-spacing: -0.06em; margin-bottom: $sp-2;}
-h2 { font-size: 1.5em; letter-spacing: -0.04em; margin-bottom: $sp-2;}
-h3 { font-size: 1.25em; letter-spacing: -0.02em; margin-bottom: $sp-2;}
+h6 { font-size: calc(var(--base-em) / var(--ms1)); }
+h5 { font-size: calc(var(--base-em) * var(--ms0)); }
+h4 { font-size: calc(var(--base-em) * var(--ms1)); }
+h3 { font-size: calc(var(--base-em) * var(--ms2)); line-height: calc(var(--base) * var(--ms1)); letter-spacing: -0.02em;}
+h2 { font-size: calc(var(--base-em) * var(--ms3)); line-height: calc(var(--base) * var(--ms1)); letter-spacing: -0.04em;}
+h1 { font-size: calc(var(--base-em) * var(--ms4)); line-height: calc(var(--base) * var(--ms1)); letter-spacing: -0.06em;}
 
-h4,
-h5,
-h6 { font-size: 1em; margin-bottom: $sp-1;}
-
-@media (--screen-lg) {
-  h1 { font-size: 3em; margin-bottom: $sp-2;}
-  h2 { font-size: 2em; margin-bottom: $sp-2;}
-  h3 { font-size: 1.5em; margin-bottom: $sp-2;}
-  h4 { font-size: 1.25em; margin-bottom: $sp-2;}
-  h5,
-  h6 { font-size: 1em; margin-bottom: $sp-2;}
+@media (--screen-md) {
+  h3 { font-size: calc(var(--base-em) * var(--ms3)); }
+  h2 { font-size: calc(var(--base-em) * var(--ms4)); }
+  h1 { font-size: calc(var(--base-em) * var(--ms5)); }
 }
+ 
+@media (--screen-xl) {
+  h2 { font-size: calc(var(--base-em) * var(--ms5)); }
+  h1 { font-size: calc(var(--base-em) * var(--ms6)); }
+}
+
 
 /* Reset paragraph margins */
 p {

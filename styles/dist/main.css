@@ -30,34 +30,36 @@
     background: #FFFFFF;
     background: rgba(255,255,255,.9);
     border-radius: 0 0 2px 2px;
+    padding: 0 5px 0 0;
+    font-size: 22px;
 }
 .breakpoint-display:after {
-    content: "x-small";
+    content: "x-small (default)";
     display: inline-block;
 }
 @media screen and (min-width: 32rem) {
     .breakpoint-display:after {
-        content: "small";
+        content: "--screen-sm";
     }
 }
 @media screen and (min-width: 48rem) {
     .breakpoint-display:after {
-        content: "medium";
+        content: "--screen-md";
     }
 }
 @media screen and (min-width: 64rem) {
     .breakpoint-display:after {
-        content: "large";
+        content: "--screen-lg";
     }
 }
 @media screen and (min-width: 90rem) {
     .breakpoint-display:after {
-        content: "x-large";
+        content: "--screen-xl";
     }
 }
 @media screen and (min-width: 120rem) {
     .breakpoint-display:after {
-        content: "2x-large";
+        content: "--screen-2xl";
     }
 }
 /*
@@ -95,6 +97,15 @@
  * inspired by Google’s Material Design.
  *
  */
+:root {
+    /* 1.2   */
+    /* 1.44  */
+    /* 1.728 */
+    /* 2.074 */
+    /* 2.488 */
+    /* 2.986 */
+    /* 3.583 */
+}
 /*
  * GEMMA/ELEMENTS
  * 
@@ -449,7 +460,7 @@ html {
  * We like readability in our text. */
 body {
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.5625;
 }
 @media screen and (min-width: 48rem) {
     body {
@@ -463,49 +474,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* NOTE: If you change heading styles here, ensure they are also
  * changed in the respective s- (surface) classes. */
-h1 {
-    font-size: 2em;
-    letter-spacing: -0.06em;
-    margin-bottom: 16px;
-    margin-bottom: 1rem;
+h6 {
+    font-size: 0.8em;
 }
-h2 {
-    font-size: 1.5em;
-    letter-spacing: -0.04em;
-    margin-bottom: 16px;
-    margin-bottom: 1rem;
+h5 {
+    font-size: 1em;
+}
+h4 {
+    font-size: 1.25em;
 }
 h3 {
-    font-size: 1.25em;
+    font-size: 1.5625em;
+    line-height: 1.25;
     letter-spacing: -0.02em;
-    margin-bottom: 16px;
-    margin-bottom: 1rem;
 }
-h4, h5, h6 {
-    font-size: 1em;
-    margin-bottom: 8px;
-    margin-bottom: 0.5rem;
+h2 {
+    font-size: 1.95313em;
+    line-height: 1.25;
+    letter-spacing: -0.04em;
 }
-@media screen and (min-width: 64rem) {
-    h1 {
-        font-size: 3em;
-        margin-bottom: 1rem;
+h1 {
+    font-size: 2.44141em;
+    line-height: 1.25;
+    letter-spacing: -0.06em;
+}
+@media screen and (min-width: 48rem) {
+    h3 {
+        font-size: 1.95313em;
     }
     h2 {
-        font-size: 2em;
-        margin-bottom: 1rem;
+        font-size: 2.44141em;
     }
-    h3 {
-        font-size: 1.5em;
-        margin-bottom: 1rem;
+    h1 {
+        font-size: 3.05176em;
     }
-    h4 {
-        font-size: 1.25em;
-        margin-bottom: 1rem;
+}
+@media screen and (min-width: 90rem) {
+    h2 {
+        font-size: 3.05176em;
     }
-    h5, h6 {
-        font-size: 1em;
-        margin-bottom: 1rem;
+    h1 {
+        font-size: 3.8147em;
     }
 }
 /* Reset paragraph margins */
@@ -3055,67 +3064,120 @@ address {
  * changed in the respective element definitions.
  *
  */
-.s-h1 {
-    font-size: 2em;
-    letter-spacing: -0.06em;
+.s-h6 {
+    font-size: 0.8em;
 }
-.s-h2 {
-    font-size: 1.5em;
-    letter-spacing: -0.04em;
-}
-.s-h3 {
-    font-size: 1.25em;
-    letter-spacing: -0.02em;
-}
-.s-h4, .s-h5, .s-h6 {
+.s-h5 {
     font-size: 1em;
 }
-@media screen and (min-width: 64rem) {
-    .s-h1 {
-        font-size: 3em;
+.s-h4 {
+    font-size: 1.25em;
+}
+.s-h3 {
+    font-size: 1.5625em;
+    letter-spacing: -0.02em;
+}
+.s-h2 {
+    font-size: 1.95313em;
+    letter-spacing: -0.04em;
+}
+.s-h1 {
+    font-size: 2.44141em;
+    letter-spacing: -0.06em;
+}
+@media screen and (min-width: 48rem) {
+    .s-h3 {
+        font-size: 1.95313em;
     }
     .s-h2 {
-        font-size: 2em;
+        font-size: 2.44141em;
     }
-    .s-h3 {
-        font-size: 1.5em;
+    .s-h1 {
+        font-size: 3.05176em;
     }
-    .s-h4 {
-        font-size: 1.25em;
+}
+@media screen and (min-width: 90rem) {
+    .s-h2 {
+        font-size: 3.05176em;
     }
-    .s-h5, .s-h6 {
-        font-size: 1em;
+    .s-h1 {
+        font-size: 3.8147em;
     }
+}
+/*
+ * FONT-SIZE
+ */
+.s-fsn1 {
+    font-size: 0.8em;
+}
+.s-fs0 {
+    font-size: 1em;
+}
+.s-fs1 {
+    font-size: 1.25em;
+}
+.s-fs2 {
+    font-size: 1.5625em;
+}
+.s-fs3 {
+    font-size: 1.95313em;
+}
+.s-fs4 {
+    font-size: 2.44141em;
+}
+.s-fs5 {
+    font-size: 3.05176em;
+}
+.s-fs6 {
+    font-size: 3.8147em;
+}
+.s-fs7 {
+    font-size: 4.76838em;
 }
 /*
  * FONT-WEIGHT
  */
-.s-100 {
+.s-100w {
     font-weight: 100;
 }
-.s-200 {
+.s-200w {
     font-weight: 200;
 }
-.s-300 {
+.s-300w {
     font-weight: 300;
 }
-.s-400 {
+.s-400w {
     font-weight: 400;
 }
-.s-500 {
+.s-500w {
     font-weight: 500;
 }
-.s-600 {
+.s-600w {
     font-weight: 600;
 }
-.s-700 {
+.s-700w {
     font-weight: 700;
 }
-.s-800 {
+.s-800w {
     font-weight: 800;
 }
-.s-900 {
+.s-900w {
     font-weight: 900;
+}
+/*
+ * LINE-HEIGHT
+ */
+.s-lh0 {
+    line-height: 1;
+}
+.s-lh1 {
+    line-height: 1.25;
+}
+.s-lh2 {
+    line-height: 1.5625;
+}
+.s-lh3 {
+    line-height: 1.95313;
 }
 /*
  * SMALL CAPS
@@ -3218,6 +3280,8 @@ button {
     border-radius: 2px;
     letter-spacing: .05em;
     font-weight: 100;
+    -webkit-transition: border-color .1s, background-color .1s;
+    transition: border-color .1s, background-color .1s;
 }
 button:hover {
     border-color: #bbc2c7;
@@ -3247,25 +3311,38 @@ button.btn-primary {
     color: #ffffff;
 }
 button.btn-primary:hover {
-    background: darken(#10B587, 5%);
-    border-color: darken(#10B587, 5%);
+    background: #0ea47a;
+    border-color: #0ea47a;
 }
 button.btn-primary:active {
-    background: darken(#10B587, 7%);
-    border-color: darken(#10B587, 7%);
+    background: #0e9b73;
+    border-color: #0e9b73;
+}
+button.btn-secondary {
+    background: #b5107d;
+    border-color: #b5107d;
+    color: #ffffff;
+}
+button.btn-secondary:hover {
+    background: #a40e71;
+    border-color: #a40e71;
+}
+button.btn-secondary:active {
+    background: #960d68;
+    border-color: #960d68;
 }
 button.btn-error {
-    background: #e65082;
-    border-color: #e65082;
+    background: #f2777f;
+    border-color: #f2777f;
     color: #ffffff;
 }
 button.btn-error:hover {
-    background: #e65082;
-    border-color: #e65082;
+    background: #f2777f;
+    border-color: #f2777f;
 }
 button.btn-error:active {
-    background: #e65082;
-    border-color: #e65082;
+    background: #f2777f;
+    border-color: #f2777f;
 }
 button.btn-ghost {
     background: white;
@@ -3281,43 +3358,69 @@ button.btn-ghost:hover {
 }
 label.form-block__label {
     display: block;
-    font-size: .75em;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 /* Input */
 input:not([type]) {
     background: #eb4651;
 }
-input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="search"]
-textarea {
+input:not([type]), input[type="date"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], textarea {
     position: relative;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 2px solid #a7a9ab;
-    padding: 2px 5px;
+    -webkit-transition: border-color .1s;
+    transition: border-color .1s;
+    padding-left: 8px;
+    padding-left: 0.5rem;
     display: block;
     width: 100%;
+    height: 1.95313em;
     box-sizing: border-box;
+    color: #656d73;
+    background: white;
 }
-input[type="text"]:before, input[type="email"]:before, input[type="number"]:before, input[type="password"]:before, input[type="search"]
-textarea:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: .25em;
-    width: 2px;
-    background: #a7a9ab;
-}
-input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]
-textarea:focus {
+input:not([type]):focus, input[type="date"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
     outline: none;
-    border-bottom-color: #7ae4c0;
+    border-color: #7ae4c0;
+    color: #141515;
 }
 textarea {
     overflow: hidden;
     resize: vertical;
+    border-top: 2px solid #a7a9ab;
+    border-left: 2px solid #a7a9ab;
+    border-right: 2px solid #a7a9ab;
+    border-bottom: 2px solid #a7a9ab;
+    height: auto;
+    margin-top: 8px;
+    margin-top: 0.5rem;
+}
+::-webkit-input-placeholder {
+    /* Safari, Chrome and Opera */
+    color: #bbc2c7;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #bbc2c7;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #bbc2c7;
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #bbc2c7;
+}
+::-ms-input-placeholder {
+    /* Edge */
+    color: #bbc2c7;
+}
+:placeholder-shown {
+    /* Standard one last! */
+    color: #bbc2c7;
 }
 /* Check boxes */
 .checkbox-toggle, .checkbox-round, .checkbox-square {
@@ -3329,10 +3432,21 @@ textarea {
         -ms-user-select: none;
             user-select: none;
     padding: 0 .125em;
+    position: relative;
 }
 .checkbox-toggle input[type="checkbox"], .checkbox-round input[type="checkbox"], .checkbox-square input[type="checkbox"] {
-    visibility: hidden;
     position: absolute;
+    outline: none;
+    border-color: white;
+    outline: none;
+    -webkit-appearance: none;
+    -mox-appearance: none;
+    -o-appearance: none;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 .checkbox-toggle input[type="checkbox"] + label, .checkbox-round input[type="checkbox"] + label, .checkbox-square input[type="checkbox"] + label {
     display: inline-block;
@@ -3350,12 +3464,17 @@ textarea {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
 }
 .checkbox-toggle input[type="checkbox"] + label:after, .checkbox-round input[type="checkbox"] + label:after, .checkbox-square input[type="checkbox"] + label:after {
     content: '';
     display: block;
     position: absolute;
     background-color: #7ae4c0;
+}
+.checkbox-toggle input[type="checkbox"] :focus, .checkbox-round input[type="checkbox"] :focus, .checkbox-square input[type="checkbox"] :focus {
+    outline: none;
 }
 /* Toggle Checkbox*/
 .checkbox-toggle {
@@ -3380,15 +3499,18 @@ textarea {
     -webkit-transform: translateY(-50%) translateX(0);
             transform: translateY(-50%) translateX(0);
     border-radius: 50%;
-    -webkit-transition: left .2s, -webkit-transform .2s;
-    transition: left .2s, -webkit-transform .2s;
-    transition: left .2s, transform .2s;
-    transition: left .2s, transform .2s, -webkit-transform .2s;
+    -webkit-transition: left .2s ease-out, -webkit-transform .2s ease-out;
+    transition: left .2s ease-out, -webkit-transform .2s ease-out;
+    transition: left .2s ease-out, transform .2s ease-out;
+    transition: left .2s ease-out, transform .2s ease-out, -webkit-transform .2s ease-out;
 }
 .checkbox-toggle input[type="checkbox"]:checked + label:after {
     left: 100%;
     -webkit-transform: translateY(-50%) translateX(-100%);
             transform: translateY(-50%) translateX(-100%);
+}
+.checkbox-toggle input[type="checkbox"]:focus + label:before {
+    background-color: #929ba1;
 }
 /* Round/Square Checkbox*/
 .checkbox-round, .checkbox-square {
@@ -3414,6 +3536,9 @@ textarea {
 }
 .checkbox-round input[type="checkbox"]:checked + label:after, .checkbox-square input[type="checkbox"]:checked + label:after {
     background-color: #7ae4c0;
+}
+.checkbox-round input[type="checkbox"]:focus + label:before, .checkbox-square input[type="checkbox"]:focus + label:before {
+    background-color: #bbc2c7;
 }
 .checkbox-round input[type="checkbox"] + label:before, .checkbox-round input[type="checkbox"] + label:after {
     border-radius: 50%;
@@ -3456,6 +3581,7 @@ input[type=range]::-moz-range-thumb {
     border-radius: 500px;
     background-color: #7ae4c0;
     cursor: pointer;
+    border: 0;
 }
 /* All the same stuff for IE */
 input[type=range]::-ms-thumb {
@@ -3470,6 +3596,8 @@ input[type=range]::-webkit-slider-runnable-track {
     height: .25em;
     cursor: pointer;
     background-color: #656d73;
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
     border-radius: 500px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
@@ -3481,6 +3609,9 @@ input[type=range]::-moz-range-track {
     cursor: pointer;
     background-color: #656d73;
     border-radius: 500px;
+}
+input[type=range]:focus::-moz-range-track {
+    background-color: #929ba1;
 }
 input[type=range]::-ms-track {
     width: 100%;
@@ -3501,5 +3632,27 @@ input[type=range]::-ms-fill-upper {
 input[type=range]:focus::-ms-fill-upper {
     background: #929ba1;
 }
+input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+/* Color input */
+input[type=color] {
+    width: 100%;
+    height: 1.95313em;
+    box-sizing: border-box;
+    background: white;
+    cursor: pointer;
+    padding: 4px;
+    padding: 0.25rem;
+    border-radius: 2px;
+    border: 2px solid #929ba1;
+    -webkit-transition: border-color .1s;
+    transition: border-color .1s;
+}
+input[type=color]:focus {
+    outline: none;
+    border-color: #7ae4c0;
+}
+/* @import './_form-errors.css'; */
 
 /*# sourceMappingURL=main.css.map */

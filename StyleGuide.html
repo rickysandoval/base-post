@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Style Guide</title>
 	<link rel="stylesheet" href="styles/dist/main.css">
 	<style>
@@ -22,15 +23,26 @@
 </head>
 <body>
 <div class="site-container u-ph2 container-fluid">
-	<p class="breakpoint-display">BP: </p>
-	<p class="u-mb-1"></p>
+	<p class="breakpoint-display u-z1">BP: </p>
+	<p style="margin-bottom: 25px"></p>
 	<h1>Heading 1</h1>
 	<h2>Heading 2</h2>
 	<h3>Heading 3</h3>
 	<h4>Heading 4 <a>link</a></h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
 	<p><a>Paragraph</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perferendis optio harum veniam, ea ducimus voluptatibus numquam blanditiis impedit assumenda, dignissimos eligendi. Quia voluptate temporibus, pariatur ullam quidem! Sunt, maiores?</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga error ad obcaecati deleniti aliquid iure accusamus velit id, earum, at quisquam accusantium quis, ipsum ipsa repudiandae illum eligendi? Provident, sit.</p>
 	
+	<div class="s-fsn1 u-mt2">Font size -1</div>
+	<div class="s-fs0">Base font size</div>
+	<div class="s-fs1">Font size +1</div>
+	<div class="s-fs2">Font size +2</div>
+	<div class="s-fs3">Font size +3</div>
+	<div class="s-fs4">Font size +4</div>
+	<div class="s-fs5">Font size +5</div>
+	<div class="s-fs6">Font size +6</div>
+	<div class="s-fs7">Font size +7</div>
 
 	<div class="block-2">
 		<h2>Colors : 100-900</h2>
@@ -118,6 +130,7 @@
 		<h2>Buttons</h2>
 		<button onclick="this.blur();">Default</button>
 		<button class="btn-primary" onclick="this.blur();">Primary</button>
+		<button class="btn-secondary" onclick="this.blur();">Secondary</button>
 		<button class="btn-error" onclick="this.blur();" disabled>Error</button>
 		<button onclick="this.blur();" disabled>Disabled</button>
 		<button class="btn-ghost" onclick="this.blur();">Ghost</button>
@@ -172,54 +185,96 @@
 	<div class="block-2">
 		<h3>Form Elements</h3>
 		<div class="row">
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="colorInput">Color</label>
+				<input type="color" name="colorInput" value="#10B587">
+			</div>
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="dateInput">Date</label>
+				<input type="date" name="dateInput" value="2016-01-01">
+			</div>
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="emailInput">Email</label>
+				<input type="email" name="emailInput">
+			</div>
+
+
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="monthInput">Month</label>
+				<input type="month" name="monthInput" value="2016-01">
+			</div>
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="numberInput">Number</label>
+				<input type="number" name="numberInput">
+			</div>
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="urlInput">Password</label>
+				<input type="password" name="passwordInput">
+			</div>
+
+
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="urlInput">Search</label>
+				<input type="search" name="searchInput" placeholder="Enter Search">
+			</div>
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="telInput">Tel</label>
+				<input type="tel" name="telInput">
+			</div>
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="textInput">Text (required)</label>
+				<input type="text" name="textInput" required>
+			</div>
+
+			<div class="form-block col-xs-12">
+				<label class="form-block__label" for="textInput">Text area</label>
+				<textarea rows="2"></textarea>
+			</div>
+
 			<div class="form-block col-xs-6">
-				<label class="form-block__label" for="textInput">Text</label>
-				<input type="text" name="textInput">
+				<label class="form-block__label" for="urlInput">URL</label>
+				<input type="url" name="urlInput">
 			</div>
 			<div class="form-block col-xs-6">
-				<label class="form-block__label" for="textInput">Text</label>
-				<input type="text" name="textInput">
+				<label class="form-block__label" for="noTypeInput">No Type</label>
+				<input name="noTypeInput">
 			</div>
 		</div>
-		<div class="form-block">
-			<label class="form-block__label" for="textInput">Text area</label>
-			<textarea rows="1" onkeyup="auto_grow(this)"></textarea>
-		</div>
-		<div class="s-h3">
-			<div class="form-block">
+
+		<div class="row">
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="urlInput">Checkbox (toggle)</label>
 				<div class="checkbox-toggle">
 					<input type="checkbox" id="toggleMe" name="toggleMe">
 					<label for="toggleMe">Label</label>
 				</div>
 				<span class="checkbox-label">Label</span>
 			</div>
-			<div class="form-block">
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="urlInput">Checkbox (round)</label>
 				<div class="checkbox-round">
 					<input type="checkbox" id="circleMe" name="circleMe">
 					<label for="circleMe">Label2</label>
 				</div>
 				<span class="checkbox-label">Label2</span>
 			</div>
-			<div class="form-block">
+			<div class="form-block col-xs-12 col-sm-4">
+				<label class="form-block__label" for="urlInput">Checkbox (square)</label>
 				<div class="checkbox-square">
 					<input type="checkbox" id="squareMe" name="squareMe">
 					<label for="squareMe">Label2</label>
 				</div>
 				<span class="checkbox-label">Label3</span>
 			</div>
+		</div>
+		<div class="row">
 			<div class="form-block col-xs-6">
+				<label class="form-block__label" for="urlInput">Range</label>
 				<input type="range">
 			</div>
 		</div>
 
 	</div>
-	<script>
-		function auto_grow(element) {
-			if (element.scrollHeight > element.clientHeight) {
-			    element.style.height = element.scrollHeight + 5 + "px";
-			  }
-		}
-	</script>
 
 
 </div>
