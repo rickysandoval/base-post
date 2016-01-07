@@ -15,7 +15,8 @@ input,
 select,
 textarea {
   font-family: Geneva, sans-serif;
-  color: $color-nearBlack;
+  color: var(--color-nearBlack);
+  border-color: var(--$color-nearBlack);
 }
 
 html {

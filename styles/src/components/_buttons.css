@@ -1,15 +1,16 @@
+$btn-border-radius: var(--corner-rounding);
+
 button {
-	background: none;
 	border: 2px solid $color-coolGray-100;
 	background: $color-coolGray-100;
 	padding: calc(var(--sp-1) * .5) var(--sp-3);
-	border-radius: 2px;
+	border-radius: $btn-border-radius;
 	letter-spacing: .05em;
 	font-weight: 100;
 	transition: border-color .1s, background-color .1s;
 
 	&:hover {
-		border-color: $color-coolGray-500;
+		border-color: $color-coolGray-300;
 	}
 	&:active {
 		background: $color-coolGray-300;
@@ -25,16 +26,7 @@ button:active:focus {
 	outline-width: 0px;
 }
 
-button[disabled] {
-	color: $color-coolGray-700;
-	&:hover {
-		border-color: $color-coolGray-100;
-	}
-	&:active {
-		border-color: $color-coolGray-100;
-	}
-}
-
+/* Solid Buttons */
 button.btn-primary {
 	background: $color-primary;
 	border-color: $color-primary;
@@ -62,9 +54,103 @@ button.btn-secondary {
 	}
 }
 
+
+/* Ghost Buttons */
+button.btn-ghost {
+	background: white;
+
+	&.btn-primary {
+		color: $color-primary-dark;
+	}
+	&.btn-secondary {
+		color: $color-secondary-dark;
+	}
+	
+	&.btn-primary,
+	&.btn-secondary {
+		&:hover, &:active {
+			color: white;
+		}
+	}
+	&[disabled] {
+		background: white !important;
+		color: $color-coolGray-300 !important;
+	}
+}
+
+/* Button group */
+.btn-group {
+	display: flex;
+	button {
+		border-radius: 0;
+		&:first-child {
+			border-radius: $btn-border-radius 0 0 $btn-border-radius;
+		}
+		&:last-child {
+			border-radius: 0 $btn-border-radius $btn-border-radius 0;
+		}
+	}
+}
+
+/* Previous/Next */
+.btn-prev {
+	border-top-left-radius: 500px;
+	border-bottom-left-radius: 500px;
+	padding-right: var(--sp-2);
+	position: relative;
+	&::after {
+		display: block;
+		content: '';
+		position: absolute;
+		z-index: 5;
+		background: transparent;
+		left: var(--sp-1);
+		top: 50%;
+		transform: translateY(-50%);
+		border-right: .5em solid white;
+		border-top: .4em solid transparent;
+		border-bottom: .4em solid transparent;
+		border-left: 0px solid transparent;
+	}
+}
+.btn-next {
+	border-top-right-radius: 500px;
+	border-bottom-right-radius: 500px;
+	padding-left: var(--sp-2);
+	position: relative;
+	&::after {
+		display: block;
+		content: '';
+		position: absolute;
+		z-index: 5;
+		background: transparent;
+		right: var(--sp-1);
+		top: 50%;
+		transform: translateY(-50%);
+		border-left: .5em solid white;
+		border-top: .4em solid transparent;
+		border-bottom: .4em solid transparent;
+		border-right: 0px solid transparent;
+	}
+}
+
+/* Disabled */
+button[disabled] {
+	color: $color-coolGray-700 !important;
+	background: $color-coolGray-100 !important;
+	border-color: $color-coolGray-100 !important;
+	&:hover {
+		border-color: $color-coolGray-100;
+	}
+	&:active {
+		border-color: $color-coolGray-100;
+	}
+}
+
+/* Error */
 button.btn-error {
-	background: $color-red-300;
-	border-color: $color-red-300;
+	background: $color-red-300 !important;
+	border-color: $color-red-300 !important;
 	color: $color-white;
 	&:hover {
 		background: $color-red-300;
@@ -74,13 +160,26 @@ button.btn-error {
 		background: $color-red-300;
 		border-color: $color-red-300;
 	}
+	&[disabled] {
+		color: white !important;
+	}
 }
 
-button.btn-ghost {
-	background: white;
-	color: $color-coolGray-900;
-	border-color: $color-coolGray-500;
-	&:hover {
-		border-color: $color-coolGray-700;
+
+/* Modifiers */
+.btn-round {
+	border-radius: 500px;
+}
+
+.btn-selected {
+	background: $color-coolGray-300;
+	border-color: $color-coolGray-300;
+	&.btn-primary {
+		border-color: $color-primary-darker;
+		background: $color-primary-darker;
+	}
+	&.btn-secondary {
+		border-color: $color-secondary-darker;
+		background: $color-secondary-darker;
 	}
 }

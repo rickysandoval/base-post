@@ -1,0 +1,131 @@
+Form Inputs 
+-----------
+	Sliders
+		- Two sided slider
+		- Labeled slider
+		- vertical
+	Buttons
+		- Prev/next buttons
+		- Large buttons (sizing?)
+	Success/Error states
+		- Messaging, etc
+		- alerts
+			(success, alert, warning, error)
+			with or without dismiss button (x)
+	Checkbox
+		- on/off
+	Select
+	Radio button
+	Dropdown
+		- grouped
+		- disabled options
+	Button groups
+		- select one (like radio buttons)
+		- vertical
+		- justified
+
+
+Navigation
+----------
+	Menus
+		- normal
+			dropdown
+		- mobile
+			show more
+			hamburglar
+		- dropdown
+		- drilldown
+		- accordion
+		- off canvas
+
+Modals
+------
+	- can't click background
+	- can click background
+	- media modals
+
+Media
+-----
+	Slider
+	Video Player?
+	Thumbnails
+		- with content (card?)
+	"Media element"
+		- basically row with thumbnail, title, description, maybe link
+		- could be used like comment section
+
+Tabset
+------
+	- Yep
+	- justified
+	- non justified
+	- pills
+	- vertical
+
+Cards
+-----
+	- Default
+	- With Form
+	- With buttons on bottom http://spyrestudios.com/wp-content/uploads/05-minimal-kit-ui-freebie-graphics.jpg
+	- With title
+
+Random
+------
+	- Blockquotes
+	- lists
+	- progress (horizontal, circular)
+		with/without label
+	- breadcrumbs
+	- pagination
+		- states (active, disabled (prev/next))
+	- pager (different, just next/prev, newer/older links)
+	- badges (unread, shit like that)
+	- tables
+	- code
+	- close button
+	- tooltip
+
+Hero
+----
+	- with text, buttons, photos, or not photos, just large text
+
+Page elements
+-------------
+	- header/title, subheader
+
+
+
+Typography
+----------
+	- alignment
+	- lead paragraph
+
+
+States
+------
+	- hidden
+		fully
+		screen readers can see
+	- think about focus styles, esp buttons
+
+
+
+Look up aria roles and make list of useful ones
+-----
+	Check notes page
+
+
+
+Change as much to variables as possible
+---------
+	- animation times
+	- component specific things
+	- things that can change bigger things
+		- thickness?
+
+Plan ahead so easy to edit
+---------
+	- organize css
+	- group like properties
+
+
