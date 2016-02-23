@@ -1,8 +1,21 @@
+/*
+Settings
+
+Base
+
+Layout
+
+Basics
+
+Components
+
+uStructure
+
+uSurface
+*/
+
 @import 'settings/settings.css';
-@import 'elements/elements.css';
-@import 'objects/objects.css';
-@import 'surfaces/surfaces.css';
-@import 'theme/theme.css';
+@import 'base/base.css';
 @import 'layout/layout.css';
+@import 'basics/basics.css';
 @import 'components/components.css';
-@import 'utilities/utilities.css';

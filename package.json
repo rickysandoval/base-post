@@ -1,30 +1,31 @@
 {
-  "name": "BaseTheme",
+  "name": "Base Post",
   "version": "1.0.0",
-  "description": "Base Theme for stuff",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "PostCSS starting point for client projects",
   "keywords": [
     "css",
-    "scss",
+    "postcss",
     "modular"
   ],
   "author": "Ricky Sandoval",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rickysandoval/base-post.git"
+  },
   "devDependencies": {
     "autoprefixer": "^6.1.2",
     "browser-sync": "^2.10.0",
     "cssnext": "^1.8.4",
-    "gulp-cssnext": "^1.0.1",
+    "gulp": "^3.9.1",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-watch": "^4.3.5",
     "postcss": "^5.0.12",
+    "postcss-cssnext": "^2.4.0",
     "postcss-reporter": "^1.3.0",
-    "postcss-scss": "^0.1.3",
     "precss": "^1.3.0"
   }
 }
