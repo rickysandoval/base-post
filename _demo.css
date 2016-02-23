@@ -1,0 +1,45 @@
+@import 'styles/src/main.css';
+
+.breakpoint-display {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 500px;
+	text-align: left;
+	background: rgba(255,255,255,.9);
+	border-radius: 0 0 2px 2px;
+	font-size: 22px;
+
+	&:before {
+		display: inline-block;
+		content: 'Breakpoint: xxs ';
+	}
+	&:after {
+		display: inline-block;
+		content: "(0 - 399px)";
+	}
+	@media (--screen-xs-min) {
+		&:before { content: 'Breakpoint: --xs'; }
+		&:after { content: '(400 - 511px)'; }
+	}
+	@media (--screen-sm-min) {
+		&:before { content: 'Breakpoint: --sm'; }
+		&:after { content: '(512 - 767px)'; }
+	}
+	@media (--screen-md-min) {
+		&:before { content: 'Breakpoint: --md'; }
+		&:after { content: '(768 - 1023px)'; }
+	}
+	@media (--screen-lg-min) {
+		&:before { content: 'Breakpoint: --lg'; }
+		&:after { content: '(1024 - 1439px)'; }
+	}
+	@media (--screen-xl-min) {
+		&:before { content: 'Breakpoint: --xl'; }
+		&:after { content: '(1440 - 1919px)'; }
+	}
+	@media (--screen-xxl-min) {
+		&:before { content: 'Breakpoint: --xxl'; }
+		&:after { content: '(1920px +)'; }
+	}
+}
