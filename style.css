@@ -449,7 +449,7 @@ optgroup {
 	Box-sizing set to border box
 */
 
-*, *:before, &:after {
+*, *:before, *:after {
 	box-sizing: border-box
 }
 /* 
@@ -563,13 +563,15 @@ h1 {
 .breakpoint-display {
 	position: fixed;
 	top: 0;
-	width: 100%;
-	max-width: 500px;
-	text-align: left;
+	right: 5px;
+	width: auto;
+	text-align: right;
 	background: #ffffff;
 	background: rgba(255,255,255,.9);
 	border-radius: 0 0 2px 2px;
-	font-size: 22px
+	font-size: 22px;
+	padding: 5px 10px;
+	border-radius: 0 0 3px 3px
 }
 
 .breakpoint-display:before {
@@ -619,11 +621,14 @@ h1 {
 	.breakpoint-display:after {
 		content: '(768 - 1023px)'
 	}
+
 	}
 
 @media (min-width: 1024px) {
 
-	.breakpoint-display {}
+	.breakpoint-display {
+		right: calc(50% - 512px)
+	}
 
 	.breakpoint-display:before {
 		content: 'Breakpoint: --lg'
@@ -662,12 +667,20 @@ h1 {
 
 
 .demo-header {
-	margin-top: 50px;
+	background-color: #56FFED;
+}
+
+.demo-header .wrapper {
+	position: relative;
+}
+.demo-title {
+	font-family: sans-serif;
+	color: black;
 }
 
 .wrapper {
 	padding: 0 4px;
-	max-width: 60em;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 

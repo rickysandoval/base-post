@@ -3,12 +3,14 @@
 .breakpoint-display {
 	position: fixed;
 	top: 0;
-	width: 100%;
-	max-width: 500px;
-	text-align: left;
+	right: 5px;
+	width: auto;
+	text-align: right;
 	background: rgba(255,255,255,.9);
 	border-radius: 0 0 2px 2px;
 	font-size: 22px;
+	padding: 5px 10px;
+	border-radius: 0 0 3px 3px;
 
 	&:before {
 		display: inline-block;
@@ -29,8 +31,10 @@
 	@media (--screen-md-min) {
 		&:before { content: 'Breakpoint: --md'; }
 		&:after { content: '(768 - 1023px)'; }
+
 	}
 	@media (--screen-lg-min) {
+		right: calc(50% - 512px);
 		&:before { content: 'Breakpoint: --lg'; }
 		&:after { content: '(1024 - 1439px)'; }
 	}
@@ -46,12 +50,20 @@
 
 
 .demo-header {
-	margin-top: 50px;
+	background-color: #56FFED;
+}
+
+.demo-header .wrapper {
+	position: relative;
+}
+.demo-title {
+	font-family: sans-serif;
+	color: black;
 }
 
 .wrapper {
 	padding: 0 4px;
-	max-width: 60em;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 
