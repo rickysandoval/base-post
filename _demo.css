@@ -43,3 +43,28 @@
 		&:after { content: '(1920px +)'; }
 	}
 }
+
+
+.demo-header {
+	margin-top: 50px;
+}
+
+.wrapper {
+	padding: 0 4px;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.demo-section__title {
+	border-bottom: 2px solid;
+	font-weight: 300;
+	font-family: sans-serif;
+}
+.demo-section__sub {
+	padding-bottom: 32px;
+
+}
+.demo-section__subtitle {
+	font-weight: 300;
+	font-family: sans-serif;
+}

@@ -22,8 +22,21 @@ uSurface
 
 */
 /*
+	--- Scale ---
+
+*/
+
+:root {
+	/* 1.25   */
+	/* 1.563  */
+	/* 1.953 */
+	/* 2.444 */
+	/* 3.052 */
+	/* 3.815 */
+	/* 4.768 */
+}
+/*
 	--- Typography ---
-	Ratio
 	Size/weight
 	Families
 	Line height
@@ -31,11 +44,20 @@ uSurface
 */
 /* 
 	--- Layout ---
+	Spacing
 	Wrapper width
 	Grid settings
-	Spacing
 
 */
+
+:root {
+	/* 4px   */
+	/* 8px   */
+	/* 12px  */
+	/* 26px  */
+	/* 20px  */
+	/* 24px */
+}
 /* 
 	--- Colors ---
 	Basics
@@ -456,6 +478,82 @@ iframe {
 /* 
 	Defaults 
 */
+
+html {
+	font-size: 100%
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.5;
+	color: #141515
+}
+
+@media (min-width: 768px) {
+
+	body {
+		font-size: 1.125em
+	}
+}
+
+p {
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem
+}
+/* Only apply this text-rendering value on headings, as applying it to large
+ * blocks of text can introduce performance issues 
+ * - from Gemma by Cole Peters
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: optimizeLegibility;
+	margin-bottom: 12px;
+	margin-bottom: .75rem;
+	font-family: Georgia, Cambria, Times, serif
+}
+
+h6 {
+	font-size: 0.8em
+}
+
+h5 {
+	font-size: 1em
+}
+
+h4 {
+	font-size: 1em
+}
+
+h3 {
+	font-size: 1.25em
+}
+
+h2 {
+	font-size: 1.5625em
+}
+
+h1 {
+	font-size: 1.95313em
+}
+
+@media (min-width: 768px) {
+
+	h4 {
+		font-size: 1.25em
+	}
+
+	h3 {
+		font-size: 1.5625em
+	}
+
+	h2 {
+		font-size: 1.95313em
+	}
+
+	h1 {
+		font-size: 2.44141em
+	}
+}
 /* Main layout file */
 /* 
 	--- Main basics file ---
@@ -561,4 +659,29 @@ iframe {
 		content: '(1920px +)'
 	}
 	}
+
+
+.demo-header {
+	margin-top: 50px;
+}
+
+.wrapper {
+	padding: 0 4px;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.demo-section__title {
+	border-bottom: 2px solid;
+	font-weight: 300;
+	font-family: sans-serif;
+}
+.demo-section__sub {
+	padding-bottom: 32px;
+
+}
+.demo-section__subtitle {
+	font-weight: 300;
+	font-family: sans-serif;
+}
 /*# sourceMappingURL=_demo.css.map */
