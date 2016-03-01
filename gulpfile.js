@@ -46,14 +46,14 @@ gulp.task('dev', function() {
 
 gulp.task('build', function() {
   return gulp.src('./styles/src/main.css')
-    .pipe(plumber())
     .pipe(sourcemaps.init())
+    .pipe(plumber())
     .pipe(postcss([
       require('precss')({}),
       require('autoprefixer'),
       cssnext({
         compress: true,
-        sourcemap: true
+        sourcemaps: false
       })
     ]))
     .on('error', function(e){ console.log(e.message); this.emit('end'); })

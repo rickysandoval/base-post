@@ -77,8 +77,9 @@
 
 	--font-family-sans: Helvetica, Arial, sans-serif;
 	--font-family-serif: Georgia, Cambria, Times, serif;
-	--font-family-mono: Monaco, Consolas, Courier, monospace;
+	--font-family-mono: Consolas, Courier, monospace;
 	--font-family-heading: var(--font-family-serif);
+
 }
 
 /* 
@@ -114,6 +115,10 @@
  	--color-nearBlack: #141515;
 
  	--color-text: var(--color-nearBlack);
+ 	--color-highlight: #FFFB90;
+ 	--color-code: #FFEDF4;
+ 	--color-link: #147BFF;
+ 	--color-link-hover: #147BFF;
 }
 
 /*
@@ -121,3 +126,9 @@
 	Border radius
 	Box shadow
 */
+:root {
+	--border-width: 2px;
+	--border-color: var(--color-nearBlack);
+
+	--border-radius: 3px;
+}

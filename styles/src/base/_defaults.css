@@ -1,0 +1,133 @@
+/* 
+	Here we set up the basis for the document 
+*/
+
+html {
+	font-size: 100%;
+	font-family: var(--font-family-sans);
+}
+
+body {
+	font-size: var(--font-size-1);
+	line-height: var(--line-height);
+	color: var(--color-text);
+	@media (--screen-md-min) {
+		font-size: calc(var(--font-size-1) * 1.125);
+	}
+}
+
+/*
+	---- Code ---
+*/
+code {
+	display: inline-block;
+	padding: 0 var(--spacing-1);
+
+	font-family: var(--font-family-mono);
+	font-size: .9em;
+
+	background-color: var(--color-code);
+	border-radius: var(--border-radius);
+}
+
+
+/* 
+  --- Headings ---
+*/
+
+/* Only apply this text-rendering value on headings, as applying it to large
+ * blocks of text can introduce performance issues 
+ * - from Gemma by Cole Peters
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizeLegibility;
+  margin-bottom: var(--spacing-2);
+  font-family: var(--font-family-heading);
+}
+
+h6 { font-size: var(--font-size-n1); }
+h5 { font-size: var(--font-size-1); }
+h4 { font-size: var(--font-size-1); }
+h3 { font-size: var(--font-size-2); }
+h2 { font-size: var(--font-size-3); }
+h1 { font-size: var(--font-size-4); }
+
+@media (--screen-md-min) {
+	h4 { font-size: var(--font-size-2); }
+	h3 { font-size: var(--font-size-3); }
+	h2 { font-size: var(--font-size-4); }
+	h1 { font-size: var(--font-size-5); }
+}
+
+/*
+	--- Horizontal Rule ---
+*/
+
+hr {
+	width: 100%;
+	border-bottom: var(--border-width);
+	border-color: var(--border-color);
+	border-style: solid;
+}
+
+/* 
+	--- Lists ---
+*/
+
+ul, ol {
+	margin-bottom: var(--spacing-2);
+	padding-left: calc(5 * var(--spacing-1));
+}
+dd {
+	padding-left: var(--spacing-4)
+}
+
+/*
+	--- Links --
+*/
+a, a:visited {
+	color: var(--color-link);
+}
+a, a:visited, a:hover {
+	text-decoration: none;
+}
+a:focus, a:hover {
+	color: var(--color-link-hover);
+	outline: none;
+	border-bottom: 2px solid currentColor;
+}
+
+
+
+/* 
+	--- Paragraphs and Text--
+*/
+
+p {
+	margin-bottom: var(--spacing-line);
+}
+
+strong, b {
+	font-weight: var(--font-weight-bold);
+}
+
+em, i {
+	font-style: italic;
+}
+
+del, s, strike {
+	text-decoration: line-through;
+}
+
+mark {
+	display: inline-block;
+	padding: 0 var(--spacing-1);
+	border-radius: var(--border-radius);
+	background-color: var(--color-highlight);
+	color: var(--color-black);
+}

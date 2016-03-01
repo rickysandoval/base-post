@@ -74,9 +74,6 @@ uSurface
 /*
 	--- Main base file --- 
 */
-/* 
-	Normalize and reset 
-*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -456,7 +453,7 @@ optgroup {
 	Remove whitespace and border from naked elements 
 */
 
-a, abbr, acronym, address, applet, article, aside, b, blockquote, body, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, u, ul, var {
+a, abbr, acronym, address, applet, article, aside, b, blockquote, body, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main, menu, nav, object, p, pre, q, s, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, u, ul, var {
 	margin: 0;
 	padding: 0;
 	border: 0
@@ -476,11 +473,12 @@ iframe {
 	outline: none !important
 }
 /* 
-	Defaults 
+	Here we set up the basis for the document 
 */
 
 html {
-	font-size: 100%
+	font-size: 100%;
+	font-family: Helvetica, Arial, sans-serif
 }
 
 body {
@@ -495,11 +493,22 @@ body {
 		font-size: 1.125em
 	}
 }
+/*
+	---- Code ---
+*/
 
-p {
-	margin-bottom: 24px;
-	margin-bottom: 1.5rem
+code {
+	display: inline-block;
+	padding: 0 8px;
+	padding: 0 .5rem;
+	font-family: Consolas, Courier, monospace;
+	font-size: .9em;
+	background-color: #FFEDF4;
+	border-radius: 3px
 }
+/* 
+  --- Headings ---
+*/
 /* Only apply this text-rendering value on headings, as applying it to large
  * blocks of text can introduce performance issues 
  * - from Gemma by Cole Peters
@@ -553,6 +562,77 @@ h1 {
 	h1 {
 		font-size: 2.44141em
 	}
+}
+/*
+	--- Horizontal Rule ---
+*/
+
+hr {
+	width: 100%;
+	border-bottom: 2px;
+	border-color: #141515;
+	border-style: solid
+}
+/* 
+	--- Lists ---
+*/
+
+ul, ol {
+	margin-bottom: 12px;
+	margin-bottom: .75rem;
+	padding-left: 40px;
+	padding-left: 2.5rem
+}
+
+dd {
+	padding-left: 20px;
+	padding-left: 1.25rem
+}
+/*
+	--- Links --
+*/
+
+a, a:visited {
+	color: #147BFF
+}
+
+a, a:visited, a:hover {
+	text-decoration: none
+}
+
+a:focus, a:hover {
+	color: #147BFF;
+	outline: none;
+	border-bottom: 2px solid currentColor
+}
+/* 
+	--- Paragraphs and Text--
+*/
+
+p {
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem
+}
+
+strong, b {
+	font-weight: 600
+}
+
+em, i {
+	font-style: italic
+}
+
+del, s, strike {
+	text-decoration: line-through
+}
+
+mark {
+	display: inline-block;
+	padding: 0 8px;
+	padding: 0 .5rem;
+	border-radius: 3px;
+	background-color: #FFFB90;
+	color: #000000
 }
 /* Main layout file */
 /* 
@@ -674,12 +754,11 @@ h1 {
 	position: relative;
 }
 .demo-title {
-	font-family: sans-serif;
 	color: black;
 }
 
 .wrapper {
-	padding: 0 4px;
+	padding: 0 10px;
 	max-width: 1024px;
 	margin: 0 auto;
 }
@@ -696,5 +775,13 @@ h1 {
 .demo-section__subtitle {
 	font-weight: 300;
 	font-family: sans-serif;
+}
+.demo-section__subtitle {
+	font-weight: 300;
+	font-family: sans-serif;
+}
+.demo-section__label {
+	font-family: sans-serif;
+	font-weight: 300;
 }
 /*# sourceMappingURL=_demo.css.map */
