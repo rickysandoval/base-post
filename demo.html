@@ -83,6 +83,55 @@
 </code></pre>
 
 			</div>
+			<div class="demo-section__sub">
+				<h2 class="demo-section__subtitle">Embedded Content</h2>
+				<h3 class="demo-section__label">&lt;img&gt;</h3>
+				<p>Plain images will be responsive by default</p>
+				<p><img src="assets/cb.png" alt="A pretty picture"></p>
+				<p>
+					<img src="badpath/cb.png" alt="A pretty picture"><br>
+					Image that fails to load
+				</p>
+
+				<h3 class="demo-section__label">&lt;svg&gt;</h3>
+				<p>
+					<svg width="600" height="100">
+					  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+					  <circle cx="150" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+					  <circle cx="250" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+					  <circle cx="350" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+					  <circle cx="450" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+					  <circle cx="550" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+					</svg>
+				</p>
+
+				<h3 class="demo-section__label">&lt;canvas&gt;</h3>
+				<p>
+					<canvas id="myCanvas" width="600" height="100" style="border:1px solid #6510FF;">
+					</canvas>
+				</p>
+
+				<h3 class="demo-section__label">&lt;audio&gt;</h3>
+				<p>
+					<audio style="width: 600px;" controls>
+						<source src="assets/front-door.mp3" type="audio/mpeg">
+						Your browser doens't support html5 audio
+					</audio>
+				</p>
+
+				<h3 class="demo-section__label">&lt;video&gt;</h3>
+				<p>
+					<video width="600" controls>
+						<source src="assets/cancun.mp4" type="video/mp4">
+						Your browser doesn't support html5 video
+					</video>
+				</p>
+
+				<h3 class="demo-section__label">&lt;iframe&gt;</h3>
+				<iframe src="https://instantostrich.com/" height="300" width="600">
+					
+				</iframe>
+			</div>
 		</section>
 	</div><!-- End wrapper -->
 
