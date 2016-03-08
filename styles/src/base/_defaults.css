@@ -40,22 +40,15 @@ pre, samp {
 /* 
 	--- Embedded ---
 
-	img
-	canvas
-	iframe
-	img
-	svg
-	video
-	embed
-	object
-	figure
-	figcaption
 */
+
 img,
 svg,
 canvas,
 audio,
-video {
+video,
+iframe,
+embed {
 	vertical-align: middle;
 }
 
@@ -66,8 +59,15 @@ canvas,
 audio,
 video,
 iframe ,
-embed {
+embed,
+object {
 	max-width: 100%;
+}
+
+embed,
+img,
+video {
+	height: auto;
 }
 
 img {
@@ -75,12 +75,19 @@ img {
 	font-size: var(--font-size-n1);
 }
 
-video {
-	
+figure {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+
+	img {
+		display: block;
+	}
 }
 
-iframe html {
-	width: 100%;
+figcaption {
+	font-style: italic;
+	font-size: var(--font-size-1);
 }
 
 
@@ -187,4 +194,29 @@ mark {
 	border-radius: var(--border-radius);
 	background-color: var(--color-highlight);
 	color: var(--color-black);
+}
+
+
+/* 
+	--- Tables --- 
+
+*/
+
+table {
+	border-collapse: collapse;
+	border: 2px solid var(--color-nearBlack);
+}
+
+th {
+	font-weight: var(--font-weight-bold);
+	border-bottom: 2px solid var(--color-nearBlack);
+	box-sizing: content-box;
+}
+
+th,td {
+	text-align: left;
+	padding: var(--spacing-0) var(--spacing-3) var(--spacing-0) var(--spacing-1);
+}
+td {
+	vertical-align: top;
 }

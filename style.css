@@ -86,7 +86,7 @@ html {
 	/* 1 */
 	-ms-text-size-adjust: 100%;
 	/* 2 */
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
 	/* 2 */
 }
 /**
@@ -94,7 +94,7 @@ html {
  */
 
 body {
-	margin: 0
+	margin: 0;
 }
 /* HTML5 display definitions
    ========================================================================== */
@@ -106,7 +106,7 @@ body {
  */
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
-	display: block
+	display: block;
 }
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
@@ -116,7 +116,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 audio, canvas, progress, video {
 	display: inline-block;
 	/* 1 */
-	vertical-align: baseline
+	vertical-align: baseline;
 	/* 2 */
 }
 /**
@@ -125,7 +125,7 @@ audio, canvas, progress, video {
 
 audio:not([controls]) {
 	display: none;
-	height: 0
+	height: 0;
 }
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
@@ -133,7 +133,7 @@ audio:not([controls]) {
  */
 
 [hidden], template {
-	display: none
+	display: none;
 }
 /* Links
    ========================================================================== */
@@ -142,7 +142,7 @@ audio:not([controls]) {
  */
 
 a {
-	background-color: transparent
+	background-color: transparent;
 }
 /**
  * Improve readability of focused elements when they are also in an
@@ -150,7 +150,7 @@ a {
  */
 
 a:active, a:hover {
-	outline: 0
+	outline: 0;
 }
 /* Text-level semantics
    ========================================================================== */
@@ -165,7 +165,7 @@ abbr[title] {
 	/* 1 */
 	text-decoration: underline;
 	/* 2 */
-	text-decoration: underline dotted
+	text-decoration: underline dotted;
 	/* 2 */
 }
 /**
@@ -175,12 +175,12 @@ abbr[title] {
  */
 
 b, strong {
-	font-weight: inherit
+	font-weight: inherit;
 	/* 1 */
 }
 
 b, strong {
-	font-weight: bolder
+	font-weight: bolder;
 	/* 2 */
 }
 /**
@@ -188,7 +188,7 @@ b, strong {
  */
 
 dfn {
-	font-style: italic
+	font-style: italic;
 }
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
@@ -197,7 +197,7 @@ dfn {
 
 h1 {
 	font-size: 2em;
-	margin: 0.67em 0
+	margin: 0.67em 0;
 }
 /**
  * Address styling not present in IE 8/9.
@@ -205,14 +205,14 @@ h1 {
 
 mark {
 	background-color: #ff0;
-	color: #000
+	color: #000;
 }
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 
 small {
-	font-size: 80%
+	font-size: 80%;
 }
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -222,15 +222,15 @@ sub, sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
-	vertical-align: baseline
+	vertical-align: baseline;
 }
 
 sup {
-	top: -0.5em
+	top: -0.5em;
 }
 
 sub {
-	bottom: -0.25em
+	bottom: -0.25em;
 }
 /* Embedded content
    ========================================================================== */
@@ -239,14 +239,14 @@ sub {
  */
 
 img {
-	border: 0
+	border: 0;
 }
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
 
 svg:not(:root) {
-	overflow: hidden
+	overflow: hidden;
 }
 /* Grouping content
    ========================================================================== */
@@ -255,7 +255,7 @@ svg:not(:root) {
  */
 
 figure {
-	margin: 1em 40px
+	margin: 1em 40px;
 }
 /**
  * Address inconsistent styling of `hr`.
@@ -268,7 +268,7 @@ hr {
 	/* 1 */
 	height: 0;
 	/* 1 */
-	overflow: visible
+	overflow: visible;
 	/* 2 */
 }
 /**
@@ -276,7 +276,7 @@ hr {
  */
 
 pre {
-	overflow: auto
+	overflow: auto;
 }
 /**
  * 1. Correct inheritance and scaling of font-size for preformatted text.
@@ -286,7 +286,7 @@ pre {
 code, kbd, pre, samp {
 	font-family: monospace, monospace;
 	/* 1 */
-	font-size: 1em
+	font-size: 1em;
 	/* 2 */
 }
 /* Forms
@@ -303,7 +303,7 @@ code, kbd, pre, samp {
 button, input, optgroup, select, textarea {
 	font: inherit;
 	/* 1 */
-	margin: 0
+	margin: 0;
 	/* 2 */
 }
 /**
@@ -311,7 +311,7 @@ button, input, optgroup, select, textarea {
  */
 
 button {
-	overflow: visible
+	overflow: visible;
 }
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -321,7 +321,7 @@ button {
  */
 
 button, select {
-	text-transform: none
+	text-transform: none;
 }
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -334,7 +334,7 @@ button, select {
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
 	-webkit-appearance: button;
 	/* 2 */
-	cursor: pointer
+	cursor: pointer;
 	/* 3 */
 }
 /**
@@ -342,7 +342,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
  */
 
 button[disabled], html input[disabled] {
-	cursor: default
+	cursor: default;
 }
 /**
  * Remove inner padding and border in Firefox 4+.
@@ -350,14 +350,14 @@ button[disabled], html input[disabled] {
 
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
-	padding: 0
+	padding: 0;
 }
 /**
  * Restore focus style in Firefox 4+ (unset by a rule above)
  */
 
 button:-moz-focusring, input:-moz-focusring {
-	outline: 1px dotted ButtonText
+	outline: 1px dotted ButtonText;
 }
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -365,7 +365,7 @@ button:-moz-focusring, input:-moz-focusring {
  */
 
 input {
-	line-height: normal
+	line-height: normal;
 }
 /**
  * It's recommended that you don't attempt to style these elements.
@@ -378,7 +378,7 @@ input {
 input[type="checkbox"], input[type="radio"] {
 	box-sizing: border-box;
 	/* 1 */
-	padding: 0
+	padding: 0;
 	/* 2 */
 }
 /**
@@ -388,14 +388,14 @@ input[type="checkbox"], input[type="radio"] {
  */
 
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-	height: auto
+	height: auto;
 }
 /**
  * Address `appearance` set to `searchfield` in Safari and Chrome.
  */
 
 input[type="search"] {
-	-webkit-appearance: textfield
+	-webkit-appearance: textfield;
 }
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
@@ -404,7 +404,7 @@ input[type="search"] {
  */
 
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none
+	-webkit-appearance: none;
 }
 /**
  * Define consistent border, margin, and padding.
@@ -413,7 +413,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 fieldset {
 	border: 1px solid #c0c0c0;
 	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em
+	padding: 0.35em 0.625em 0.75em;
 }
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -423,7 +423,7 @@ fieldset {
 legend {
 	border: 0;
 	/* 1 */
-	padding: 0
+	padding: 0;
 	/* 2 */
 }
 /**
@@ -431,7 +431,7 @@ legend {
  */
 
 textarea {
-	overflow: auto
+	overflow: auto;
 }
 /**
  * Restore font weight (unset by a rule above).
@@ -439,7 +439,7 @@ textarea {
  */
 
 optgroup {
-	font-weight: bold
+	font-weight: bold;
 }
 /* Small reset on top of normalization */
 /* 
@@ -447,7 +447,7 @@ optgroup {
 */
 
 *, *:before, *:after {
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 /* 
 	Remove whitespace and border from naked elements 
@@ -456,21 +456,21 @@ optgroup {
 a, abbr, acronym, address, applet, article, aside, b, blockquote, body, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main, menu, nav, object, p, pre, q, s, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, u, ul, var {
 	margin: 0;
 	padding: 0;
-	border: 0
+	border: 0;
 }
 /*
 	No default border for iframes.
 */
 
 iframe {
-	border: 0
+	border: 0;
 }
 /*
 	Don't show focus outline if element isn't accessible via keyboard
 */
 
 [tabindex="-1"]:focus {
-	outline: none !important
+	outline: none !important;
 }
 /* 
 	Here we set up the basis for the document 
@@ -478,19 +478,19 @@ iframe {
 
 html {
 	font-size: 100%;
-	font-family: Helvetica, Arial, sans-serif
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
 	font-size: 1em;
 	line-height: 1.5;
-	color: #141515
+	color: #141515;
 }
 
 @media (min-width: 768px) {
 
 	body {
-		font-size: 1.125em
+		font-size: 1.125em;
 	}
 }
 /*
@@ -504,45 +504,48 @@ code, samp {
 	font-family: Consolas, Courier, monospace;
 	font-size: .9em;
 	background-color: #FFEDF4;
-	border-radius: 3px
+	border-radius: 3px;
 }
 
 pre, samp {
 	font-family: Consolas, Courier, monospace;
-	font-size: .9em
+	font-size: .9em;
 }
 /* 
 	--- Embedded ---
 
-	img
-	canvas
-	iframe
-	img
-	svg
-	video
-	embed
-	object
-	figure
-	figcaption
 */
 
-img, svg, canvas, audio, video {
-	vertical-align: middle
+img, svg, canvas, audio, video, iframe, embed {
+	vertical-align: middle;
 }
 
-img, svg, canvas, audio, video, iframe, embed {
-	max-width: 100%
+img, svg, canvas, audio, video, iframe, embed, object {
+	max-width: 100%;
+}
+
+embed, img, video {
+	height: auto;
 }
 
 img {
 	font-style: italic;
-	font-size: 0.8em
+	font-size: 0.8em;
 }
 
-video {}
+figure {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
 
-iframe html {
-	width: 100%
+figure img {
+	display: block;
+}
+
+figcaption {
+	font-style: italic;
+	font-size: 1em;
 }
 /* 
   --- Headings ---
@@ -556,49 +559,49 @@ h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizeLegibility;
 	margin-bottom: 12px;
 	margin-bottom: .75rem;
-	font-family: Georgia, Cambria, Times, serif
+	font-family: Georgia, Cambria, Times, serif;
 }
 
 h6 {
-	font-size: 0.8em
+	font-size: 0.8em;
 }
 
 h5 {
-	font-size: 1em
+	font-size: 1em;
 }
 
 h4 {
-	font-size: 1em
+	font-size: 1em;
 }
 
 h3 {
-	font-size: 1.25em
+	font-size: 1.25em;
 }
 
 h2 {
-	font-size: 1.5625em
+	font-size: 1.5625em;
 }
 
 h1 {
-	font-size: 1.95313em
+	font-size: 1.95313em;
 }
 
 @media (min-width: 768px) {
 
 	h4 {
-		font-size: 1.25em
+		font-size: 1.25em;
 	}
 
 	h3 {
-		font-size: 1.5625em
+		font-size: 1.5625em;
 	}
 
 	h2 {
-		font-size: 1.95313em
+		font-size: 1.95313em;
 	}
 
 	h1 {
-		font-size: 2.44141em
+		font-size: 2.44141em;
 	}
 }
 /*
@@ -611,7 +614,7 @@ hr {
 	box-sizing: content-box;
 	border-bottom: 2px;
 	border-color: #141515;
-	border-style: solid
+	border-style: solid;
 }
 /* 
 	--- Lists ---
@@ -621,29 +624,29 @@ ul, ol {
 	margin-bottom: 12px;
 	margin-bottom: .75rem;
 	padding-left: 40px;
-	padding-left: 2.5rem
+	padding-left: 2.5rem;
 }
 
 dd {
 	padding-left: 20px;
-	padding-left: 1.25rem
+	padding-left: 1.25rem;
 }
 /*
 	--- Links --
 */
 
 a, a:visited {
-	color: #147BFF
+	color: #147BFF;
 }
 
 a, a:visited, a:hover {
-	text-decoration: none
+	text-decoration: none;
 }
 
 a:focus, a:hover {
 	color: #147BFF;
 	outline: none;
-	border-bottom: 2px solid currentColor
+	border-bottom: 2px solid currentColor;
 }
 /* 
 	--- Paragraphs and Text ---
@@ -651,19 +654,19 @@ a:focus, a:hover {
 
 p {
 	margin-bottom: 24px;
-	margin-bottom: 1.5rem
+	margin-bottom: 1.5rem;
 }
 
 strong, b {
-	font-weight: 600
+	font-weight: 600;
 }
 
 em, i {
-	font-style: italic
+	font-style: italic;
 }
 
 del, s, strike {
-	text-decoration: line-through
+	text-decoration: line-through;
 }
 
 mark {
@@ -672,7 +675,32 @@ mark {
 	padding: 0 .5rem;
 	border-radius: 3px;
 	background-color: #FFFB90;
-	color: #000000
+	color: #000000;
+}
+/* 
+	--- Tables --- 
+
+*/
+
+table {
+	border-collapse: collapse;
+	border: 2px solid #141515;
+}
+
+th {
+	font-weight: 600;
+	border-bottom: 2px solid #141515;
+	box-sizing: content-box;
+}
+
+th, td {
+	text-align: left;
+	padding: 4px 16px 4px 8px;
+	padding: .25rem 1rem .25rem .5rem;
+}
+
+td {
+	vertical-align: top;
 }
 /* Main layout file */
 /* 
@@ -686,7 +714,6 @@ mark {
 	right: 5px;
 	width: auto;
 	text-align: right;
-	background: #ffffff;
 	background: rgba(255,255,255,.9);
 	border-radius: 0 0 2px 2px;
 	font-size: 22px;
@@ -696,12 +723,12 @@ mark {
 
 .breakpoint-display:before {
 	display: inline-block;
-	content: 'Breakpoint: xxs '
+	content: 'Breakpoint: xxs ';
 }
 
 .breakpoint-display:after {
 	display: inline-block;
-	content: "(0 - 399px)"
+	content: "(0 - 399px)";
 }
 
 @media (min-width: 400px) {
@@ -709,11 +736,11 @@ mark {
 	.breakpoint-display {}
 
 	.breakpoint-display:before {
-		content: 'Breakpoint: --xs'
+		content: 'Breakpoint: --xs';
 	}
 
 	.breakpoint-display:after {
-		content: '(400 - 511px)'
+		content: '(400 - 511px)';
 	}
 	}
 
@@ -722,11 +749,11 @@ mark {
 	.breakpoint-display {}
 
 	.breakpoint-display:before {
-		content: 'Breakpoint: --sm'
+		content: 'Breakpoint: --sm';
 	}
 
 	.breakpoint-display:after {
-		content: '(512 - 767px)'
+		content: '(512 - 767px)';
 	}
 	}
 
@@ -735,11 +762,11 @@ mark {
 	.breakpoint-display {}
 
 	.breakpoint-display:before {
-		content: 'Breakpoint: --md'
+		content: 'Breakpoint: --md';
 	}
 
 	.breakpoint-display:after {
-		content: '(768 - 1023px)'
+		content: '(768 - 1023px)';
 	}
 
 	}
@@ -747,15 +774,15 @@ mark {
 @media (min-width: 1024px) {
 
 	.breakpoint-display {
-		right: calc(50% - 512px)
+		right: calc(50% - 512px);
 	}
 
 	.breakpoint-display:before {
-		content: 'Breakpoint: --lg'
+		content: 'Breakpoint: --lg';
 	}
 
 	.breakpoint-display:after {
-		content: '(1024 - 1439px)'
+		content: '(1024 - 1439px)';
 	}
 	}
 
@@ -764,11 +791,11 @@ mark {
 	.breakpoint-display {}
 
 	.breakpoint-display:before {
-		content: 'Breakpoint: --xl'
+		content: 'Breakpoint: --xl';
 	}
 
 	.breakpoint-display:after {
-		content: '(1440 - 1919px)'
+		content: '(1440 - 1919px)';
 	}
 	}
 
@@ -777,11 +804,11 @@ mark {
 	.breakpoint-display {}
 
 	.breakpoint-display:before {
-		content: 'Breakpoint: --xxl'
+		content: 'Breakpoint: --xxl';
 	}
 
 	.breakpoint-display:after {
-		content: '(1920px +)'
+		content: '(1920px +)';
 	}
 	}
 
