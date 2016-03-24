@@ -4,176 +4,181 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BasePost Demo</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 	<div class="breakpoint-display"></div>
-	<header class="demo-header">
-		<div class="wrapper">
-			<h1 class="demo-title">BasePost</h1>
+	<header>
+		<div class="demo-header">
+			<div class="wrapper">
+				<h1 class="demo-title">BasePost</h1>
+			</div>
 		</div>
+		<nav class="demo-nav wrapper">
+			<ul>
+				<li><a href="/">Defaults</a></li>
+			</ul>
+		</nav>
 	</header>
-	<div class="wrapper">
+	<main class="wrapper">
+		<h1 class="demo-page__title">Default Elements</h1>
 		<section class="demo-section">
-			<h1 class="demo-section__title">Default Elements</h1>
-			<div class="demo-section__sub">
-				<h2 class="demo-section__subtitle">Headings</h2>
-				<h1>&lt;h1&gt; Heading 1</h1>
-				<h2>&lt;h2&gt; Heading 2</h2>
-				<h3>&lt;h3&gt; Heading 3</h3>
-				<h4>&lt;h4&gt; Heading 4</h4>
-				<h5>&lt;h5&gt; Heading 5</h5>
-				<h6>&lt;h6&gt; Heading 6</h6>
-			</div>
-			<div class="demo-section__sub">
-				<h2 class="demo-section__subtitle">Paragraphs and Inline Elements</h2>
-				<p><strong>&lt;p&gt;</strong> Lorem ipsum dolor sit amet, &lt;strong&gt;<strong>consectetur</strong>&lt;/strong&gt; adipisicing elit. Quos odio error incidunt totam facilis necessitatibus commodi ipsam dolore sapiente magni nesciunt doloremque quis, &lt;em&gt;<em>ex adipisci</em>&lt;/em&gt;, aliquam eaque, veniam aperiam possimus. <strong>&lt;/p&gt;</strong></p>
-				<p><strong>&lt;p&gt;</strong> Lorem ipsum dolor sit amet, &lt;del&gt;<del>consectetur adipisi
-				cing</del>&lt;/del&gt; elit. Adipisci doloremque repudiandae nulla tempora. Illum voluptatum, dignissimos, ipsum sint sunt tempore alias sed iure esse provident &lt;mark&gt;<mark>labore officiis officia</mark>&lt;/mark&gt; non quam. <strong>&lt;/p&gt;</strong></p>
-			</div>
-			<div class="demo-section__sub">
-				<h2 class="demo-section__subtitle">Lists</h2>
-				<h3 class="demo-section__label">&lt;ul&gt;</h3>
-				<ul>
+			<h2 class="demo-section__title">Headings</h2>
+			<h1>&lt;h1&gt; Heading 1</h1>
+			<h2>&lt;h2&gt; Heading 2</h2>
+			<h3>&lt;h3&gt; Heading 3</h3>
+			<h4>&lt;h4&gt; Heading 4</h4>
+			<h5>&lt;h5&gt; Heading 5</h5>
+			<h6>&lt;h6&gt; Heading 6</h6>
+		</section>
+		<section class="demo-section">
+			<h2 class="demo-section__title">Paragraphs and Inline Elements</h2>
+			<p><strong>&lt;p&gt;</strong> Lorem ipsum dolor sit amet, &lt;strong&gt;<strong>consectetur</strong>&lt;/strong&gt; adipisicing elit. Quos odio error incidunt totam facilis necessitatibus <a href="">commodi ipsam</a> dolore sapiente magni nesciunt doloremque quis, &lt;em&gt;<em>ex adipisci</em>&lt;/em&gt;, aliquam eaque, veniam aperiam possimus. <strong>&lt;/p&gt;</strong></p>
+			<p><strong>&lt;p&gt;</strong> Lorem ipsum dolor sit amet, &lt;del&gt;<del>consectetur adipisi
+			cing</del>&lt;/del&gt; elit. Adipisci doloremque repudiandae nulla tempora. Illum voluptatum, dignissimos, ipsum sint sunt tempore alias sed iure esse provident &lt;mark&gt;<mark>labore officiis officia</mark>&lt;/mark&gt; non quam. <strong>&lt;/p&gt;</strong></p>
+		</section>
+		<section class="demo-section">
+			<h2 class="demo-section__title">Lists</h2>
+			<h3 class="demo-section__subtitle">&lt;ul&gt;</h3>
+			<ul>
 
-					<li>Bananas</li>
-					<li>Avocados</li>
-					<li>Pineapples</li>
-					<li>Beer</li>
-					<li>Peaches</li>
-				</ul>
-				<h3 class="demo-section__label">&lt;ol&gt;</h3>
-				<ol>
-					<li>Flour</li>
-					<li>Shortening</li>
-					<li>Baking Powder</li>
-					<li>Salt</li>
-					<li>Water</li>
-				</ol>
-				<h3 class="demo-section__label">&lt;dl&gt;</h3>
-				<dl>
-					<dt>Coffee</dt>
-					<dd>Black hot drink</dd>
-					<dt>Milk</dt>
-					<dd>White cold drink</dd>
-				</dl>
-			</div>
-			<div class="demo-section__sub">
-				<h2 class="demo-section__subtitle">Hr</h2>
-				<hr>
-			</div>
-			<div class="demo-section__sub">
-				<h2 class="demo-section__subtitle">Links</h2>
-				<p>You may encounter a <a href="javascript:;">Link</a> as you read along in a document and wish to <a href="javascript:;">Click</a> it.</p>
-			</div>
-			<div class="demo-section__sub">
-				<h2 class="demo-section__subtitle">Code</h2>
-				<p>This applice to inline code like <code>git checkout -b beer</code> or code blocks.</p>
+				<li>Bananas</li>
+				<li>Avocados</li>
+				<li>Pineapples</li>
+				<li>Beer</li>
+				<li>Peaches</li>
+			</ul>
+			<h3 class="demo-section__subtitle">&lt;ol&gt;</h3>
+			<ol>
+				<li>Flour</li>
+				<li>Shortening</li>
+				<li>Baking Powder</li>
+				<li>Salt</li>
+				<li>Water</li>
+			</ol>
+			<h3 class="demo-section__subtitle">&lt;dl&gt;</h3>
+			<dl>
+				<dt>Coffee</dt>
+				<dd>Black hot drink</dd>
+				<dt>Milk</dt>
+				<dd>White cold drink</dd>
+			</dl>
+		</section>
+		<section class="demo-section">
+			<h2 class="demo-section__title">Hr</h2>
+			<hr>
+		</section>
+		<section class="demo-section">
+			<h2 class="demo-section__title">Links</h2>
+			<p>You may encounter a <a href="javascript:;">Link</a> as you read along in a document and wish to <a href="javascript:;">Click</a> it.</p>
+		</section>
+		<section class="demo-section">
+			<h2 class="demo-section__title">Code</h2>
+			<p>This applice to inline code like <code>git checkout -b beer</code> or code blocks.</p>
 
 <pre><code>function saltNPeppa(realGood) {
-  let action = 'Ah, push it';
-	
-  if (!realGood) {
-    action += ' - ' + 'push it good';
-  } else {
-	action += ' - ' + 'p-push it real good';
-  }
-  return action;
+let action = 'Ah, push it';
+
+if (!realGood) {
+action += ' - ' + 'push it good';
+} else {
+action += ' - ' + 'p-push it real good';
+}
+return action;
 }
 </code></pre>
 
-			</div>
-			<div class="demo-section__sub">
-				<h2 class="demo-section__subtitle">Embedded Content</h2>
-				<h3 class="demo-section__label">&lt;img&gt;</h3>
-				<p>Plain images will be responsive by default</p>
-				<p><img src="assets/cb.png" alt="A pretty picture"></p>
-				<p>
-					<img src="badpath/cb.png" alt="A pretty picture"><br>
-					Image that fails to load
-				</p>
+		</div>
+		<section class="demo-section">
+			<h2 class="demo-section__title">Embedded Content</h2>
+			<h3 class="demo-section__subtitle">&lt;img&gt;</h3>
+			<p>Plain images will be responsive by default</p>
+			<p><img src="assets/cb.png" alt="A pretty picture"></p>
+			<p>
+				<img src="badpath/cb.png" alt="A pretty picture"><br>
+				Image that fails to load
+			</p>
 
-				<h3 class="demo-section__label">&lt;svg&gt;</h3>
-				<p>
-					<svg width="600" height="100">
-					  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-					  <circle cx="150" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-					  <circle cx="250" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-					  <circle cx="350" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-					  <circle cx="450" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-					  <circle cx="550" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-					</svg>
-				</p>
+			<h3 class="demo-section__subtitle">&lt;svg&gt;</h3>
+			<p>
+				<svg width="600" height="100">
+				  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+				  <circle cx="150" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+				  <circle cx="250" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+				  <circle cx="350" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+				  <circle cx="450" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+				  <circle cx="550" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+				</svg>
+			</p>
 
-				<h3 class="demo-section__label">&lt;canvas&gt;</h3>
-				<p>
-					<canvas id="myCanvas" width="600" height="100" style="border:1px solid #6510FF;">
-					</canvas>
-				</p>
+			<h3 class="demo-section__subtitle">&lt;canvas&gt;</h3>
+			<p>
+				<canvas id="myCanvas" width="600" height="100" style="border:1px solid #6510FF;">
+				</canvas>
+			</p>
 
-				<h3 class="demo-section__label">&lt;audio&gt;</h3>
-				<p>
-					<audio style="width: 600px;" controls>
-						<source src="assets/front-door.mp3" type="audio/mpeg">
-						Your browser doens't support html5 audio
-					</audio>
-				</p>
+			<h3 class="demo-section__subtitle">&lt;audio&gt;</h3>
+			<p>
+				<audio style="width: 600px;" controls>
+					<source src="assets/front-door.mp3" type="audio/mpeg">
+					Your browser doens't support html5 audio
+				</audio>
+			</p>
 
-				<h3 class="demo-section__label">&lt;video&gt;</h3>
-				<p>
-					<video width="600" controls>
-						<source src="assets/cancun.mp4" type="video/mp4">
-						Your browser doesn't support html5 video
-					</video>
-				</p>
+			<h3 class="demo-section__subtitle">&lt;video&gt;</h3>
+			<p>
+				<video width="600" controls>
+					<source src="assets/cancun.mp4" type="video/mp4">
+					Your browser doesn't support html5 video
+				</video>
+			</p>
 
-				<h3 class="demo-section__label">&lt;iframe&gt;</h3>
-				<iframe src="https://instantostrich.com/" height="300" width="600">
-					
-				</iframe>
+			<h3 class="demo-section__subtitle">&lt;iframe&gt;</h3>
+			<iframe src="https://instantostrich.com/" height="300" width="600">
+				
+			</iframe>
 
-				<h3 class="demo-section__label">&lt;figure&gt; & &lt;figcaption&gt;</h3>
-				<figure>
-					<img src="assets/cb.png" alt="Pretty pretty">
-					<figcaption>Fig1. - Taylor canyon near Crested Butte, CO</figcaption>
-				</figure>
-			</div>
-
-			<div class="demo-section__sub">
-				<h2 class="demo-section__subtitle">Tables</h2>
-				<table>
-					<thead>
-					<tr>
-						<th>Column</th>
-						<th>Other</th>
-						<th>More</th>
-						<th>Still</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Row</td>
-							<td>row</td>
-							<td>rowwwwwwww</td>
-							<td>row</td>
-						</tr>
-						<tr>
-							<td>Row</td>
-							<td></td>
-							<td>row</td>
-							<td>rowwwwwww</td>
-						</tr>
-						<tr>
-							<td>Row</td>
-							<td>Row</td>
-							<td>row row row row row row row row row row row row </td>
-							<td>row</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+			<h3 class="demo-section__subtitle">&lt;figure&gt; & &lt;figcaption&gt;</h3>
+			<figure>
+				<img src="assets/cb.png" alt="Pretty pretty">
+				<figcaption>Fig1. - Taylor canyon near Crested Butte, CO</figcaption>
+			</figure>
 		</section>
-	</div><!-- End wrapper -->
+
+		<section class="demo-section">
+			<h2 class="demo-section__title">Tables</h2>
+			<table>
+				<thead>
+				<tr>
+					<th>Column</th>
+					<th>Other</th>
+					<th>More</th>
+					<th>Still</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Row</td>
+						<td>row</td>
+						<td>rowwwwwwww</td>
+						<td>row</td>
+					</tr>
+					<tr>
+						<td>Row</td>
+						<td></td>
+						<td>row</td>
+						<td>rowwwwwww</td>
+					</tr>
+					<tr>
+						<td>Row</td>
+						<td>Row</td>
+						<td>row row row row row row row row row row row row </td>
+						<td>row</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
 
 
 	<!-- <p style="margin-bottom: 25px"></p>

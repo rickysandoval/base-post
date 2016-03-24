@@ -17,12 +17,12 @@ gulp.task('serve', ['dev'], function() {
   browserSync.init({
     server: {
       baseDir: './',
-      index: 'demo.html'
+      index: 'demo/index.html'
     }
   });
 
   gulp.watch(['styles/src/**/*.css', '_demo.css'], ['dev']);
-  gulp.watch("*.html").on('change', browserSync.reload);
+  gulp.watch("demo/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('dev', function() {
