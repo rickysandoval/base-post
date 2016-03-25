@@ -71,6 +71,9 @@
 	ul {
 		list-style: none;
 		padding-left: 0;
+		li {
+			display: inline-block;
+		}
 	}
 	a {
 		font-weight: 300;
@@ -100,4 +103,20 @@
 .demo-section__subtitle {
 	font-weight: 300;
 	font-family: sans-serif;
+}
+
+.demo-callout {
+	display: block;
+	text-align: center;
+	margin: var(--spacing-line) auto;
+	a {
+		display: inline-block;
+	}
+	img {
+		display: inline-block;
+	}
+	figcaption {
+		font-style: normal;
+		font-size: 24px;
+	}
 }
