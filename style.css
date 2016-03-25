@@ -676,7 +676,7 @@ strong, b {
 	font-weight: 600;
 }
 
-em, i {
+em, i, cite {
 	font-style: italic;
 }
 
@@ -691,6 +691,24 @@ mark {
 	border-radius: 3px;
 	background-color: #FFFB90;
 	color: #000000;
+}
+/* 
+	--- Quotes ---
+
+*/
+
+blockquote {
+	margin: 24px 0;
+	margin: 1.5rem 0;
+	padding: 0 24px;
+	padding: 0 1.5rem;
+}
+
+@media (min-width: 32rem) {
+
+	blockquote {
+		padding: 0 2.25rem;
+	}
 }
 /* 
 	--- Tables --- 
@@ -2309,9 +2327,8 @@ td {
 .breakpoint-display {
 	position: fixed;
 	top: 0;
-	right: 5px;
-	width: auto;
-	text-align: right;
+	width: 100%;
+	text-align: left;
 	background: rgba(255,255,255,.9);
 	border-radius: 0 0 2px 2px;
 	font-size: 22px;
@@ -2344,7 +2361,10 @@ td {
 
 @media (min-width: 32rem) {
 
-	.breakpoint-display {}
+	.breakpoint-display {
+		right: 5px;
+		width: auto;
+	}
 
 	.breakpoint-display:before {
 		content: 'Breakpoint: --sm';
@@ -2415,7 +2435,16 @@ td {
 	margin: 0 auto;
 }
 
+header {
+	margin-top: 50px
+}
 
+@media (min-width: 32rem) {
+
+	header {
+		margin-top: 0;
+	}
+	}
 
 .demo-header {
 	background-color: #56FFED;

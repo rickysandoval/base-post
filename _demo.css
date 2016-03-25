@@ -3,9 +3,8 @@
 .breakpoint-display {
 	position: fixed;
 	top: 0;
-	right: 5px;
-	width: auto;
-	text-align: right;
+	width: 100%;
+	text-align: left;
 	background: rgba(255,255,255,.9);
 	border-radius: 0 0 2px 2px;
 	font-size: 22px;
@@ -25,6 +24,8 @@
 		&:after { content: '(400 - 511px)'; }
 	}
 	@media (--screen-sm-min) {
+		right: 5px;
+		width: auto;
 		&:before { content: 'Breakpoint: --sm'; }
 		&:after { content: '(512 - 767px)'; }
 	}
@@ -53,7 +54,12 @@
 	margin: 0 auto;
 }
 
-
+header {
+	margin-top: 50px;
+	@media (--screen-sm-min) {
+		margin-top: 0;
+	}
+}
 
 .demo-header {
 	background-color: #56FFED;

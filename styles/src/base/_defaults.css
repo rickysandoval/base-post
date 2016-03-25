@@ -181,7 +181,7 @@ strong, b {
 	font-weight: var(--font-weight-bold);
 }
 
-em, i {
+em, i, cite {
 	font-style: italic;
 }
 
@@ -195,6 +195,18 @@ mark {
 	border-radius: var(--border-radius);
 	background-color: var(--color-highlight);
 	color: var(--color-black);
+}
+
+/* 
+	--- Quotes ---
+
+*/
+blockquote {
+	margin: var(--spacing-line) 0;
+	padding: 0 var(--spacing-line);
+	@media (--screen-sm-min) {
+		padding: 0 calc(var(--spacing-line) * 1.5);
+	}
 }
 
 
