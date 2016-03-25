@@ -32,6 +32,9 @@ gulp.task('dev', function() {
     .pipe(postcss([
       require('precss')({}),
       require('autoprefixer'),
+      require('postcss-calc')({
+        mediaQueries: true
+      }),
       cssnext({
         compress: true,
         sourcemap: true

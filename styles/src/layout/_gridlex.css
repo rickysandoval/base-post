@@ -1,0 +1,149 @@
+/* ==========================================================================
+    GRIDLEX
+    Just a Flexbox Grid System
+========================================================================== */
+
+@import '_gridlex-vars.css';
+
+[class*="grid"]{
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 calc(-$gl-gutter/2);
+}
+.col,
+[class*="col-"]{
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding: 0 calc($gl-gutter/2) $gl-gutter;
+}
+.col{
+  flex: 1 1 0%;
+}
+.grid.col,
+.grid[class*="col-"]{
+  margin: 0;
+  padding: 0;
+}
+
+/************************
+    HELPERS SUFFIXES
+*************************/
+/* FOR GRID */
+[class*="grid-"]{
+/* No spacing between cols : noGutter */
+  &[class*="-noGutter"]{
+    margin: 0;
+    > [class*="col"]{
+      padding: 0;
+    }
+  }
+
+/* Horizontal alignment */
+  &[class*="-center"]{
+    justify-content: center;
+  }
+  &[class*="-right"]{
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+/* Vertical alignment */
+  &[class*="-top"]{
+    align-items: flex-start;
+  }
+  &[class*="-middle"]{
+    align-items: center;
+  }
+  &[class*="-bottom"]{
+    align-items: flex-end;
+  }
+
+/* Orders */
+  &[class*="-reverse"]{
+    flex-direction: row-reverse;
+  }
+  &[class*="-column"] {
+    flex-direction: column;
+    > [class*="col-"] {
+      flex-basis: auto;
+    }
+  }
+  &[class*="-column-reverse"]{
+    flex-direction: column-reverse;
+  }
+
+/* Spaces between and around cols */
+  &[class*="-spaceBetween"]{
+    justify-content: space-between;
+  }
+  &[class*="-spaceAround"]{
+    justify-content: space-around;
+  }
+
+/* Equal heights columns */
+  &[class*="-equalHeight"] > [class*="col"]{
+    display: flex;
+  }
+}
+
+/* FOR COL */
+[class*="col-"]{
+  &[class*="-top"]{
+    align-self: flex-start;
+  }
+  &[class*="-middle"]{
+    align-self: center;
+  }
+  &[class*="-bottom"]{
+    align-self: flex-end;
+  }
+  &[class*="-first"]{
+      order: -1;
+  }
+  &[class*="-last"]{
+      order: 1;
+  }
+}
+
+/************************
+    GRID BY NUMBER
+*************************/
+@mixin makeGridByNumber grid;
+
+@media (--screen-lg-max){
+  @mixin makeGridByNumber _lg;
+}
+@media (--screen-md-max){
+  @mixin makeGridByNumber _md;
+}
+@media (--screen-sm-max){
+  @mixin makeGridByNumber _sm;
+}
+@media (--screen-xs-max){
+  @mixin makeGridByNumber _xs;
+}
+
+
+/************************
+    COLS SIZES
+*************************/
+@mixin makeCol col;
+@mixin makeOff off;
+
+@media (--screen-lg-max){
+  @mixin makeCol _lg;
+  @mixin makeOff _lg;
+}
+@media (--screen-md-max){
+  @mixin makeCol _md;
+  @mixin makeOff _md;
+}
+@media (--screen-sm-max){
+  @mixin makeCol _sm;
+  @mixin makeOff _sm;
+}
+@media (--screen-xs-max){
+  @mixin makeCol _xs;
+  @mixin makeOff _xs;
+}

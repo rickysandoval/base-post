@@ -39,30 +39,38 @@
 		</section>
 		<section class="demo-section">
 			<h2 class="demo-section__title">Lists</h2>
-			<h3 class="demo-section__subtitle">&lt;ul&gt;</h3>
-			<ul>
+			<div class="grid-3_xs-1">
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;ul&gt;</h3>
+					<ul>
 
-				<li>Bananas</li>
-				<li>Avocados</li>
-				<li>Pineapples</li>
-				<li>Beer</li>
-				<li>Peaches</li>
-			</ul>
-			<h3 class="demo-section__subtitle">&lt;ol&gt;</h3>
-			<ol>
-				<li>Flour</li>
-				<li>Shortening</li>
-				<li>Baking Powder</li>
-				<li>Salt</li>
-				<li>Water</li>
-			</ol>
-			<h3 class="demo-section__subtitle">&lt;dl&gt;</h3>
-			<dl>
-				<dt>Coffee</dt>
-				<dd>Black hot drink</dd>
-				<dt>Milk</dt>
-				<dd>White cold drink</dd>
-			</dl>
+						<li>Bananas</li>
+						<li>Avocados</li>
+						<li>Pineapples</li>
+						<li>Beer</li>
+						<li>Peaches</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;ol&gt;</h3>
+					<ol>
+						<li>Flour</li>
+						<li>Shortening</li>
+						<li>Baking Powder</li>
+						<li>Salt</li>
+						<li>Water</li>
+					</ol>
+				</div>
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;dl&gt;</h3>
+					<dl>
+						<dt>Coffee</dt>
+						<dd>Black hot drink</dd>
+						<dt>Milk</dt>
+						<dd>White cold drink</dd>
+					</dl>
+				</div>
+			</div>
 		</section>
 		<section class="demo-section">
 			<h2 class="demo-section__title">Hr</h2>
@@ -88,61 +96,71 @@ return action;
 }
 </code></pre>
 
-		</div>
+		</section>
 		<section class="demo-section">
 			<h2 class="demo-section__title">Embedded Content</h2>
-			<h3 class="demo-section__subtitle">&lt;img&gt;</h3>
-			<p>Plain images will be responsive by default</p>
-			<p><img src="assets/cb.png" alt="A pretty picture"></p>
-			<p>
-				<img src="badpath/cb.png" alt="A pretty picture"><br>
-				Image that fails to load
-			</p>
-
-			<h3 class="demo-section__subtitle">&lt;svg&gt;</h3>
-			<p>
-				<svg width="600" height="100">
-				  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-				  <circle cx="150" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-				  <circle cx="250" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-				  <circle cx="350" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-				  <circle cx="450" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-				  <circle cx="550" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-				</svg>
-			</p>
-
-			<h3 class="demo-section__subtitle">&lt;canvas&gt;</h3>
-			<p>
-				<canvas id="myCanvas" width="600" height="100" style="border:1px solid #6510FF;">
-				</canvas>
-			</p>
-
-			<h3 class="demo-section__subtitle">&lt;audio&gt;</h3>
-			<p>
-				<audio style="width: 600px;" controls>
-					<source src="assets/front-door.mp3" type="audio/mpeg">
-					Your browser doens't support html5 audio
-				</audio>
-			</p>
-
-			<h3 class="demo-section__subtitle">&lt;video&gt;</h3>
-			<p>
-				<video width="600" controls>
-					<source src="assets/cancun.mp4" type="video/mp4">
-					Your browser doesn't support html5 video
-				</video>
-			</p>
-
-			<h3 class="demo-section__subtitle">&lt;iframe&gt;</h3>
-			<iframe src="https://instantostrich.com/" height="300" width="600">
-				
-			</iframe>
-
-			<h3 class="demo-section__subtitle">&lt;figure&gt; & &lt;figcaption&gt;</h3>
-			<figure>
-				<img src="assets/cb.png" alt="Pretty pretty">
-				<figcaption>Fig1. - Taylor canyon near Crested Butte, CO</figcaption>
-			</figure>
+			<div class="grid-3_sm-1">
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;img&gt;</h3>
+					<p>Plain images will be responsive by default</p>
+					<p><img src="assets/cb.png" alt="A pretty picture"></p>
+					<p>
+						<img src="badpath/cb.png" alt="A pretty picture"><br>
+						Image that fails to load
+					</p>
+				</div>
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;svg&gt;</h3>
+					<p>
+						<svg width="600" height="100">
+						  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+						  <circle cx="150" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+						  <circle cx="250" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+						  <circle cx="350" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+						  <circle cx="450" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+						  <circle cx="550" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+						</svg>
+					</p>
+				</div>
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;canvas&gt;</h3>
+					<p>
+						<canvas id="myCanvas" width="600" height="100" style="border:1px solid #6510FF;">
+						</canvas>
+					</p>
+				</div>
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;audio&gt;</h3>
+					<p>
+						<audio style="width: 600px;" controls>
+							<source src="assets/front-door.mp3" type="audio/mpeg">
+							Your browser doens't support html5 audio
+						</audio>
+					</p>
+				</div>
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;video&gt;</h3>
+					<p>
+						<video width="600" controls>
+							<source src="assets/cancun.mp4" type="video/mp4">
+							Your browser doesn't support html5 video
+						</video>
+					</p>
+				</div>
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;iframe&gt;</h3>
+					<iframe src="https://instantostrich.com/" height="300" width="600">
+						
+					</iframe>
+				</div>
+				<div class="col">
+					<h3 class="demo-section__subtitle">&lt;figure&gt; & &lt;figcaption&gt;</h3>
+					<figure>
+						<img src="assets/cb.png" alt="Pretty pretty">
+						<figcaption>Fig1. - Taylor canyon near Crested Butte, CO</figcaption>
+					</figure>
+				</div>
+			</div>
 		</section>
 
 		<section class="demo-section">
