@@ -525,9 +525,65 @@ pre, samp {
 	font-family: Consolas, Courier, monospace;
 	font-size: .9em;
 }
+/*
+	---- Form Elements ---
+*/
+
+input {
+	margin-top: 4px;
+	margin-top: .25rem;
+	margin-bottom: 4px;
+	margin-bottom: .25rem;
+	border: 1px solid #81858B;
+}
+
+input[type="checkbox"], input[type="color"], input[type="file"], input[type="image"], input[type="radio"], input[type="range"], select {
+	cursor: pointer;
+}
+
+input[type="checkbox"], input[type="image"], input[type="radio"] {
+	display: inline-block;
+	width: auto;
+}
+
+input[type="image"], input[type="range"], input[type="color"] {
+	vertical-align: middle;
+	border-color: currentColor;
+	border-color: initial;
+}
+
+input[type="image"] {
+	border: none;
+}
+
+input[type="color"] {}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="file"] {
+	max-width: 100%;
+	line-height: 1em;
+	vertical-align: text-bottom;
+	height: 1.5em;
+	border: none;
+}
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+	height: 1.5em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-left: .5em;
+	padding-right: .5em;
+	line-height: 1em;
+	margin: 0;
+	color: #141515;
+	border: 1px solid #141515;
+	background: #E6E6E6;
+}
 /* 
 	--- Embedded ---
-
 */
 
 img, svg, canvas, audio, video, iframe, embed {

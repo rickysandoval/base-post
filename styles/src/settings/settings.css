@@ -123,6 +123,7 @@
  	--color-nearBlack: #141515;
 
  	--color-text: var(--color-nearBlack);
+ 	--color-text-light: #81858B;
  	--color-highlight: #FFFB90;
  	--color-code: #FFEDF4;
  	--color-link: #147BFF;
@@ -137,7 +138,8 @@
 */
 :root {
 	--border-width: 2px;
-	--border-color: var(--color-nearBlack);
+	--border-color: var(--color-text);
+	--border-color-light: var(--color-text-light);
 
 	--border-radius: 3px;
 }
