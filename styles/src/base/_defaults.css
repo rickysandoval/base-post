@@ -1,4 +1,4 @@
-/* 
+/*
 	Here we set up the basis for the document 
 */
 
@@ -39,7 +39,7 @@ pre, samp {
 /*
 	---- Form Elements ---
 */
-input {
+input:not([type="image"]) {
 	margin-top: var(--spacing-0);
 	margin-bottom: var(--spacing-0);
 	border: 1px solid var(--border-color-light);
@@ -66,11 +66,14 @@ input[type="image"],
 input[type="range"],
 input[type="color"]{
 	vertical-align: middle;
-	border-color: initial;
 }
 
-input[type="image"] {
+input[type="range"] {
 	border: none;
+}
+
+input[type="radio"] {
+	margin-right: var(--spacing-0)
 }
 
 input[type="color"] {
@@ -91,18 +94,23 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-	height: 1.5em;
+	height: 1.75em;
 	padding-top: .25em;
 	padding-bottom: .25em;
 	padding-left: .5em;
 	padding-right: .5em;
-	line-height: 1em;
+	line-height: 1.25em;
 	margin: 0;
 
 	color: var(--color-text);
 	border: 1px solid var(--border-color);
 	background: #E6E6E6;
 }
+
+legend {
+	font-size: calc(1em * var(--scale-1));
+}
+
 /* 
 	--- Embedded ---
 */
@@ -159,12 +167,13 @@ figcaption {
 
 /* 
   --- Headings ---
+
+	Only apply this text-rendering value on headings, as applying it to large
+	 * blocks of text can introduce performance issues 
+	 * - from Gemma by Cole Peters
 */
 
-/* Only apply this text-rendering value on headings, as applying it to large
- * blocks of text can introduce performance issues 
- * - from Gemma by Cole Peters
- */
+ 
 h1,
 h2,
 h3,
@@ -201,6 +210,14 @@ hr {
 	border-bottom: var(--border-width);
 	border-color: var(--border-color);
 	border-style: solid;
+}
+
+/*
+	-- Interactive elements beyond forms --
+*/
+
+summary {
+	font-size: calc(1em * var(--scale-1));
 }
 
 /* 
@@ -246,7 +263,7 @@ strong, b {
 	font-weight: var(--font-weight-bold);
 }
 
-em, i, cite {
+em, i, cite, dfn {
 	font-style: italic;
 }
 

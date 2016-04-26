@@ -1,4 +1,7 @@
 @import 'styles/src/main.css';
+body {
+	color: #333;
+}
 
 .breakpoint-display {
 	position: fixed;
@@ -103,6 +106,7 @@ header {
 }
 .demo-section__title {
 	border-bottom: 2px solid;
+	margin-bottom: 10px;
 	font-weight: 300;
 	font-family: sans-serif;
 }
