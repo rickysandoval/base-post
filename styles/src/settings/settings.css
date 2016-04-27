@@ -2,6 +2,8 @@
 	--- Main settings file ---
 */
 
+@import '_colors.css';
+
 /*
 	-- Responsive -- 
 	Breakpoints/Custom medias
@@ -108,28 +110,6 @@
 	--gutter-width: 1rem;
 }
 
-
-/* 
-	--- Colors ---
-	Basics
-	Theme
-	Error/warning/success
-	Links
-	Text
-*/
-:root {
-	--color-white: #ffffff;
-	--color-black: #000000;
- 	--color-nearBlack: #141515;
-
- 	--color-text: var(--color-nearBlack);
- 	--color-text-light: #81858B;
- 	--color-highlight: #FFFB90;
- 	--color-code: #FFEDF4;
- 	--color-link: #147BFF;
- 	--color-link-hover: #147BFF;
- 	--color-focus: #24FF6F;
-}
 
 /*
 	--- Other --
