@@ -2201,6 +2201,7 @@ header {
 	text-align: center;
 	padding-top: 2px;
 	padding-bottom: 2px;
+	text-shadow: 0px 0px 8px white;
 }
 
 .red-1 { background: #ffbabf; }
@@ -2274,6 +2275,24 @@ header {
 .coolGray-5 { background: #bbc2c7; }
 .coolGray-7 { background: #929ba1; }
 .coolGray-9 { background: #656d73; }
+
+.color-black {
+	background: #000000;
+	color: white;
+	text-shadow: none !important;
+}
+.color-nearBlack {
+	background: #141515;
+	color: white;
+	text-shadow: none !important;
+}
+.color-code { background: #FFEDF4; }
+.color-focus { background: #24FF6F; }
+.color-text { color: #141515; }
+.color-text-light { color: #81858B; }
+.color-link { color: #147BFF; }
+.color-link-hover { color: #147BFF; }
+
 
 
 /*# sourceMappingURL=_demo.css.map */

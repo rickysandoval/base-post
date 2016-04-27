@@ -137,6 +137,7 @@ header {
 	text-align: center;
 	padding-top: 2px;
 	padding-bottom: 2px;
+	text-shadow: 0px 0px 8px white;
 }
 
 .red-1 { background: var(--color-red-100); }
@@ -210,4 +211,22 @@ header {
 .coolGray-5 { background: var(--color-coolGray-500); }
 .coolGray-7 { background: var(--color-coolGray-700); }
 .coolGray-9 { background: var(--color-coolGray-900); }
+
+.color-black {
+	background: var(--color-black);
+	color: white;
+	text-shadow: none !important;
+}
+.color-nearBlack {
+	background: var(--color-nearBlack);
+	color: white;
+	text-shadow: none !important;
+}
+.color-code { background: var(--color-code); }
+.color-focus { background: var(--color-focus); }
+.color-text { color: var(--color-text); }
+.color-text-light { color: var(--color-text-light); }
+.color-link { color: var(--color-link); }
+.color-link-hover { color: var(--color-link-hover); }
+
 
