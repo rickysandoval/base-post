@@ -8,11 +8,12 @@ html {
 }
 
 body {
-	font-size: var(--font-size-1);
+	/*font-size: var(--base-px);*/
 	line-height: var(--line-height);
 	color: var(--color-text);
-	@media (--screen-md-min) {
-		font-size: calc(var(--font-size-1) * 1.125);
+	@media (--screen-lg-min) {
+		font-size: 1.125em;
+		/*font-size: calc(var(--base-px) * 1.125);*/
 	}
 }
 

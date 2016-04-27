@@ -453,13 +453,14 @@ html {
 	font-family: Helvetica, Arial, sans-serif;
 }
 body {
-	font-size: 1em;
+	/*font-size: var(--base-px);*/
 	line-height: 1.5;
 	color: #141515;
 }
-@media (min-width: 48em) {
+@media (min-width: 64em) {
 	body {
 		font-size: 1.125em;
+		/*font-size: calc(var(--base-px) * 1.125);*/
 	}
 }
 /*
@@ -683,7 +684,7 @@ blockquote {
 	padding: 0 24px;
 	padding: 0 1.5rem;
 }
-@media (min-width: 32rem) {
+@media (min-width: 32em) {
 	blockquote {
 		padding: 0 2.25rem;
 	}
@@ -2025,7 +2026,7 @@ body {
 	text-align: left;
 	background: rgba(255,255,255,.9);
 	border-radius: 0 0 2px 2px;
-	font-size: 22px;
+	font-size: 1.25em;
 	padding: 5px 10px;
 	border-radius: 0 0 3px 3px
 }
@@ -2050,7 +2051,7 @@ body {
 	}
 	}
 
-@media (min-width: 32rem) {
+@media (min-width: 32em) {
 	.breakpoint-display {
 		right: 5px;
 		width: auto;
@@ -2076,7 +2077,7 @@ body {
 
 @media (min-width: 64em) {
 	.breakpoint-display {
-		right: calc(50% - 512px);
+		right: calc(50% - 32rem);
 	}
 	.breakpoint-display:before {
 		content: 'Breakpoint: --lg';
@@ -2107,7 +2108,7 @@ body {
 	}
 .wrapper {
 	padding: 0 10px;
-	max-width: 1024px;
+	max-width: 64em;
 	margin: 0 auto;
 }
 
@@ -2115,7 +2116,7 @@ header {
 	margin-top: 50px
 }
 
-@media (min-width: 32rem) {
+@media (min-width: 32em) {
 	header {
 		margin-top: 0;
 	}
@@ -2144,7 +2145,7 @@ header {
 
 .demo-nav a {
 	font-weight: 300;
-	font-size: 24px;
+	font-size: 1.25em;
 	color: #141515;
 	margin-right: 15px
 }
@@ -2191,7 +2192,7 @@ header {
 
 .demo-callout figcaption {
 	font-style: normal;
-	font-size: 24px;
+	font-size: 1.25em;
 }
 .demo-colors {
 	padding: 8px;

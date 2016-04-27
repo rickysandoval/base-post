@@ -7,11 +7,10 @@
 
 */
 :root {
-	--base-em: calc(1 * 1em);
 	--base-px: 16px;
+	--base-em: calc(1 * 1em);
 
 	--line-height: 1.5;
-	--base-line-height: calc(var(--base-px) * var(--line-height));
 
 	--font-size-n1: calc(var(--base-em) * var(--scale-n1));
 	--font-size-1:  calc(var(--base-em) * var(--scale-0));

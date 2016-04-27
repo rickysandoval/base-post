@@ -5,7 +5,7 @@
 */
 :root {
 	--screen-xs_min: 25em;     /* 400px  */
-	--screen-sm_min: 32rem;    /* 512px  */
+	--screen-sm_min: 32em;    /* 512px  */
 	--screen-md_min: 48em;     /* 768px  */
 	--screen-lg_min: 64em;     /* 1024px */
 	--screen-xl_min: 90em;     /* 1440px */
@@ -15,11 +15,11 @@
 	--screen-sm_max: 47.9375em;  /* 512px  */
 	--screen-md_max: 63.9375em;  /* 768px  */
 	--screen-lg_max: 89.9375em;  /* 1024px */
-	--screen-xl_max: 119.9375em;       /* 1440px */
+	--screen-xl_max: 119.9375em; /* 1440px */
 }
 
 @custom-media --screen-xs-min (min-width: 25em);
-@custom-media --screen-sm-min (min-width: 32rem);
+@custom-media --screen-sm-min (min-width: 32em);
 @custom-media --screen-md-min (min-width: 48em);
 @custom-media --screen-lg-min (min-width: 64em);
 @custom-media --screen-xl-min (min-width: 90em);
