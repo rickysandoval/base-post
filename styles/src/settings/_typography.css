@@ -1,0 +1,35 @@
+
+/*
+	--- Typography ---
+	Size/weight
+	Families
+	Line height
+
+*/
+:root {
+	--base-em: calc(1 * 1em);
+	--base-px: 16px;
+
+	--line-height: 1.5;
+	--base-line-height: calc(var(--base-px) * var(--line-height));
+
+	--font-size-n1: calc(var(--base-em) * var(--scale-n1));
+	--font-size-1:  calc(var(--base-em) * var(--scale-0));
+	--font-size-2:  calc(var(--base-em) * var(--scale-1));
+	--font-size-3:  calc(var(--base-em) * var(--scale-2));
+	--font-size-4:  calc(var(--base-em) * var(--scale-3));
+	--font-size-5:  calc(var(--base-em) * var(--scale-4));
+	--font-size-6:  calc(var(--base-em) * var(--scale-5));
+	--font-size-7:  calc(var(--base-em) * var(--scale-6));
+	--font-size-8:  calc(var(--base-em) * var(--scale-7));
+
+	--font-weight-thin: 300;
+	--font-weight-normal: 400;
+	--font-weight-bold: 600;
+
+	--font-family-sans: Helvetica, Arial, sans-serif;
+	--font-family-serif: Georgia, Cambria, Times, serif;
+	--font-family-mono: Consolas, Courier, monospace;
+	--font-family-heading: var(--font-family-serif);
+
+}

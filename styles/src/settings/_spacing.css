@@ -1,0 +1,19 @@
+/* 
+	--- Layout ---
+	Spacing
+	Wrapper width
+	Grid settings
+
+*/
+:root {
+
+	--spacing-0: .25rem;    /* 4px   */
+	--spacing-1: .5rem;     /* 8px   */
+	--spacing-2: .75rem;    /* 12px  */
+	--spacing-3: 1rem;      /* 26px  */
+	--spacing-4: 1.25rem;   /* 20px  */
+
+	--spacing-line: 1.5rem; /* 24px */
+
+	--gutter-width: 1rem;
+}

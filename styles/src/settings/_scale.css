@@ -1,0 +1,17 @@
+/*
+	--- Scale ---
+
+*/
+:root {
+	--ratio: 1.25;
+
+	--scale-n1: calc(1 / var(--ratio));
+	--scale-0:  1;
+	--scale-1:  var(--ratio);                       /* 1.25   */
+	--scale-2:  calc(var(--ratio) * var(--scale-1)); /* 1.563  */
+	--scale-3:  calc(var(--ratio) * var(--scale-2)); /* 1.953 */
+	--scale-4:  calc(var(--ratio) * var(--scale-3)); /* 2.444 */
+	--scale-5:  calc(var(--ratio) * var(--scale-4)); /* 3.052 */
+	--scale-6:  calc(var(--ratio) * var(--scale-5)); /* 3.815 */
+	--scale-7:  calc(var(--ratio) * var(--scale-6)); /* 4.768 */
+}

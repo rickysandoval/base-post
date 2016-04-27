@@ -16,20 +16,6 @@ uSurface
 /* 
 	--- Main settings file ---
 */
-/* 
-	--- Colors ---
-	Basics
-	Theme
-	Error/warning/success
-	Links
-	Text
-*/
-:root {
-	/*
-		Color palet from Gemma by Cole Peters
-		https://github.com/colepeters/gemma
-	*/
-}
 /*
 	-- Responsive -- 
 	Breakpoints/Custom medias
@@ -61,13 +47,6 @@ uSurface
 	/* 3.815 */
 	/* 4.768 */
 }
-/*
-	--- Typography ---
-	Size/weight
-	Families
-	Line height
-
-*/
 /* 
 	--- Layout ---
 	Spacing
@@ -82,6 +61,27 @@ uSurface
 	/* 26px  */
 	/* 20px  */
 	/* 24px */
+}
+/*
+	--- Typography ---
+	Size/weight
+	Families
+	Line height
+
+*/
+/* 
+	--- Colors ---
+	Basics
+	Theme
+	Error/warning/success
+	Links
+	Text
+*/
+:root {
+	/*
+		Color palet from Gemma by Cole Peters
+		https://github.com/colepeters/gemma
+	*/
 }
 /*
 	--- Other --
