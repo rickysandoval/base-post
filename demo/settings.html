@@ -13,12 +13,12 @@
     <header>
         <div class="demo-header">
             <div class="wrapper">
-                <h1 class="demo-title">BasePost</h1>
+                <h1 class="demo-title"><a href="/">BasePost</a></h1>
             </div>
         </div>
         <nav class="demo-nav wrapper">
             <ul>
-                <li><a href="/">Defaults</a></li>
+                <li><a href="/demo/defaults.html">Defaults</a></li>
                 <li><a href="/demo/settings.html">Settings</a></li>
                 <li><a href="/demo/layout.html">Layout</a></li>
             </ul>
@@ -26,9 +26,11 @@
     </header>
     <main class="wrapper">
         <h1 class="demo-page__title">Settings</h1>
-        <p>Files in the settings folder exist for the <strong>sole purpose</strong> of setting variables that are used in the rest of the codebase. There shouldn't be any code that is not a variable declaration.</p>
+        <p class="demo-copy">Files in the settings folder exist for the <strong>sole purpose</strong> of setting variables that are used in the rest of the codebase. There shouldn't be any code that is not a variable declaration.</p>
         <section class="demo-section">
             <h2 class="demo-section__title">Breakpoints</h2>
+            <p class="demo-copy">There are 6 breakpoints built in: xs, sm, md, lg, and xxl. They are defined in em units which allows them to adapt to users who set a different base font size in their browser, along with typography and white-space, as long as there is no explicit font size set for the body/html elements.
+            </p>
         </section>
         <section class="demo-section">
             <h2 class="demo-section__title">Colors</h2>

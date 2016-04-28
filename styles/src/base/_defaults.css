@@ -1,14 +1,15 @@
 /*
-	Here we set up the basis for the document 
+	Default styles for HTML elements
 */
 
 html {
-	font-size: 100%;
+	font-size: 100%; /* Keep this if you be accessible to users who change their browser font-size settings */
+	/* font-size: var(--base-px) */;
 	font-family: var(--font-family-sans);
 }
 
 body {
-	/*font-size: var(--base-px);*/
+	/* font-size: var(--base-px); */
 	line-height: var(--line-height);
 	color: var(--color-text);
 	@media (--screen-lg-min) {
@@ -300,12 +301,12 @@ blockquote {
 
 table {
 	border-collapse: collapse;
-	border: 2px solid var(--color-nearBlack);
+	border: 1px solid var(--color-nearBlack);
 }
 
 th {
 	font-weight: var(--font-weight-bold);
-	border-bottom: 2px solid var(--color-nearBlack);
+	border-bottom: 1px solid var(--color-nearBlack);
 	box-sizing: content-box;
 }
 

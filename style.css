@@ -446,14 +446,16 @@ iframe {
 	outline: none !important;
 }
 /*
-	Here we set up the basis for the document 
+	Default styles for HTML elements
 */
 html {
 	font-size: 100%;
+	/* Keep this if you be accessible to users who change their browser font-size settings */
+	/* font-size: var(--base-px) */
 	font-family: Helvetica, Arial, sans-serif;
 }
 body {
-	/*font-size: var(--base-px);*/
+	/* font-size: var(--base-px); */
 	line-height: 1.5;
 	color: #141515;
 }
@@ -695,11 +697,11 @@ blockquote {
 */
 table {
 	border-collapse: collapse;
-	border: 2px solid #141515;
+	border: 1px solid #141515;
 }
 th {
 	font-weight: 600;
-	border-bottom: 2px solid #141515;
+	border-bottom: 1px solid #141515;
 	box-sizing: content-box;
 }
 th, td {
@@ -2133,6 +2135,13 @@ header {
 	color: black;
 	margin-bottom: 0;
 }
+.demo-title a {
+	color: #141515;
+	border-bottom: none
+}
+.demo-title a:hover {
+	border-bottom: none;
+}
 
 .demo-nav ul {
 	list-style: none;
@@ -2166,13 +2175,19 @@ header {
 }
 .demo-section__title {
 	border-bottom: 2px solid;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
+	margin-bottom: .75rem;
 	font-weight: 300;
 	font-family: sans-serif;
 }
 .demo-section__subtitle {
 	font-weight: 300;
 	font-family: sans-serif;
+}
+
+.demo-table-wrapper {
+	max-width: 100%;
+	overflow-x: auto;
 }
 
 .demo-callout {
@@ -2193,6 +2208,10 @@ header {
 .demo-callout figcaption {
 	font-style: normal;
 	font-size: 1.25em;
+}
+
+.demo-copy {
+	max-width: 768px;
 }
 .demo-colors {
 	padding: 8px;

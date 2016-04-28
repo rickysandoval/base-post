@@ -74,6 +74,14 @@ header {
 .demo-title {
 	color: black;
 	margin-bottom: 0;
+	a {
+		color: var(--color-nearBlack);
+		border-bottom: none;
+
+		&:hover {
+			border-bottom: none;
+		}
+	}
 }
 
 .demo-nav {
@@ -106,13 +114,18 @@ header {
 }
 .demo-section__title {
 	border-bottom: 2px solid;
-	margin-bottom: 10px;
+	margin-bottom: var(--spacing-2);
 	font-weight: 300;
 	font-family: sans-serif;
 }
 .demo-section__subtitle {
 	font-weight: 300;
 	font-family: sans-serif;
+}
+
+.demo-table-wrapper {
+	max-width: 100%;
+	overflow-x: auto;
 }
 
 .demo-callout {
@@ -129,6 +142,10 @@ header {
 		font-style: normal;
 		font-size: var(--font-size-2);
 	}
+}
+
+.demo-copy {
+	max-width: 768px;
 }
 .demo-colors {
 	padding: .5rem;
