@@ -7,13 +7,13 @@
 */
 :root {
 
-	--spacing-0: .25rem;    /* 4px   */
-	--spacing-1: .5rem;     /* 8px   */
-	--spacing-2: .75rem;    /* 12px  */
-	--spacing-3: 1rem;      /* 26px  */
-	--spacing-4: 1.25rem;   /* 20px  */
+	--spacing-0: .4rem;       /* 4px   */
+	--spacing-1: .8rem;       /* 8px   */
+	--spacing-2: 1.2rem;      /* 12px  */
+	--spacing-3: 1.6rem;      /* 16px  */
+	--spacing-4: 2rem;        /* 20px  */
 
-	--spacing-line: 1.5rem; /* 24px */
+	--spacing-line: 2.4rem;   /* 24px */
 
-	--gutter-width: 1rem;
+	--gutter-width: 1.6rem;   /* 15px */
 }

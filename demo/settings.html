@@ -28,65 +28,45 @@
         <h1 class="demo-page__title">Settings</h1>
         <p class="demo-copy">Files in the settings folder exist for the <strong>sole purpose</strong> of setting variables that are used in the rest of the codebase. There shouldn't be any code that is not a variable declaration.</p>
         <section class="demo-section">
-            <h2 class="demo-section__title">Breakpoints</h2>
-            <p class="demo-copy">There are 7 breakpoint "zones" built in: xxs, xs, sm, md, lg, and xxl. There are 12 custom media queries (6 min and 6 max) defined around them. They are defined in em units which allows them to adapt to users who set a different base font size in their browser, as long as there is no explicit (px) font size set for the body/html elements.
+            <h2 class="demo-section__title">_breakpoints.css</h2>
+            <p class="demo-copy">There are 7 breakpoints built in and 12 custom media queries (6 min and 6 max) defined around them. They are defined in em units which allows them to adapt to users who set a different base font size in their browser, as long as there is no explicit (px) font size set for the body/html elements.
             </p>
-            <table class="demo-breakpoint-table">
-                <caption>Custom Media Queries</caption>
-                    <thead>
-                        <tr>
-                            <th>Zone</th>
-                            <th>Custom Queries</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="subhead">
-                            <td class="spacer">spacer</td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>queries</td>
-                                        <td>min</td>
-                                        <td>max</td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>xxs</td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>--screen-xss-max</td>
-                                        <td>-</td>
-                                        <td><span>25.9375em</span><span class="px">( 399px )</span></td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>xs</td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>--scren-xs-min<br>--screen-xs-max</td>
-                                        <td>
-                                            <span>25em<span>
-                                            <span class="px">( 400px )</span>
-                                        </td>
-                                        <td>    
-                                            <span>31.9375em</span>
-                                            <span class="px">( 511px )</span>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <code class="breakpoint-list">
+                @custom-media --screen-xs-min (min-width: 25em);
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 400px  &nbsp;*/<br>
+                @custom-media --screen-sm-min (min-width: 32em);
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 512px  &nbsp;*/<br>
+                @custom-media --screen-md-min (min-width: 48em);
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 768px  &nbsp;*/<br>
+                @custom-media --screen-lg-min (min-width: 64em);
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 1024px */<br>
+                @custom-media --screen-xl-min (min-width: 90em);
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 1440px */<br>
+                @custom-media --screen-xxl-min (min-width: 120em);
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 1920px */<br>
+                <br>
+                @custom-media --screen-xxs-max (max-width: 24.9375em);  
+                &nbsp;/* 399px  &nbsp;*/<br>
+                @custom-media --screen-xs-max (max-width: 31.9375em);   
+                &nbsp;&nbsp;/* 511px  &nbsp;*/<br>
+                @custom-media --screen-sm-max (max-width: 47.9375em);   
+                &nbsp;&nbsp;/* 767px  &nbsp;*/<br>
+                @custom-media --screen-md-max (max-width: 63.9375em);   
+                &nbsp;&nbsp;/* 1023px */<br>
+                @custom-media --screen-lg-max (max-width: 89.9375em);   
+                &nbsp;&nbsp;/* 1439px */<br>
+                @custom-media --screen-xl-max (max-width: 119.9375em);  
+                &nbsp;/* 1919px */<br>
+            </code>
         </section>
         <section class="demo-section">
-            <h2 class="demo-section__title">Colors</h2>
+            <h2 class="demo-section__title">_scale.css</h2>
+            <p class="demo-copy">The <code>--ratio</code> variable defined here is used to define the typographic scale used in headings and font-size classes. It is the the multiplier between one level and the next largest. The default is set to the "perfect fourth" scale (1.333).</p>
+            <p>Check out <a href="http://type-scale.com/">Type Scale</a> to learn more and see other scale ratios in action.</p>
+        </section>
+        <section class="demo-section">
+            <h2 class="demo-section__title">_colors.css</h2>
+            <p class="demo-copy">There is a whole palet of general color variables (pulled from Gemma by Cole Peters) defined for use, as well as a number of variables for text, highlights, links, etc.</p>
             <div class="grid-5_sm-1 demo-colors">
                     <div class="col red-1">--color-red-100<!-- <br>#ffbabf --></div>
                     <div class="col red-3">--color-red-300<!-- <br>#f2777f --></div>

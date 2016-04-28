@@ -13,10 +13,10 @@
 
 	--screen-xxs_max: 24.9375;   /* 399px  */
 	--screen-xs_max: 31.9375em;  /* 511px  */
-	--screen-sm_max: 47.9375em;  /* 512px  */
-	--screen-md_max: 63.9375em;  /* 768px  */
-	--screen-lg_max: 89.9375em;  /* 1024px */
-	--screen-xl_max: 119.9375em; /* 1440px */
+	--screen-sm_max: 47.9375em;  /* 767px  */
+	--screen-md_max: 63.9375em;  /* 1023px */
+	--screen-lg_max: 89.9375em;  /* 1439px */
+	--screen-xl_max: 119.9375em; /* 1919px */
 }
 
 @custom-media --screen-xs-min (min-width: 25em);

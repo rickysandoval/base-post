@@ -134,41 +134,10 @@ header {
 	}
 }
 
-.demo-breakpoint-table {
-	th:last-child {
-		text-align: center;
-	}
-
-	font-size: 22px;
-	table {
-		border: 0;
-		width: 100%;
-		td {
-			width: 150px;
-			vertical-align: top;
-			span {
-				display: block;
-			}
-			.px {
-				font-size: 14px;
-				margin-top: -2px;
-			}
-		}
-		td:first-child {
-			width: 200px;
-		}
-	}
-	tbody tr td:not(:first-child) {
-		text-align: center;
-	}
-	.subhead td {
-		text-align: center;
-	}
+.breakpoint-list {
+	padding: var(--spacing-1) var(--spacing-line);
 }
 
-.spacer {
-	color: white;
-}
 
 .demo-copy {
 	max-width: 76.8rem;

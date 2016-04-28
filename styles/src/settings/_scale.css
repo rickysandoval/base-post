@@ -3,7 +3,7 @@
 
 */
 :root {
-	--ratio: 1.25;
+	--ratio: 1.333;
 
 	--scale-n1: calc(1 / var(--ratio));
 	--scale-0:  1;
