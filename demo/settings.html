@@ -29,8 +29,61 @@
         <p class="demo-copy">Files in the settings folder exist for the <strong>sole purpose</strong> of setting variables that are used in the rest of the codebase. There shouldn't be any code that is not a variable declaration.</p>
         <section class="demo-section">
             <h2 class="demo-section__title">Breakpoints</h2>
-            <p class="demo-copy">There are 6 breakpoints built in: xs, sm, md, lg, and xxl. They are defined in em units which allows them to adapt to users who set a different base font size in their browser, along with typography and white-space, as long as there is no explicit font size set for the body/html elements.
+            <p class="demo-copy">There are 7 breakpoint "zones" built in: xxs, xs, sm, md, lg, and xxl. There are 12 custom media queries (6 min and 6 max) defined around them. They are defined in em units which allows them to adapt to users who set a different base font size in their browser, as long as there is no explicit (px) font size set for the body/html elements.
             </p>
+            <table class="demo-breakpoint-table">
+                <caption>Custom Media Queries</caption>
+                    <thead>
+                        <tr>
+                            <th>Zone</th>
+                            <th>Custom Queries</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="subhead">
+                            <td class="spacer">spacer</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>queries</td>
+                                        <td>min</td>
+                                        <td>max</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>xxs</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>--screen-xss-max</td>
+                                        <td>-</td>
+                                        <td><span>25.9375em</span><span class="px">( 399px )</span></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>xs</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>--scren-xs-min<br>--screen-xs-max</td>
+                                        <td>
+                                            <span>25em<span>
+                                            <span class="px">( 400px )</span>
+                                        </td>
+                                        <td>    
+                                            <span>31.9375em</span>
+                                            <span class="px">( 511px )</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
         </section>
         <section class="demo-section">
             <h2 class="demo-section__title">Colors</h2>

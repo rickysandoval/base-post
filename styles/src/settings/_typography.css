@@ -7,20 +7,20 @@
 
 */
 :root {
-	--base-px: 16px;
-	--base-em: calc(1 * 1em);
+	--base-font-px: 16px;
+	--base-font-rem: calc(1.6 * 1rem);
 
 	--line-height: 1.5;
 
-	--font-size-n1: calc(var(--base-em) * var(--scale-n1));
-	--font-size-1:  calc(var(--base-em) * var(--scale-0));
-	--font-size-2:  calc(var(--base-em) * var(--scale-1));
-	--font-size-3:  calc(var(--base-em) * var(--scale-2));
-	--font-size-4:  calc(var(--base-em) * var(--scale-3));
-	--font-size-5:  calc(var(--base-em) * var(--scale-4));
-	--font-size-6:  calc(var(--base-em) * var(--scale-5));
-	--font-size-7:  calc(var(--base-em) * var(--scale-6));
-	--font-size-8:  calc(var(--base-em) * var(--scale-7));
+	--font-size-n1: calc(var(--base-font-rem) * var(--scale-n1));
+	--font-size-1:  calc(var(--base-font-rem) * var(--scale-0));
+	--font-size-2:  calc(var(--base-font-rem) * var(--scale-1));
+	--font-size-3:  calc(var(--base-font-rem) * var(--scale-2));
+	--font-size-4:  calc(var(--base-font-rem) * var(--scale-3));
+	--font-size-5:  calc(var(--base-font-rem) * var(--scale-4));
+	--font-size-6:  calc(var(--base-font-rem) * var(--scale-5));
+	--font-size-7:  calc(var(--base-font-rem) * var(--scale-6));
+	--font-size-8:  calc(var(--base-font-rem) * var(--scale-7));
 
 	--font-weight-thin: 300;
 	--font-weight-normal: 400;

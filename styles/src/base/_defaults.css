@@ -3,18 +3,16 @@
 */
 
 html {
-	font-size: 100%; /* Keep this if you be accessible to users who change their browser font-size settings */
-	/* font-size: var(--base-px) */;
+	font-size: 62.5%;
 	font-family: var(--font-family-sans);
 }
 
 body {
-	/* font-size: var(--base-px); */
+	font-size: var(--base-font-rem);
 	line-height: var(--line-height);
 	color: var(--color-text);
 	@media (--screen-lg-min) {
-		font-size: 1.125em;
-		/*font-size: calc(var(--base-px) * 1.125);*/
+		font-size: calc(var(--base-font-rem) * 1.125);
 	}
 }
 
