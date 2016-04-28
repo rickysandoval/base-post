@@ -43,7 +43,7 @@ body {
 
 .wrapper {
 	padding: 0 10px;
-	max-width: 102.4rem;
+	max-width: var(--wrapper-width);
 	margin: 0 auto;
 }
 

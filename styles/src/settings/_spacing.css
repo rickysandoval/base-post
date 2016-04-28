@@ -12,8 +12,9 @@
 	--spacing-2: 1.2rem;      /* 12px  */
 	--spacing-3: 1.6rem;      /* 16px  */
 	--spacing-4: 2rem;        /* 20px  */
-
 	--spacing-line: 2.4rem;   /* 24px */
+
+	--wrapper-width: 102.4rem;
 
 	--gutter-width: 1.6rem;   /* 15px */
 }
