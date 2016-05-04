@@ -1,20 +1,16 @@
 /* 
-	--- Layout ---
-	Spacing
-	Wrapper width
-	Grid settings
-
+	Settings >> Spacing
 */
 :root {
 
-	--spacing-0: .4rem;       /* 4px   */
-	--spacing-1: .8rem;       /* 8px   */
-	--spacing-2: 1.2rem;      /* 12px  */
-	--spacing-3: 1.6rem;      /* 16px  */
-	--spacing-4: 2rem;        /* 20px  */
-	--spacing-line: 2.4rem;   /* 24px */
+	--spacing-half: .5rem;      /* 5px   */
+	--spacing-1: 1rem;       	/* 10px  */
+	--spacing-2: 2rem;      	/* 20px  */
+	--spacing-3: 3rem;      	/* 30px  */
+	--spacing-4: 4rem;        	/* 40px  */
+	--spacing-line: calc(1em);	/* Whatever font size on element is */
 
-	--wrapper-width: 102.4rem;
+	--wrapper-width: 102.4rem;  /* 1024px */
 
-	--gutter-width: 1.6rem;   /* 15px */
+	--gutter-width: 1.5rem;   	/* 15px */
 }

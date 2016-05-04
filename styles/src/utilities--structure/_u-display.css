@@ -1,0 +1,40 @@
+/*
+	Utilities (Structure) -- Display
+
+	Utility classes for display
+
+
+	Formula:
+		.u-d{value}
+
+	Breakpoint modifiers:
+		_sm
+		_md
+		_lg
+*/
+
+.u-dnone 	{ display: none; }
+.u-dblock 	{ display: block; }
+.u-dinline	{ display: inline; }
+.u-diblock	{ display: inline-block; }
+
+@media (screen-sm-min) {
+	._sm-u-dnone 	{ display: none; }
+	._sm-u-dblock 	{ display: block; }
+	._sm-u-dinline	{ display: inline; }
+	._sm-u-diblock	{ display: inline-block; }
+}
+
+@media (screen-md-min) {
+	._md-u-dnone 	{ display: none; }
+	._md-u-dblock 	{ display: block; }
+	._md-u-dinline	{ display: inline; }
+	._md-u-diblock	{ display: inline-block; }
+}
+
+@media (screen-lg-min) {
+	._lg-u-dnone 	{ display: none; }
+	._lg-u-dblock 	{ display: block; }
+	._lg-u-dinline	{ display: inline; }
+	._lg-u-diblock	{ display: inline-block; }
+}
