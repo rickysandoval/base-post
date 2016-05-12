@@ -2035,6 +2035,231 @@ td {
 */
 /* Main components file */
 /*
+	Utilities (Structure) -- Display
+
+	Utility classes for display
+
+
+	Formula:
+		.u-display-{value}
+
+		value = n (none), b (block), i(inline) or ib (inline-block)
+		
+*/
+.u-display-n {
+	display: none;
+}
+.u-display-b {
+	display: block;
+}
+.u-display-i {
+	display: inline;
+}
+.u-display-ib {
+	display: inline-block;
+}
+@media (screen-sm-min) {
+	._sm-u-display-n {
+		display: none;
+	}
+	._sm-u-display-b {
+		display: block;
+	}
+	._sm-u-display-i {
+		display: inline;
+	}
+	._sm-u-display-ib {
+		display: inline-block;
+	}
+}
+@media (screen-md-min) {
+	._md-u-display-n {
+		display: none;
+	}
+	._md-u-display-b {
+		display: block;
+	}
+	._md-u-display-i {
+		display: inline;
+	}
+	._md-u-display-ib {
+		display: inline-block;
+	}
+}
+@media (screen-lg-min) {
+	._lg-u-display-n {
+		display: none;
+	}
+	._lg-u-display-b {
+		display: block;
+	}
+	._lg-u-display-i {
+		display: inline;
+	}
+	._lg-u-display-ib {
+		display: inline-block;
+	}
+}
+/* 
+	Utilities (Structure) -- Floats
+
+	Utility classes for float related purposes
+
+
+	Formula:
+		.u-float-{value}
+
+*/
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.u-float-l {
+	float: left;
+}
+.u-float-r {
+	float: right;
+}
+.u-float-n {
+	float: none;
+}
+.u-clear-l {
+	clear: left;
+}
+.u-clear-r {
+	clear: right;
+}
+.u-clear-b {
+	clear: both;
+}
+@media (min-width: 32em) {
+	._sm-u-float-l {
+		float: left;
+	}
+	._sm-u-float-r {
+		float: right;
+	}
+	._sm-u-float-n {
+		float: none;
+	}
+	._sm-u-clear-l {
+		clear: left;
+	}
+	._sm-u-clear-r {
+		clear: right;
+	}
+	._sm-u-clear-b {
+		clear: both;
+	}
+}
+@media (min-width: 48em) {
+	._md-u-float-l {
+		float: left;
+	}
+	._md-u-float-r {
+		float: right;
+	}
+	._md-u-float-n {
+		float: none;
+	}
+	._md-u-clear-l {
+		clear: left;
+	}
+	._md-u-clear-r {
+		clear: right;
+	}
+	._md-u-clear-b {
+		clear: both;
+	}
+}
+@media (min-width: 64em) {
+	._lg-u-float-l {
+		float: left;
+	}
+	._lg-u-float-r {
+		float: right;
+	}
+	._lg-u-float-n {
+		float: none;
+	}
+	._lg-u-clear-l {
+		clear: left;
+	}
+	._lg-u-clear-r {
+		clear: right;
+	}
+	._lg-u-clear-b {
+		clear: both;
+	}
+}
+/* 
+	Utilities (Structure) -- Position
+
+	Utility classes for position
+
+
+	Formula: 
+		.u-{value}
+
+*/
+.u-static {
+	position: static;
+}
+.u-relative {
+	position: relative;
+}
+.u-absolute {
+	position: absolute;
+}
+.u-fixed {
+	position: fixed;
+}
+@media (min-width: 32em) {
+	._sm-u-static {
+		position: static;
+	}
+	._sm-u-relative {
+		position: relative;
+	}
+	._sm-u-absolute {
+		position: absolute;
+	}
+	._sm-u-fixed {
+		position: fixed;
+	}
+}
+@media (min-width: 48em) {
+	._md-u-static {
+		position: static;
+	}
+	._md-u-relative {
+		position: relative;
+	}
+	._md-u-absolute {
+		position: absolute;
+	}
+	._md-u-fixed {
+		position: fixed;
+	}
+}
+@media (min-width: 64em) {
+	._lg-u-static {
+		position: static;
+	}
+	._lg-u-relative {
+		position: relative;
+	}
+	._lg-u-absolute {
+		position: absolute;
+	}
+	._lg-u-fixed {
+		position: fixed;
+	}
+}
+/*
 	Utilities (Structure) -- Spacing
 
 	Utility classes for padding and margin
@@ -2045,10 +2270,6 @@ td {
 	
 		Example: .u-pv3 = padding, vertical (top and bottom), with spacing-3 value
 
-	Breakpoint modifiers:
-		_sm
-		_md
-		_lg
 */
 .u-m0 {
 	margin: 0;

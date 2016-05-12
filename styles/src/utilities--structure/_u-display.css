@@ -5,36 +5,34 @@
 
 
 	Formula:
-		.u-d{value}
+		.u-display-{value}
 
-	Breakpoint modifiers:
-		_sm
-		_md
-		_lg
+		value = n (none), b (block), i(inline) or ib (inline-block)
+		
 */
 
-.u-dnone 	{ display: none; }
-.u-dblock 	{ display: block; }
-.u-dinline	{ display: inline; }
-.u-diblock	{ display: inline-block; }
+.u-display-n 	{ display: none; }
+.u-display-b 	{ display: block; }
+.u-display-i	{ display: inline; }
+.u-display-ib	{ display: inline-block; }
 
 @media (screen-sm-min) {
-	._sm-u-dnone 	{ display: none; }
-	._sm-u-dblock 	{ display: block; }
-	._sm-u-dinline	{ display: inline; }
-	._sm-u-diblock	{ display: inline-block; }
+	._sm-u-display-n 	{ display: none; }
+	._sm-u-display-b 	{ display: block; }
+	._sm-u-display-i	{ display: inline; }
+	._sm-u-display-ib	{ display: inline-block; }
 }
 
 @media (screen-md-min) {
-	._md-u-dnone 	{ display: none; }
-	._md-u-dblock 	{ display: block; }
-	._md-u-dinline	{ display: inline; }
-	._md-u-diblock	{ display: inline-block; }
+	._md-u-display-n 	{ display: none; }
+	._md-u-display-b 	{ display: block; }
+	._md-u-display-i	{ display: inline; }
+	._md-u-display-ib	{ display: inline-block; }
 }
 
 @media (screen-lg-min) {
-	._lg-u-dnone 	{ display: none; }
-	._lg-u-dblock 	{ display: block; }
-	._lg-u-dinline	{ display: inline; }
-	._lg-u-diblock	{ display: inline-block; }
+	._lg-u-display-n 	{ display: none; }
+	._lg-u-display-b 	{ display: block; }
+	._lg-u-display-i	{ display: inline; }
+	._lg-u-display-ib	{ display: inline-block; }
 }

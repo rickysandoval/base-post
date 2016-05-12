@@ -9,10 +9,6 @@
 	
 		Example: .u-pv3 = padding, vertical (top and bottom), with spacing-3 value
 
-	Breakpoint modifiers:
-		_sm
-		_md
-		_lg
 */
 
 .u-m0 		{ margin: 0; }

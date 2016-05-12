@@ -1,0 +1,36 @@
+/* 
+	Utilities (Structure) -- Position
+
+	Utility classes for position
+
+
+	Formula: 
+		.u-{value}
+
+*/
+
+.u-static { position: static; }
+.u-relative { position: relative; }
+.u-absolute { position: absolute; }
+.u-fixed { position: fixed; }
+
+@media (--screen-sm-min) {
+	._sm-u-static { position: static; }
+	._sm-u-relative { position: relative; }
+	._sm-u-absolute { position: absolute; }
+	._sm-u-fixed { position: fixed; }
+}
+
+@media (--screen-md-min) {
+	._md-u-static { position: static; }
+	._md-u-relative { position: relative; }
+	._md-u-absolute { position: absolute; }
+	._md-u-fixed { position: fixed; }
+}
+
+@media (--screen-lg-min) {
+	._lg-u-static { position: static; }
+	._lg-u-relative { position: relative; }
+	._lg-u-absolute { position: absolute; }
+	._lg-u-fixed { position: fixed; }
+}

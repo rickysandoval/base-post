@@ -1,0 +1,58 @@
+/* 
+	Utilities (Structure) -- Floats
+
+	Utility classes for float related purposes
+
+
+	Formula:
+		.u-float-{value}
+
+*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.u-float-l { float: left; }
+.u-float-r { float: right; }
+.u-float-n { float: none; }
+
+.u-clear-l { clear: left; }
+.u-clear-r { clear: right; }
+.u-clear-b { clear: both; }
+
+@media (--screen-sm-min) {
+	._sm-u-float-l { float: left; }
+	._sm-u-float-r { float: right; }
+	._sm-u-float-n { float: none; }
+
+	._sm-u-clear-l { clear: left; }
+	._sm-u-clear-r { clear: right; }
+	._sm-u-clear-b { clear: both; }
+}
+
+@media (--screen-md-min) {
+	._md-u-float-l { float: left; }
+	._md-u-float-r { float: right; }
+	._md-u-float-n { float: none; }
+
+	._md-u-clear-l { clear: left; }
+	._md-u-clear-r { clear: right; }
+	._md-u-clear-b { clear: both; }
+}
+
+@media (--screen-lg-min) {
+	._lg-u-float-l { float: left; }
+	._lg-u-float-r { float: right; }
+	._lg-u-float-n { float: none; }
+
+	._lg-u-clear-l { clear: left; }
+	._lg-u-clear-r { clear: right; }
+	._lg-u-clear-b { clear: both; }
+}
