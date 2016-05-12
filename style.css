@@ -2036,6 +2036,67 @@ td {
 /* 
 	--- Main basics file ---
 */
+.list-reset {
+	list-style: none;
+	padding-left: 0;
+}
+.u-h1, .u-h2, .u-h3, .u-h4, .u-h5, .u-h6 {
+	text-rendering: optimizeLegibility;
+	font-family: Georgia, Cambria, Times, serif;
+}
+.u-h6 {
+	font-size: 12.003px;
+	font-size: 1.2003rem;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+.u-h5 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+.u-h4 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+.u-h3 {
+	font-size: 21.328px;
+	font-size: 2.1328rem;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+.u-h2 {
+	font-size: 28.43px;
+	font-size: 2.84302rem;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+.u-h1 {
+	font-size: 37.897px;
+	font-size: 3.78974rem;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+@media (min-width: 48em) {
+	.u-h4 {
+		font-size: 2.1328rem;
+	}
+	.u-h3 {
+		font-size: 2.84302rem;
+		margin-bottom: 2rem;
+	}
+	.u-h2 {
+		font-size: 3.78974rem;
+		margin-bottom: 2rem;
+	}
+	.u-h1 {
+		font-size: 5.05173rem;
+		margin-bottom: 2rem;
+	}
+}
 /* Main components file */
 /*
 	Utilities (Structure) -- Display
@@ -3615,6 +3676,63 @@ td {
 }
 .u-bc-tertiary-dark {
 	background-color: #44d072;
+}
+/*
+	Utilities (Surface) - Font
+*/
+.u-sans {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.u-serif {
+	font-family: Georgia, Cambria, Times, serif;
+}
+.u-mono {
+	font-family: Consolas, Courier, monospace;
+}
+.u-fw-thin {
+	font-weight: 300;
+}
+.u-fw-normal {
+	font-weight: 400;
+}
+.u-fw-bold {
+	font-weight: 600;
+}
+.u-fs-n1 {
+	font-size: 12.003px;
+	font-size: 1.2003rem;
+}
+.u-fs-1 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.u-fs-2 {
+	font-size: 21.328px;
+	font-size: 2.1328rem;
+}
+.u-fs-3 {
+	font-size: 28.43px;
+	font-size: 2.84302rem;
+}
+.u-fs-4 {
+	font-size: 37.897px;
+	font-size: 3.78974rem;
+}
+.u-fs-5 {
+	font-size: 50.517px;
+	font-size: 5.05173rem;
+}
+.u-fs-6 {
+	font-size: 67.339px;
+	font-size: 6.73395rem;
+}
+.u-fs-7 {
+	font-size: 89.763px;
+	font-size: 8.97635rem;
+}
+.u-fs-8 {
+	font-size: 119.654px;
+	font-size: 11.96547rem;
 }
 body {
 	color: #333;
