@@ -17,7 +17,18 @@
  	--color-code: #FFEDF4;
  	--color-link: #147BFF;
  	--color-link-hover: #147BFF;
- 	--color-focus: #24FF6F;
+ 	--color-focus: #49FF85;
+
+ 	/* 
+ 		Theme Colors
+ 	*/
+
+ 	--color-primary: #56FFED;
+ 	--color-primary-dark: #3fc8b9;
+ 	--color-secondary: #49B1FF;
+ 	--color-secondary-dark: #3584c0;
+ 	--color-tertiary: #49FF85;
+ 	--color-tertiary-dark: #44d072;
 
 	/*
 		Color palet from Gemma by Cole Peters
