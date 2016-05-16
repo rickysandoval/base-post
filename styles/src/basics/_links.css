@@ -1,0 +1,18 @@
+.link-reset, .link-reset:visited {
+	color: currentColor;
+	border-bottom: 0;
+}
+.link-reset:focus, .link-reset:hover {
+	color: currentColor;
+	border-bottom: 0;
+}
+
+.fake-link, .fake-link:visited {
+	color: var(--color-link);
+	border-bottom: 2px solid transparent;
+}
+.fake-link:focus, .fake-link:hover {
+	color: var(--color-link-hover);
+	outline: none;
+	border-bottom: 2px solid currentColor;
+}

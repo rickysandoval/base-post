@@ -19,4 +19,6 @@
 	--border-color-light: var(--color-text-light);
 
 	--border-radius: 3px;
+
+	--z-index-spacing: 5;
 }

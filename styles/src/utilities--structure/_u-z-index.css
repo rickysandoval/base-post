@@ -3,14 +3,14 @@
 
 */
 
-.u-zi-n5 { z-index: -25; }
-.u-zi-n4 { z-index: -20; }
-.u-zi-n3 { z-index: -15; }
-.u-zi-n2 { z-index: -10; }
-.u-zi-n1 { z-index: -5; }
+.u-zi-n5 { z-index: calc(var(--z-index-spacing) * -5); }
+.u-zi-n4 { z-index: calc(var(--z-index-spacing) * -4); }
+.u-zi-n3 { z-index: calc(var(--z-index-spacing) * -3); }
+.u-zi-n2 { z-index: calc(var(--z-index-spacing) * -2); }
+.u-zi-n1 { z-index: calc(var(--z-index-spacing) * -1); }
 .u-zi-0 { z-index: 0; }
-.u-zi-1 { z-index: 5; }
-.u-zi-2 { z-index: 10; }
-.u-zi-3 { z-index: 15; }
-.u-zi-4 { z-index: 20; }
-.u-zi-5 { z-index: 25; }
+.u-zi-1 { z-index: calc(var(--z-index-spacing) * 1); }
+.u-zi-2 { z-index: calc(var(--z-index-spacing) * 2); }
+.u-zi-3 { z-index: calc(var(--z-index-spacing) * 3); }
+.u-zi-4 { z-index: calc(var(--z-index-spacing) * 4); }
+.u-zi-5 { z-index: calc(var(--z-index-spacing) * 5); }

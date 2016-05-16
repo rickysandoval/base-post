@@ -1,3 +1,10 @@
+/*
+	Basics - Typography
+
+	This file contains simple classes for typographic changes, like copying
+	header styling and smallcaps.
+*/
+
 .u-h1,.u-h2,.u-h3,.u-h4,.u-h5,.u-h6 {
   text-rendering: optimizeLegibility;
   font-family: var(--font-family-heading);
