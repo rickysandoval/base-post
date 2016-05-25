@@ -1,0 +1,45 @@
+/* 
+	Overrides -- Floats
+
+	Formula:
+		.float-{value}
+
+*/
+
+.float-l { float: left !important; }
+.float-r { float: right !important; }
+.float-n { float: none !important; }
+
+.clear-l { clear: left !important; }
+.clear-r { clear: right !important; }
+.clear-b { clear: both !important; }
+
+@media (--screen-sm-min) {
+	._sm-float-l { float: left !important; }
+	._sm-float-r { float: right !important; }
+	._sm-float-n { float: none !important; }
+
+	._sm-clear-l { clear: left !important; }
+	._sm-clear-r { clear: right !important; }
+	._sm-clear-b { clear: both !important; }
+}
+
+@media (--screen-md-min) {
+	._md-float-l { float: left !important; }
+	._md-float-r { float: right !important; }
+	._md-float-n { float: none !important; }
+
+	._md-clear-l { clear: left !important; }
+	._md-clear-r { clear: right !important; }
+	._md-clear-b { clear: both !important; }
+}
+
+@media (--screen-lg-min) {
+	._lg-float-l { float: left !important; }
+	._lg-float-r { float: right !important; }
+	._lg-float-n { float: none !important; }
+
+	._lg-clear-l { clear: left !important; }
+	._lg-clear-r { clear: right !important; }
+	._lg-clear-b { clear: both !important; }
+}

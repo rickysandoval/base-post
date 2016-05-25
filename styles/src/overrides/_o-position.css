@@ -1,0 +1,12 @@
+/* 
+	Overrides -- Position
+
+	Formula: 
+		.{value}
+
+*/
+
+.static { position: static !important; }
+.relative { position: relative !important; }
+.absolute { position: absolute !important; }
+.fixed { position: fixed !important; }

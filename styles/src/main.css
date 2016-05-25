@@ -5,20 +5,18 @@ Base
 
 Layout
 
-Basics
-
 Components
 
-uStructure
+Utilities
 
-uSurface
+Overrides
+
 */
 
 @import 'settings/settings.css';
 @import 'base/base.css';
 @import 'layout/layout.css';
-@import 'basics/basics.css';
 @import 'components/components.css';
-@import 'utilities--structure/u-structure.css';
-@import 'utilities--surface/u-surface.css';
+@import 'utilities/utilities.css';
+@import 'overrides/overrides.css';
 

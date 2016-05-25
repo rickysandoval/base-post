@@ -1,0 +1,10 @@
+/* 
+	Overrides -- Color
+*/
+
+.color-primary 		{ color: var(--color-primary) !important; }
+.color-primary-dark 	{ color: var(--color-primary-dark) !important; }
+.color-secondary 		{ color: var(--color-secondary) !important; }
+.color-secondary-dark { color: var(--color-secondary-dark) !important; }
+.color-tertiary 		{ color: var(--color-tertiary) !important; }
+.color-tertiary-dark 	{ color: var(--color-tertiary-dark) !important; }

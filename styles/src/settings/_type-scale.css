@@ -1,0 +1,28 @@
+/*
+	--- Scale ---
+
+*/
+:root {
+	--ratio: 1.25;
+	--mobile-ratio: 1.2;
+
+	--scale-n1: calc(1 / var(--ratio));
+	--scale-0:  1;
+	--scale-1:  var(--ratio);                       
+	--scale-2:  calc(var(--ratio) * var(--scale-1));
+	--scale-3:  calc(var(--ratio) * var(--scale-2));
+	--scale-4:  calc(var(--ratio) * var(--scale-3));
+	--scale-5:  calc(var(--ratio) * var(--scale-4));
+	--scale-6:  calc(var(--ratio) * var(--scale-5));
+	--scale-7:  calc(var(--ratio) * var(--scale-6));
+
+	--mobile-scale-n1: calc(1 / var(--mobile-ratio));
+	--mobile-scale-0:  1;
+	--mobile-scale-1:  var(--mobile-ratio);                               
+	--mobile-scale-2:  calc(var(--mobile-ratio) * var(--mobile-scale-1)); 
+	--mobile-scale-3:  calc(var(--mobile-ratio) * var(--mobile-scale-2));
+	--mobile-scale-4:  calc(var(--mobile-ratio) * var(--mobile-scale-3));
+	--mobile-scale-5:  calc(var(--mobile-ratio) * var(--mobile-scale-4));
+	--mobile-scale-6:  calc(var(--mobile-ratio) * var(--mobile-scale-5));
+	--mobile-scale-7:  calc(var(--mobile-ratio) * var(--mobile-scale-6));
+}

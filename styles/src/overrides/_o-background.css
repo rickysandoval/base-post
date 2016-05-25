@@ -1,0 +1,10 @@
+/*
+	Overrides -- Background
+*/
+
+.background-primary 			{ background-color: var(--color-primary) !important; }
+.background-primary-dark 		{ background-color: var(--color-primary-dark) !important; }
+.background-secondary 		{ background-color: var(--color-secondary) !important; }
+.background-secondary-dark 	{ background-color: var(--color-secondary-dark) !important; }
+.background-tertiary 			{ background-color: var(--color-tertiary) !important; }
+.background-tertiary-dark 	{ background-color: var(--color-tertiary-dark) !important; }

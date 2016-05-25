@@ -1,0 +1,46 @@
+/*
+	Overrides - Typography
+*/
+
+.sans  { font-family: var(--font-family-sans) !important; }
+.serif { font-family: var(--font-family-serif) !important; }
+.mono  { font-family: var(--font-family-mono) !important; }
+
+.font-weight-thin 	 { font-weight: var(--font-weight-thin) !important; }
+.font-weight-normal { font-weight: var(--font-weight-normal) !important; }
+.font-weight-bold 	 { font-weight: var(--font-weight-bold) !important; }
+
+.line-height-0{ line-height: var(--scale-0)); };
+.line-height-1{ line-height: var(--scale-1)); };
+.line-height-2{ line-height: var(--scale-2)); };
+.line-height-3{ line-height: var(--scale-3)); };
+
+.font-size-n1 { font-size: var(--font-size-n1) !important; }
+.font-size-1  { font-size: var(--font-size-1) !important; }
+.font-size-2  { font-size: var(--font-size-2) !important; }
+.font-size-3  { font-size: var(--font-size-3) !important; }
+.font-size-4  { font-size: var(--font-size-4) !important; }
+.font-size-5  { font-size: var(--font-size-5) !important; }
+.font-size-6  { font-size: var(--font-size-6) !important; }
+.font-size-7  { font-size: var(--font-size-7) !important; }
+.font-size-8  { font-size: var(--font-size-8) !important; }
+
+@media(--screen-sm-max) {
+	.font-size-n1 { font-size: var(--mobile-font-size-n1) !important; }
+	.font-size-1  { font-size: var(--mobile-font-size-1) !important; }
+	.font-size-2  { font-size: var(--mobile-font-size-2) !important; }
+	.font-size-3  { font-size: var(--mobile-font-size-3) !important; }
+	.font-size-4  { font-size: var(--mobile-font-size-4) !important; }
+	.font-size-5  { font-size: var(--mobile-font-size-5) !important; }
+	.font-size-6  { font-size: var(--mobile-font-size-6) !important; }
+	.font-size-7  { font-size: var(--mobile-font-size-7) !important; }
+	.font-size-8  { font-size: var(--mobile-font-size-8) !important; }
+}
+
+.uppercase  	{ text-transform: uppercase !important; }
+.lowercase  	{ text-transform: lowercase !important; }
+.capitalize 	{ text-transform: capitalize !important; }
+.smallcaps  	{ font-variant: small-caps !important; }
+.underline  	{ text-decoration: underline !important; }
+.overline		{ text-decoration: overline !important; }
+.line-through 	{ text-decoration: line-through !important; }

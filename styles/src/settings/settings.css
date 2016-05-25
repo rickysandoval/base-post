@@ -3,8 +3,8 @@
 */
 
 @import '_breakpoints.css';
-@import '_scale.css';
 @import '_spacing.css';
+@import '_type-scale.css';
 @import '_typography.css';
 @import '_colors.css';
 
