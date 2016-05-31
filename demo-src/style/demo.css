@@ -1,4 +1,4 @@
-@import 'styles/src/main.css';
+@import '../../styles/src/main.css';
 body {
 	color: #333;
 }
@@ -75,6 +75,9 @@ header {
 }
 
 .demo-nav {
+	ul {
+		padding-left: 0;
+	}
 	ul li {
 		display: inline-block;
 	}
@@ -83,7 +86,7 @@ header {
 		font-size: var(--fontSize-2);
 		color: var(--color-nearBlack);
 		margin-right: 15px;
-		&:hover {
+		&:hover, @:focus {
 			border-bottom: none;
 			color: #5B5E5F;
 		}
