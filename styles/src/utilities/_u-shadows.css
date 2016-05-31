@@ -3,3 +3,29 @@
 .boxShadow-3 { box-shadow: var(--boxShadow-3); }
 .boxShadow-4 { box-shadow: var(--boxShadow-4); }
 .boxShadow-5 { box-shadow: var(--boxShadow-5); }
+
+.boxShadow-1.hover-rise {
+	transition: box-shadow .3s, transform .3s;
+	&:hover {
+		box-shadow: var(--boxShadow-3); 
+		transform: translateY(-3px)
+	};
+}
+
+.boxShadow-2.hover-rise {
+	transition: box-shadow .3s, transform .3s;
+	&:hover {
+		box-shadow: var(--boxShadow-4); 
+		transform: translateY(-3px)
+	};
+}
+
+
+.boxShadow-3.hover-rise {
+	transition: box-shadow .3s, transform .3s;
+	&:hover {
+		box-shadow: var(--boxShadow-5); 
+		transform: translateY(-3px)
+	};
+}
+

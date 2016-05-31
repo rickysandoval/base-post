@@ -1,5 +1,5 @@
 :root {
-	--borderWidth: 2px;
+	--borderWidth: 1px;
 	--borderColor: var(--color-text);
 	--borderColor-light: var(--color-text-light);
 	--borderRadius: 3px;

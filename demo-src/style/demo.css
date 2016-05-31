@@ -246,3 +246,10 @@ header {
 	text-align: center;
 	padding-top: 15px;
 }
+
+.demo__box-shadows .col {
+	min-height: 100%;
+	> div {
+		height: calc(100% - var(--spacing-2));
+	}
+}
