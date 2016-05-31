@@ -4,9 +4,9 @@
 	Utilities are VERY simple classes. They only have a single, well defined purpose
 */
 
-@import '_u-borders.css';
 @import '_u-clearfix.css';
 @import '_u-links.css';
 @import '_u-lists.css';
+@import '_u-position.css';
 @import '_u-shadows.css';
 @import '_u-typography.css';

@@ -10,10 +10,17 @@
 .fontWeight-normal { font-weight: var(--fontWeight-normal) !important; }
 .fontWeight-bold 	 { font-weight: var(--fontWeight-bold) !important; }
 
-.lineHeight-0{ line-height: var(--scale-0)); };
-.lineHeight-1{ line-height: var(--scale-1)); };
-.lineHeight-2{ line-height: var(--scale-2)); };
-.lineHeight-3{ line-height: var(--scale-3)); };
+.lineHeight-0{ line-height: var(--scale-0)) !important; }
+.lineHeight-1{ line-height: var(--scale-1)) !important; }
+.lineHeight-2{ line-height: var(--scale-2)) !important; }
+.lineHeight-3{ line-height: var(--scale-3)) !important; }
+
+@media (--screen-sm-max) {
+	.lineHeight-0{ line-height: var(--mobile-scale-0)) !important; }
+	.lineHeight-1{ line-height: var(--mobile-scale-1)) !important; }
+	.lineHeight-2{ line-height: var(--mobile-scale-2)) !important; }
+	.lineHeight-3{ line-height: var(--mobile-scale-3)) !important; }
+}
 
 .fontSize-n1 { font-size: var(--fontSize-n1) !important; }
 .fontSize-1  { font-size: var(--fontSize-1) !important; }
@@ -25,7 +32,7 @@
 .fontSize-7  { font-size: var(--fontSize-7) !important; }
 .fontSize-8  { font-size: var(--fontSize-8) !important; }
 
-@media(--screen-sm-max) {
+@media (--screen-sm-max) {
 	.fontSize-n1 { font-size: var(--mobile-fontSize-n1) !important; }
 	.fontSize-1  { font-size: var(--mobile-fontSize-1) !important; }
 	.fontSize-2  { font-size: var(--mobile-fontSize-2) !important; }
