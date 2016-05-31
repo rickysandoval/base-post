@@ -35,6 +35,23 @@ Overrides
 	/* 1919px */
 }
 /* 
+	--- Colors ---
+	Basics
+	Theme
+	Error/warning/success
+	Links
+	Text
+*/
+:root {
+	/* 
+ 		Theme Colors
+ 	*/
+	/*
+		Color palet from Gemma by Cole Peters
+		https://github.com/colepeters/gemma
+	*/
+}
+/* 
 	Settings -- Spacing
 */
 :root {
@@ -58,23 +75,6 @@ Overrides
 	Line height
 
 */
-/* 
-	--- Colors ---
-	Basics
-	Theme
-	Error/warning/success
-	Links
-	Text
-*/
-:root {
-	/* 
- 		Theme Colors
- 	*/
-	/*
-		Color palet from Gemma by Cole Peters
-		https://github.com/colepeters/gemma
-	*/
-}
 /*
 	--- Other --
 	Border radius
@@ -2043,6 +2043,36 @@ td {
 
 	Utilities are VERY simple classes. They only have a single, well defined purpose
 */
+.border {
+	border: 2px solid #141515;
+}
+.border-right {
+	border-right: 2px solid #141515;
+}
+.border-bottom {
+	border-bottom: 2px solid #141515;
+}
+.border-left {
+	border-left: 2px solid #141515;
+}
+.border-top {
+	border-top: 2px solid #141515;
+}
+.border-light {
+	border: 2px solid #81858B;
+}
+.border-right-light {
+	border-right: 2px solid #81858B;
+}
+.border-bottom-light {
+	border-bottom: 2px solid #81858B;
+}
+.border-left-light {
+	border-left: 2px solid #81858B;
+}
+.border-top-light {
+	border-top: 2px solid #81858B;
+}
 .cf:before, .cf:after {
 	content: " ";
 	display: table;
@@ -2773,98 +2803,98 @@ td {
 /*
 	Overrides - Typography
 */
-.sans {
+.fontFamily-sans {
 	font-family: Helvetica, Arial, sans-serif !important;
 }
-.serif {
+.fontFamily-serif {
 	font-family: Georgia, Cambria, Times, serif !important;
 }
-.mono {
+.fontFamily-mono {
 	font-family: Consolas, Courier, monospace !important;
 }
-.font-weight-thin {
+.fontWeight-thin {
 	font-weight: 300 !important;
 }
-.font-weight-normal {
+.fontWeight-normal {
 	font-weight: 400 !important;
 }
-.font-weight-bold {
+.fontWeight-bold {
 	font-weight: 600 !important;
 }
-.line-height-0 {
+.lineHeight-0 {
 	line-height: 1);
 }
-.line-height-1 {
+.lineHeight-1 {
 	line-height: 1.25);
 }
-.line-height-2 {
+.lineHeight-2 {
 	line-height: 1.5625);
 }
-.line-height-3 {
+.lineHeight-3 {
 	line-height: 1.95313);
 }
-.font-size-n1 {
+.fontSize-n1 {
 	font-size: 12.8px !important;
 	font-size: 1.28rem !important;
 }
-.font-size-1 {
+.fontSize-1 {
 	font-size: 16px !important;
 	font-size: 1.6rem !important;
 }
-.font-size-2 {
+.fontSize-2 {
 	font-size: 20px !important;
 	font-size: 2rem !important;
 }
-.font-size-3 {
+.fontSize-3 {
 	font-size: 25px !important;
 	font-size: 2.5rem !important;
 }
-.font-size-4 {
+.fontSize-4 {
 	font-size: 31.25px !important;
 	font-size: 3.12501rem !important;
 }
-.font-size-5 {
+.fontSize-5 {
 	font-size: 39.062px !important;
 	font-size: 3.90626rem !important;
 }
-.font-size-6 {
+.fontSize-6 {
 	font-size: 48.828px !important;
 	font-size: 4.88282rem !important;
 }
-.font-size-7 {
+.fontSize-7 {
 	font-size: 61.035px !important;
 	font-size: 6.10352rem !important;
 }
-.font-size-8 {
+.fontSize-8 {
 	font-size: 76.294px !important;
 	font-size: 7.62941rem !important;
 }
 @media(max-width: 47.9375em) {
-	.font-size-n1 {
+	.fontSize-n1 {
 		font-size: 1.33333rem !important;
 	}
-	.font-size-1 {
+	.fontSize-1 {
 		font-size: 1.6rem !important;
 	}
-	.font-size-2 {
+	.fontSize-2 {
 		font-size: 1.92rem !important;
 	}
-	.font-size-3 {
+	.fontSize-3 {
 		font-size: 2.304rem !important;
 	}
-	.font-size-4 {
+	.fontSize-4 {
 		font-size: 2.7648rem !important;
 	}
-	.font-size-5 {
+	.fontSize-5 {
 		font-size: 3.31776rem !important;
 	}
-	.font-size-6 {
+	.fontSize-6 {
 		font-size: 3.98131rem !important;
 	}
-	.font-size-7 {
+	.fontSize-7 {
 		font-size: 4.77757rem !important;
 	}
-	.font-size-8 {
+	.fontSize-8 {
 		font-size: 5.73309rem !important;
 	}
 }
@@ -2894,49 +2924,49 @@ td {
 /*
 	Overrides -- Z-Index
 */
-.zindex-n5 {
+.zIndex-n5 {
 	z-index: -25 !important;
 }
-.zindex-n4 {
+.zIndex-n4 {
 	z-index: -20 !important;
 }
-.zindex-n3 {
+.zIndex-n3 {
 	z-index: -15 !important;
 }
-.zindex-n2 {
+.zIndex-n2 {
 	z-index: -10 !important;
 }
-.zindex-n1 {
+.zIndex-n1 {
 	z-index: -5 !important;
 }
-.zindex-0 {
+.zIndex-0 {
 	z-index: 0 !important;
 }
-.zindex-1 {
+.zIndex-1 {
 	z-index: 5 !important;
 }
-.zindex-2 {
+.zIndex-2 {
 	z-index: 10 !important;
 }
-.zindex-3 {
+.zIndex-3 {
 	z-index: 15 !important;
 }
-.zindex-4 {
+.zIndex-4 {
 	z-index: 20 !important;
 }
-.zindex-5 {
+.zIndex-5 {
 	z-index: 25 !important;
 }
 /*
 	Overrides -- Cursor
 */
-.text-left {
+.textAlign-left {
 	text-align: left !important;
 }
-.text-center {
+.textAlign-center {
 	text-align: center !important;
 }
-.text-right {
+.textAlign-right {
 	text-align: right !important;
 }
 body {

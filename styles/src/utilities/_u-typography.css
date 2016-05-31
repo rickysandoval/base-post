@@ -12,15 +12,15 @@
 .h5,
 .h6 {
   text-rendering: optimizeLegibility;
-  font-family: var(--font-family-heading);
+  font-family: var(--fontFamily-heading);
 }
 
-.h6 { font-size: var(--font-size-n1); margin-bottom: var(--spacing-1); }
-.h5 { font-size: var(--font-size-1); margin-bottom: var(--spacing-1); }
-.h4 { font-size: var(--font-size-2); margin-bottom: var(--spacing-1); }
-.h3 { font-size: var(--font-size-3); margin-bottom: var(--spacing-1); }
-.h2 { font-size: var(--font-size-4); margin-bottom: var(--spacing-1); }
-.h1 { font-size: var(--font-size-6); margin-bottom: var(--spacing-1); }
+.h6 { font-size: var(--fontSize-n1); margin-bottom: var(--spacing-1); }
+.h5 { font-size: var(--fontSize-1); margin-bottom: var(--spacing-1); }
+.h4 { font-size: var(--fontSize-2); margin-bottom: var(--spacing-1); }
+.h3 { font-size: var(--fontSize-3); margin-bottom: var(--spacing-1); }
+.h2 { font-size: var(--fontSize-4); margin-bottom: var(--spacing-1); }
+.h1 { font-size: var(--fontSize-6); margin-bottom: var(--spacing-1); }
 
 @media (--screen-md-min) {
 	.h3 { margin-bottom: var(--spacing-2); }
@@ -29,10 +29,10 @@
 }
 
 @media (--screen-sm-max) {
-	.h6 { font-size: var(--mobile-font-size-n1); }
-	.h5 { font-size: var(--mobile-font-size-1); }
-	.h4 { font-size: var(--mobile-font-size-2); }
-	.h3 { font-size: var(--mobile-font-size-3); }
-	.h2 { font-size: var(--mobile-font-size-4); }
-	.h1 { font-size: var(--mobile-font-size-5); }
+	.h6 { font-size: var(--mobile-fontSize-n1); }
+	.h5 { font-size: var(--mobile-fontSize-1); }
+	.h4 { font-size: var(--mobile-fontSize-2); }
+	.h3 { font-size: var(--mobile-fontSize-3); }
+	.h2 { font-size: var(--mobile-fontSize-4); }
+	.h1 { font-size: var(--mobile-fontSize-5); }
 }

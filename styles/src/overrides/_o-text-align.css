@@ -2,6 +2,6 @@
 	Overrides -- Cursor
 */
 
-.text-left   { text-align: left !important; }
-.text-center { text-align: center !important; }
-.text-right  { text-align: right !important; }
+.textAlign-left   { text-align: left !important; }
+.textAlign-center { text-align: center !important; }
+.textAlign-right  { text-align: right !important; }

@@ -4,7 +4,7 @@
 
 html {
 	font-size: 62.5%;
-	font-family: var(--font-family-sans);
+	font-family: var(--fontFamily-sans);
 }
 
 body {
@@ -23,15 +23,15 @@ code, samp {
 	display: inline-block;
 	padding: 0 var(--spacing-1);
 
-	font-family: var(--font-family-mono);
+	font-family: var(--fontFamily-mono);
 	font-size: .9em;
 
 	background-color: var(--color-code);
-	border-radius: var(--border-radius);
+	border-radius: var(--borderRadius);
 }
 
 pre, samp {
-	font-family: var(--font-family-mono);
+	font-family: var(--fontFamily-mono);
 	font-size: .9em;
 }
 
@@ -42,7 +42,7 @@ pre, samp {
 input:not([type="image"]) {
 	margin-top: var(--spacing-half);
 	margin-bottom: var(--spacing-half);
-	border: 1px solid var(--border-color-light);
+	border: 1px solid var(--borderColor-light);
 }
 
 input[type="checkbox"],
@@ -103,7 +103,7 @@ input[type="reset"] {
 	margin: 0;
 
 	color: var(--color-text);
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--borderColor);
 	background: #E6E6E6;
 }
 
@@ -145,7 +145,7 @@ video {
 
 img {
 	font-style: italic;
-	font-size: var(--font-size-n1);
+	font-size: var(--fontSize-n1);
 }
 
 figure {
@@ -160,7 +160,7 @@ figure {
 
 figcaption {
 	font-style: italic;
-	font-size: var(--font-size-1);
+	font-size: var(--fontSize-1);
 }
 
 
@@ -181,15 +181,15 @@ h4,
 h5,
 h6 {
   text-rendering: optimizeLegibility;
-  font-family: var(--font-family-heading);
+  font-family: var(--fontFamily-heading);
 }
 
-h6 { font-size: var(--font-size-n1); margin-bottom: var(--spacing-1); }
-h5 { font-size: var(--font-size-1); margin-bottom: var(--spacing-1); }
-h4 { font-size: var(--font-size-2); margin-bottom: var(--spacing-1); }
-h3 { font-size: var(--font-size-3); margin-bottom: var(--spacing-1); }
-h2 { font-size: var(--font-size-4); margin-bottom: var(--spacing-1); }
-h1 { font-size: var(--font-size-6); margin-bottom: var(--spacing-1); }
+h6 { font-size: var(--fontSize-n1); margin-bottom: var(--spacing-1); }
+h5 { font-size: var(--fontSize-1); margin-bottom: var(--spacing-1); }
+h4 { font-size: var(--fontSize-2); margin-bottom: var(--spacing-1); }
+h3 { font-size: var(--fontSize-3); margin-bottom: var(--spacing-1); }
+h2 { font-size: var(--fontSize-4); margin-bottom: var(--spacing-1); }
+h1 { font-size: var(--fontSize-6); margin-bottom: var(--spacing-1); }
 
 @media (--screen-md-min) {
 	h3 { margin-bottom: var(--spacing-2); }
@@ -198,12 +198,12 @@ h1 { font-size: var(--font-size-6); margin-bottom: var(--spacing-1); }
 }
 
 @media (--screen-sm-max) {
-	h6 { font-size: var(--mobile-font-size-n1); }
-	h5 { font-size: var(--mobile-font-size-1); }
-	h4 { font-size: var(--mobile-font-size-2); }
-	h3 { font-size: var(--mobile-font-size-3); }
-	h2 { font-size: var(--mobile-font-size-4); }
-	h1 { font-size: var(--mobile-font-size-5); }
+	h6 { font-size: var(--mobile-fontSize-n1); }
+	h5 { font-size: var(--mobile-fontSize-1); }
+	h4 { font-size: var(--mobile-fontSize-2); }
+	h3 { font-size: var(--mobile-fontSize-3); }
+	h2 { font-size: var(--mobile-fontSize-4); }
+	h1 { font-size: var(--mobile-fontSize-5); }
 }
 
 /*
@@ -214,8 +214,8 @@ hr {
 	width: 100%;
 	height: 0;
 	box-sizing: content-box;
-	border-bottom: var(--border-width);
-	border-color: var(--border-color);
+	border-bottom: var(--borderWidth);
+	border-color: var(--borderColor);
 	border-style: solid;
 }
 
@@ -267,7 +267,7 @@ p {
 }
 
 strong, b {
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--fontWeight-bold);
 }
 
 em, i, cite, dfn {
@@ -281,7 +281,7 @@ del, s, strike {
 mark {
 	display: inline-block;
 	padding: 0 var(--spacing-half);
-	border-radius: var(--border-radius);
+	border-radius: var(--borderRadius);
 	background-color: var(--color-highlight);
 	color: var(--color-black);
 }
@@ -310,7 +310,7 @@ table {
 }
 
 th {
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--fontWeight-bold);
 	border-bottom: 1px solid var(--color-nearBlack);
 	box-sizing: content-box;
 }

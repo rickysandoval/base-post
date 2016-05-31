@@ -12,33 +12,33 @@
 
 	--line-height: 1.5;
 
-	--font-size-n1: calc(var(--base-font-rem) * var(--scale-n1));
-	--font-size-1:  calc(var(--base-font-rem) * var(--scale-0));
-	--font-size-2:  calc(var(--base-font-rem) * var(--scale-1));
-	--font-size-3:  calc(var(--base-font-rem) * var(--scale-2));
-	--font-size-4:  calc(var(--base-font-rem) * var(--scale-3));
-	--font-size-5:  calc(var(--base-font-rem) * var(--scale-4));
-	--font-size-6:  calc(var(--base-font-rem) * var(--scale-5));
-	--font-size-7:  calc(var(--base-font-rem) * var(--scale-6));
-	--font-size-8:  calc(var(--base-font-rem) * var(--scale-7));
+	--fontSize-n1: calc(var(--base-font-rem) * var(--scale-n1));
+	--fontSize-1:  calc(var(--base-font-rem) * var(--scale-0));
+	--fontSize-2:  calc(var(--base-font-rem) * var(--scale-1));
+	--fontSize-3:  calc(var(--base-font-rem) * var(--scale-2));
+	--fontSize-4:  calc(var(--base-font-rem) * var(--scale-3));
+	--fontSize-5:  calc(var(--base-font-rem) * var(--scale-4));
+	--fontSize-6:  calc(var(--base-font-rem) * var(--scale-5));
+	--fontSize-7:  calc(var(--base-font-rem) * var(--scale-6));
+	--fontSize-8:  calc(var(--base-font-rem) * var(--scale-7));
 
-	--mobile-font-size-n1: calc(var(--base-font-rem) * var(--mobile-scale-n1));
-	--mobile-font-size-1:  calc(var(--base-font-rem) * var(--mobile-scale-0));
-	--mobile-font-size-2:  calc(var(--base-font-rem) * var(--mobile-scale-1));
-	--mobile-font-size-3:  calc(var(--base-font-rem) * var(--mobile-scale-2));
-	--mobile-font-size-4:  calc(var(--base-font-rem) * var(--mobile-scale-3));
-	--mobile-font-size-5:  calc(var(--base-font-rem) * var(--mobile-scale-4));
-	--mobile-font-size-6:  calc(var(--base-font-rem) * var(--mobile-scale-5));
-	--mobile-font-size-7:  calc(var(--base-font-rem) * var(--mobile-scale-6));
-	--mobile-font-size-8:  calc(var(--base-font-rem) * var(--mobile-scale-7));
+	--mobile-fontSize-n1: calc(var(--base-font-rem) * var(--mobile-scale-n1));
+	--mobile-fontSize-1:  calc(var(--base-font-rem) * var(--mobile-scale-0));
+	--mobile-fontSize-2:  calc(var(--base-font-rem) * var(--mobile-scale-1));
+	--mobile-fontSize-3:  calc(var(--base-font-rem) * var(--mobile-scale-2));
+	--mobile-fontSize-4:  calc(var(--base-font-rem) * var(--mobile-scale-3));
+	--mobile-fontSize-5:  calc(var(--base-font-rem) * var(--mobile-scale-4));
+	--mobile-fontSize-6:  calc(var(--base-font-rem) * var(--mobile-scale-5));
+	--mobile-fontSize-7:  calc(var(--base-font-rem) * var(--mobile-scale-6));
+	--mobile-fontSize-8:  calc(var(--base-font-rem) * var(--mobile-scale-7));
 
-	--font-weight-thin: 300;
-	--font-weight-normal: 400;
-	--font-weight-bold: 600;
+	--fontWeight-thin: 300;
+	--fontWeight-normal: 400;
+	--fontWeight-bold: 600;
 
-	--font-family-sans: Helvetica, Arial, sans-serif;
-	--font-family-serif: Georgia, Cambria, Times, serif;
-	--font-family-mono: Consolas, Courier, monospace;
-	--font-family-heading: var(--font-family-serif);
+	--fontFamily-sans: Helvetica, Arial, sans-serif;
+	--fontFamily-serif: Georgia, Cambria, Times, serif;
+	--fontFamily-mono: Consolas, Courier, monospace;
+	--fontFamily-heading: var(--fontFamily-serif);
 
 }

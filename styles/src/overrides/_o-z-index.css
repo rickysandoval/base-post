@@ -2,14 +2,14 @@
 	Overrides -- Z-Index
 */
 
-.zindex-n5 { z-index: calc(var(--z-index-spacing) * -5) !important; }
-.zindex-n4 { z-index: calc(var(--z-index-spacing) * -4) !important; }
-.zindex-n3 { z-index: calc(var(--z-index-spacing) * -3) !important; }
-.zindex-n2 { z-index: calc(var(--z-index-spacing) * -2) !important; }
-.zindex-n1 { z-index: calc(var(--z-index-spacing) * -1) !important; }
-.zindex-0 { z-index: 0 !important; }
-.zindex-1 { z-index: calc(var(--z-index-spacing) * 1) !important; }
-.zindex-2 { z-index: calc(var(--z-index-spacing) * 2) !important; }
-.zindex-3 { z-index: calc(var(--z-index-spacing) * 3) !important; }
-.zindex-4 { z-index: calc(var(--z-index-spacing) * 4) !important; }
-.zindex-5 { z-index: calc(var(--z-index-spacing) * 5) !important; }
+.zIndex-n5 { z-index: calc(var(--z-index-spacing) * -5) !important; }
+.zIndex-n4 { z-index: calc(var(--z-index-spacing) * -4) !important; }
+.zIndex-n3 { z-index: calc(var(--z-index-spacing) * -3) !important; }
+.zIndex-n2 { z-index: calc(var(--z-index-spacing) * -2) !important; }
+.zIndex-n1 { z-index: calc(var(--z-index-spacing) * -1) !important; }
+.zIndex-0 { z-index: 0 !important; }
+.zIndex-1 { z-index: calc(var(--z-index-spacing) * 1) !important; }
+.zIndex-2 { z-index: calc(var(--z-index-spacing) * 2) !important; }
+.zIndex-3 { z-index: calc(var(--z-index-spacing) * 3) !important; }
+.zIndex-4 { z-index: calc(var(--z-index-spacing) * 4) !important; }
+.zIndex-5 { z-index: calc(var(--z-index-spacing) * 5) !important; }
