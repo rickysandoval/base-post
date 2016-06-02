@@ -9,7 +9,7 @@
 */
 
 .margin-0 		{ margin: 0 !important; }
-.margin-half 	{ margin: var(--spacing-half) !important; }
+.margin-half 	{ margin: var(--spacing-half) c!important; }
 .margin-1 		{ margin: var(--spacing-1) !important; }
 .margin-2 		{ margin: var(--spacing-2) !important; }
 .margin-3 		{ margin: var(--spacing-3) !important; }
