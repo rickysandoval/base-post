@@ -1,0 +1,30 @@
+.c-btn,
+[class*="c-btn--"] {
+	
+}
+
+/*  Modifier  */
+[class*="c-btn--"][class*="-primary"] {
+	
+}
+
+[class*="c-btn--"][class*="-secondary"] {
+	
+}
+
+/*  Sizes  */
+[class*="c-btn--"][class*="-tiny"] {
+
+}
+
+[class*="c-btn--"][class*="-small"] {
+
+}
+
+[class*="c-btn--"][class*="-large"] {
+	
+}
+
+[class*="c-btn--"][class*="-huge"] {
+	
+}

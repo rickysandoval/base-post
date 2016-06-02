@@ -171,6 +171,9 @@ figcaption {
 	Only apply this text-rendering value on headings, as applying it to large
 	 * blocks of text can introduce performance issues 
 	 * - from Gemma by Cole Peters
+
+	Note: If you change the styles here, make sure to change the accompanying
+		header class tyles in the utilities/_u-typography.css file
 */
 
  

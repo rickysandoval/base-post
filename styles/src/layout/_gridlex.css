@@ -5,14 +5,17 @@
 
 @import '_gridlex-vars.css';
 
-[class*="grid"]{
+.grid,
+[class^="grid"],
+[class*=" grid"]{
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
   margin: 0 calc(-$gl-gutter/2);
 }
 .col,
-[class*="col-"]{
+[class^="col-"],
+[class*=" col-"]{
   box-sizing: border-box;
   flex: 0 0 auto;
   padding: 0 calc($gl-gutter/2) $gl-gutter;
@@ -21,7 +24,8 @@
   flex: 1 1 0%;
 }
 .grid.col,
-.grid[class*="col-"]{
+.grid[class^="col-"]
+.grid[class*=" col-"]{
   margin: 0;
   padding: 0;
 }
@@ -30,7 +34,8 @@
     HELPERS SUFFIXES
 *************************/
 /* FOR GRID */
-[class*="grid-"]{
+[class^="grid-"],
+[class*=" grid-"]{
 /* No spacing between cols : noGutter */
   &[class*="-noGutter"]{
     margin: 0;
@@ -88,7 +93,8 @@
 }
 
 /* FOR COL */
-[class*="col-"]{
+[class^="col-"]
+[class*=" col-"]{
   &[class*="-top"]{
     align-self: flex-start;
   }

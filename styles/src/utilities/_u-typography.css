@@ -5,6 +5,11 @@
 	header styling and smallcaps.
 */
 
+/*
+	Note: If you change the header styles here, make sure to change the accompanying
+		default header in the base/_defaults.css file if you wish to stay consistent.
+*/
+
 .h1,
 .h2,
 .h3,

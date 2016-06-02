@@ -2,20 +2,11 @@
 	--- Main settings file ---
 */
 
-@import '_breakpoints.css';
-@import '_borders.css';
-@import '_colors.css';
-@import '_shadows.css';
-@import '_spacing.css';
-@import '_type-scale.css';
-@import '_typography.css';
-
-
-/*
-	--- Other --
-	Border radius
-	Box shadow
-*/
-:root {
-	--z-index-spacing: 5;
-}
+@import '_s-borders.css';
+@import '_s-colors.css';
+@import '_s-shadows.css';
+@import '_s-spacing.css';
+@import '_s-breakpoints.css';
+@import '_s-type-scale.css';
+@import '_s-typography.css';
+@import '_s-z-index.css';

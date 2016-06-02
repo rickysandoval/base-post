@@ -10,7 +10,7 @@
 	--base-font-px: 16px;
 	--base-font-rem: calc(1.6 * 1rem);
 
-	--line-height: 1.5;
+	--line-height: 1.45;
 
 	--fontSize-n1: calc(var(--base-font-rem) * var(--scale-n1));
 	--fontSize-1:  calc(var(--base-font-rem) * var(--scale-0));
@@ -39,6 +39,6 @@
 	--fontFamily-sans: Helvetica, Arial, sans-serif;
 	--fontFamily-serif: Georgia, Cambria, Times, serif;
 	--fontFamily-mono: Consolas, Courier, monospace;
-	--fontFamily-heading: var(--fontFamily-serif);
+	--fontFamily-heading: var(--fontFamily-sans);
 
 }

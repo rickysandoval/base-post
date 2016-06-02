@@ -1,4 +1,10 @@
-.list-reset {
+.list--reset {
 	list-style: none;
 	padding-left: 0;
+}
+
+.list--inline {
+	li {
+		display: inline-block;
+	}
 }

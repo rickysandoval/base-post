@@ -8,9 +8,14 @@
 	--spacing-2: 2rem;      	/* 20px  */
 	--spacing-3: 3rem;      	/* 30px  */
 	--spacing-4: 4rem;        	/* 40px  */
+	--spacing-5: 5rem;        	/* 50px  */
 	--spacing-line: calc(1em);	/* Whatever font size on element is */
 
-	--wrapper-width: 102.4rem;  /* 1024px */
+	/* 
+		Note: if you change this value, you should change the value of the
+			--screen-site-container variable as well, found in _breakpoints.css
+	*/
+	--site-container-width: 102.4rem;  /* 1024px */
 
 	--gutter-width: 1.5rem;   	/* 15px */
 }

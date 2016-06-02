@@ -1,10 +1,22 @@
-.link-reset, .link-reset:visited {
+.link--reset, 
+.link--reset:visited {
 	color: currentColor;
 	border-bottom: 0;
 }
-.link-reset:focus, .link-reset:hover {
+.link--reset:focus, 
+.link--reset:hover {
 	color: currentColor;
 	border-bottom: 0;
+}
+
+.link--reset a{
+	&, 
+	&:hover, 
+	&:visited,
+	&:focus {
+		color: currentColor;
+		border-bottom: 0;
+	}
 }
 
 .fake-link, .fake-link:visited {

@@ -32,3 +32,6 @@
 @custom-media --screen-md-max (max-width: 63.9375em);
 @custom-media --screen-lg-max (max-width: 89.9375em);
 @custom-media --screen-xl-max (max-width: 119.9375em);
+
+/* calc(var(--wrapper-width) + var(--spacing-2))) */
+@custom-media --screen-site-container (max-width: 104.4rem);

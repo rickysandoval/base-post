@@ -1,0 +1,13 @@
+.site-container {
+	max-width: var(--site-container-width);
+	margin: 0 auto;
+
+	@media (--screen-site-container) {
+		padding: 0 var(--spacing-1);
+	}
+}
+
+.site-container--screen-width {
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+}

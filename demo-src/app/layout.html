@@ -1,17 +1,30 @@
-<h1 class="demo-page__title">Layout</h1>
-<section class="demo-section">
-	<h2 class="demo-section__title">Grid</h2>
+<h1 class="demo-title">Layout</h1>
+<section class="l-section-1">
+	<h2 class="demo-title--2">Containers</h2>
+	<p class="l-line-length">
+		BasePost comes with a <code>.site-container</code> class that is common for use with layouts that have some sort of max-width. It is set to 102.4rem (1024px) by default.
+	</p>
+	<div class="site-container--screen-width demo-gradient padding-v-1">
+		<div class="site-container background-white padding-v-1 borderRadius">
+			<p class="l-line-length">
+				If you need to break out of the confines of a <code>.site-container</code> without having to split into multiple contained sections, you can use <code>.site-container--screen-width</code> to achieve this, and if needed nest another <code>.site-container</code> inside.
+			</p>
+		</div>
+	</div>
+</section>
+<section class="l-section-1">
+	<h2 class="demo-title--2">Grid</h2>
 	<figure class="demo-callout">
-		<a href="http://gridlex.devlint.fr/" class="link-reset"><img src="/assets/gridlex.png" alt="Gridlex Flexbox Grid"></a>
+		<a href="http://gridlex.devlint.fr/" class="link--reset"><img src="/assets/gridlex.png" alt="Gridlex Flexbox Grid"></a>
 		<figcaption><a href="http://gridlex.devlint.fr/">Documentation</a></figcaption>
 	</figure>
-	<p>
+	<p class="l-line-length">
 		I chose not to implement a custom grid, because well, there's so many different grid systems out there and everyone has their favorites. I'm including the flexbox based <a href="http://gridlex.devlint.fr/">Gridlex</a> because the syntax is simple and powerful and isn't like learning a mini framework.
 	</p>
-	<p>
+	<p class="l-line-length">
 		I manually imported the source and edited it to work with <a href="https://github.com/jonathantneal/precss">PreCSS</a> and BasePost's settings, but you can swap it out with whatever you want.
 	</p>
-	<p>
+	<p class="l-line-length">
 		Check out the <a href="http://gridlex.devlint.fr/">documentation for Gridlex</a> if you don't want to use your own.
 	</p>
 </section>
