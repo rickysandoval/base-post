@@ -17,7 +17,8 @@ angular.module('demoApp', ['templates', 'ngComponentRouter'])
 		{path: '/settings', name: 'Settings', component: 'settings'},
 		{path: '/layout', name: 'Layout', component: 'layout'},
 		{path: '/overrides', name: 'Overrides', component: 'overrides'},
-		{path: '/utilities', name: 'Utilities', component: 'utilities'}
+		{path: '/utilities', name: 'Utilities', component: 'utilities'},
+		{path: '/components', name: 'Components', component: 'components'}
 	]
 });
 

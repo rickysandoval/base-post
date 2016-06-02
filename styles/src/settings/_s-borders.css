@@ -3,4 +3,5 @@
 	--borderColor: var(--color-text);
 	--borderColor-light: var(--color-text-light);
 	--borderRadius: 3px;
+	--borderRadius-button: 3px;
 }

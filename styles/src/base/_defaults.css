@@ -94,7 +94,8 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-	height: 1.75em;
+	height: auto;
+	font-size: var(--base-font-rem);
 	padding-top: .25em;
 	padding-bottom: .25em;
 	padding-left: .5em;

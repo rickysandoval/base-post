@@ -13,21 +13,21 @@
 .display-i	{ display: inline !important; }
 .display-ib	{ display: inline-block !important; }
 
-@media (screen-sm-min) {
+@media (--screen-sm-min) {
 	._sm-display-n 	{ display: none !important; }
 	._sm-display-b 	{ display: block !important; }
 	._sm-display-i	{ display: inline !important; }
 	._sm-display-ib	{ display: inline-block !important; }
 }
 
-@media (screen-md-min) {
+@media (--screen-md-min) {
 	._md-display-n 	{ display: none !important; }
 	._md-display-b 	{ display: block !important; }
 	._md-display-i	{ display: inline !important; }
 	._md-display-ib	{ display: inline-block !important; }
 }
 
-@media (screen-lg-min) {
+@media (--screen-lg-min) {
 	._lg-display-n 	{ display: none !important; }
 	._lg-display-b 	{ display: block !important; }
 	._lg-display-i	{ display: inline !important; }

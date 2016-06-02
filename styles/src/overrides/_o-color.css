@@ -8,3 +8,7 @@
 .color-secondary-dark { color: var(--color-secondary-dark) !important; }
 .color-tertiary 		{ color: var(--color-tertiary) !important; }
 .color-tertiary-dark 	{ color: var(--color-tertiary-dark) !important; }
+
+.color-text { color: var(--color-text) !important; }
+.color-text-light { color: var(--color-text-light) !important; }
+.color-white { color: var(--color-white) !important; }
