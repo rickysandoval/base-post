@@ -40,8 +40,15 @@ gulp.task('serve', ['vendor', 'dev', 'js', 'templates', 'copy-index', 'copy-asse
   gulp.watch(['demo-build/index.html', 'demo-build/demo.js']).on('change', browserSync.reload);
 });
 
+gulp.task('launch-pages', ['vendor', 'dev', 'js', 'templates', 'copy-index', 'copy-assets'], function() {
+  return gulp.src('demo-build/**/*', {
+    base: 'demo-build'
+  }).pipe(gulp.dest('./'));
+
+});
+
 gulp.task('js', ['templates'], function() {
-  gulp.src(['demo-src/app/main.js', 'demo-src/templates/templates.js', 'demo-src/app/**/*.js'])
+  return gulp.src(['demo-src/app/main.js', 'demo-src/templates/templates.js', 'demo-src/app/**/*.js'])
     .pipe(sourcemaps.init())
       .pipe(concat('demo.js'))
       .pipe(ngAnnotate())
@@ -67,12 +74,12 @@ gulp.task('templates', function() {
 });
 
 gulp.task('copy-assets', function() {
-  gulp.src('demo-src/assets/**/*')
+  return gulp.src('demo-src/assets/**/*')
     .pipe(gulp.dest('demo-build/assets/'))
 });
 
 gulp.task('copy-index', function() {
-  gulp.src('demo-src/index.html')
+  return gulp.src('demo-src/index.html')
     .pipe(gulp.dest('demo-build'));
 })
 
