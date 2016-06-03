@@ -40,12 +40,18 @@ gulp.task('serve', ['vendor', 'dev', 'js', 'templates', 'copy-index', 'copy-asse
   gulp.watch(['demo-build/index.html', 'demo-build/demo.js']).on('change', browserSync.reload);
 });
 
-gulp.task('launch-pages', ['vendor', 'dev', 'js', 'templates', 'copy-index', 'copy-assets'], function() {
+gulp.task('launch-pages', ['vendor', 'dev', 'js', 'templates', 'copy-index', 'copy-assets', 'make-404'], function() {
   return gulp.src('demo-build/**/*', {
     base: 'demo-build'
   }).pipe(gulp.dest('./'));
 
 });
+
+gulp.task('make-404', function(){
+  return gulp.src('demo-src/index.html')
+    .pipe(rename('404.html'))
+    .pipe(gulp.dest('./'));
+})
 
 gulp.task('js', ['templates'], function() {
   return gulp.src(['demo-src/app/main.js', 'demo-src/templates/templates.js', 'demo-src/app/**/*.js'])
