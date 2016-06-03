@@ -35,6 +35,10 @@ pre, samp {
 	font-size: .9em;
 }
 
+pre {
+	tab-size: 3;
+}
+
 
 /*
 	---- Form Elements ---
