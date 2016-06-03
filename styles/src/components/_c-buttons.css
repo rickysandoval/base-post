@@ -139,10 +139,12 @@
 [class*="btn-group--"][class*="-fill"] {
 	> * {
 		flex-grow: 1;
+	}
 
-		.btn, 
-		[class*="c-btn--"] {
-			width: 100%;
-		}
+	.c-btn, 
+	[class*="c-btn--"] {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }

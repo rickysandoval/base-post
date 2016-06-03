@@ -8,7 +8,8 @@
 */
 :root {
 	--base-font-px: 16px;
-	--base-font-rem: calc(1.6 * 1rem);
+	--base-font-rem: calc(1.8 * 1rem);
+	--mobile-base-font-rem: calc(1.6 * 1rem);
 
 	--line-height: 1.45;
 
@@ -22,15 +23,15 @@
 	--fontSize-7:  calc(var(--base-font-rem) * var(--scale-6));
 	--fontSize-8:  calc(var(--base-font-rem) * var(--scale-7));
 
-	--mobile-fontSize-n1: calc(var(--base-font-rem) * var(--mobile-scale-n1));
-	--mobile-fontSize-1:  calc(var(--base-font-rem) * var(--mobile-scale-0));
-	--mobile-fontSize-2:  calc(var(--base-font-rem) * var(--mobile-scale-1));
-	--mobile-fontSize-3:  calc(var(--base-font-rem) * var(--mobile-scale-2));
-	--mobile-fontSize-4:  calc(var(--base-font-rem) * var(--mobile-scale-3));
-	--mobile-fontSize-5:  calc(var(--base-font-rem) * var(--mobile-scale-4));
-	--mobile-fontSize-6:  calc(var(--base-font-rem) * var(--mobile-scale-5));
-	--mobile-fontSize-7:  calc(var(--base-font-rem) * var(--mobile-scale-6));
-	--mobile-fontSize-8:  calc(var(--base-font-rem) * var(--mobile-scale-7));
+	--mobile-fontSize-n1: calc(var(--mobile-base-font-rem) * var(--mobile-scale-n1));
+	--mobile-fontSize-1:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-0));
+	--mobile-fontSize-2:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-1));
+	--mobile-fontSize-3:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-2));
+	--mobile-fontSize-4:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-3));
+	--mobile-fontSize-5:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-4));
+	--mobile-fontSize-6:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-5));
+	--mobile-fontSize-7:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-6));
+	--mobile-fontSize-8:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-7));
 
 	--fontWeight-thin: 300;
 	--fontWeight-normal: 400;
