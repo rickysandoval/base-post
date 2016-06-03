@@ -2,6 +2,10 @@
 
 This is going to be some mixture of a scaffolding/framework, base theme, and UI kit for css for projects. Built with PostCSS
 
+Demo/Work in progress at:
+
+http://rickysandoval.github.io/base-post/
+
 Used Cole Peters' Gemma as inspiration/starting point: 
 
 https://github.com/colepeters/gemma
