@@ -10,7 +10,7 @@
 	padding-bottom: .5em;
 	letter-spacing: 1px;
 	font-weight: var(--fontWeight-thin);
-	transition: background-color .05s, color .05s, bordr-color .05s;
+	transition: background-color .05s, color .05s, border-color .05s;
 
 	@media (--screen-sm-max) {
 		font-size: var(--mobile-fontSize-2);
@@ -107,8 +107,8 @@
 }
 
 /* Group */
-.btn-group,
-[class*="btn-group--"] {
+.c-btn-group,
+[class*="c-btn-group--"] {
 	display: flex;
 
 	.c-btn,
@@ -124,7 +124,7 @@
 	}
 }
 
-[class*="btn-group--"][class*="-round"] {
+[class*="c-btn-group--"][class*="-round"] {
 	.c-btn,
 	[class*="c-btn--"]{
 		&:first-child {
@@ -136,7 +136,7 @@
 	}
 }
 
-[class*="btn-group--"][class*="-fill"] {
+[class*="c-btn-group--"][class*="-fill"] {
 	> * {
 		flex-grow: 1;
 	}
