@@ -9,7 +9,7 @@
 	--spacing-3: 3rem;      	/* 30px  */
 	--spacing-4: 4rem;        	/* 40px  */
 	--spacing-5: 5rem;        	/* 50px  */
-	--spacing-line: calc(1em * var(--line-height));	/* Whatever font size on element is times the line-height */
+	--spacing-line: calc(1em * var(--lineHeight));	/* Whatever font size on element is times the line-height */
 
 	/* 
 		Note: if you change this value, you should change the value of the

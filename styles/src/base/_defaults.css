@@ -9,7 +9,7 @@ html {
 
 body {
 	font-size: var(--mobile-base-font-rem);
-	line-height: var(--line-height);
+	line-height: var(--lineHeight);
 	color: var(--color-text);
 	@media (--screen-lg-min) {
 		font-size: var(--base-font-rem);
@@ -90,7 +90,7 @@ input[type="file"] {
 	max-width: 100%;
 	line-height: 1em;
 	vertical-align: text-bottom;
-	height: calc(1em * var(--line-height));
+	height: calc(1em * var(--lineHeight));
 	border: none;
 }
 

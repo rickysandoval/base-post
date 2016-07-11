@@ -11,7 +11,7 @@
 	--base-font-rem: calc(1.8 * 1rem);
 	--mobile-base-font-rem: calc(1.6 * 1rem);
 
-	--line-height: 1.45;
+	--lineHeight: 1.45;
 
 	--fontSize-n1: calc(var(--base-font-rem) * var(--scale-n1));
 	--fontSize-1:  calc(var(--base-font-rem) * var(--scale-0));

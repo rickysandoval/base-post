@@ -19,11 +19,11 @@
 	}
 }
 
-.fake-link, .fake-link:visited {
+.link--fake, .link--fake:visited {
 	color: var(--color-link);
 	border-bottom: 2px solid transparent;
 }
-.fake-link:focus, .fake-link:hover {
+.link--fake:focus, .link--fake:hover {
 	color: var(--color-link-hover);
 	outline: none;
 	border-bottom: 2px solid currentColor;
