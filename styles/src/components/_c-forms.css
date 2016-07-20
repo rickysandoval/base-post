@@ -15,6 +15,7 @@
 	input[type="text"],
 	input[type="time"], 
 	input[type="url"],
+	select,
 	textarea {
 		position: relative;
 		border: 2px solid var(--color-gray-500);
@@ -71,12 +72,14 @@
 .checkbox-round, 
 .checkbox-square {
 	height: calc(1em * var(--scale-3));
-	line-height: calc(1em * var(--scale-3));
+	vertical-align: middle;
 	display: inline-block;
 	vertical-align: top;
 	user-select: none;
 	padding: 0 .125em;
 	position: relative;
+	margin-top: var(--spacing-half);
+	margin-bottom: var(--spacing-half);
 }
 
 .checkbox-toggle input[type="checkbox"],
@@ -85,21 +88,23 @@
 	position: absolute;
 	outline: none;
 	border-color: white;
+	border-width: 0;
 	outline: none;
 	-webkit-appearance: none;
 	-mox-appearance: none;
 	-o-appearance: none;
 	opacity: 0;
+	margin: 0;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
 	& + label {
 		display: inline-block;
+		height: calc(1em * var(--scale-3));
 		color: transparent;
 		position: relative;
 		width: 100%;
-		height: auto;
 		cursor: pointer;
 
 		&::before {
@@ -107,8 +112,6 @@
 			display: block;
 			position: absolute;
 			background-color: var(--color-coolGray-900);
-			top: 50%;
-			transform: translateY(-50%);
 			transition: background-color .1s;
 		}
 		&::after {
@@ -135,9 +138,9 @@
 			width: calc(100% - 10px);
 			height: 0;
 			padding-top: calc(100%/4);
-			left: 5px;
 			top: 50%;
 			transform: translateY(-50%);
+			left: 5px;
 			border-radius: 500px;
 		}
 		&::after {
@@ -154,6 +157,7 @@
 	&:checked + label {
 		&::after {
 			left: 100%;
+			top: 50%;
 			transform: translateY(-50%) translateX(-100%);
 		}
 	}
@@ -178,6 +182,8 @@
 			height: 0;
 			padding-top: 100%;
 			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
 		}
 		&::after {
 			width: calc(100% - .25em);

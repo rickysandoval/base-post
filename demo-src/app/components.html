@@ -110,8 +110,15 @@
 </section>
 <section class="l-section-1">
 	<h2 class="demo-title--2">Forms</h2>
-	<p class="u-line-length">With the use of the included grid system and a parent <code>.c-form</code> class, it's easy to get a simple form up and running quickly.</p>
-	<form class="c-form">
+	<p class="u-line-length">With the use of the included grid system and a parent <code>.c-form</code> class, it's easy to get a simple form up and running quickly. All heights are based on font size, so it's easy to make smaller or larger elements</p>
+	
+	<form class="c-form" id="test-form" ng-class="$ctrl.sizeClass">
+	{{$ctrl.hello}}
+		<div class="c-btn-group margin-b-2">
+			<button class="c-btn--primary-tiny" ng-click="$ctrl.changeFormSize('small')">Small</button>
+			<button class="c-btn--secondary-tiny" ng-click="$ctrl.changeFormSize('normal')">Normal</button>
+			<button class="c-btn--tertiary-tiny" ng-click="$ctrl.changeFormSize('large')">Large</button>
+		</div>
 		<div class="grid-3_sm-1">
 			<div class="col" data-push-right="off-8_sm-0">
        			<label for="text">Text</label>
@@ -122,8 +129,20 @@
 	            <input type="text" name="text">
        		</div>
        		<div class="col-3_sm-12">
-       			<label for="text">Text</label>
-	            <input type="text" name="text">
+       			<label for="select">Select</label>
+	            <select name="select" id="select">
+	            	<option selected disabled></option>
+	            	<optgroup label="Girls">
+	            		<option value="sugar">Sugar</option>
+	            		<option value="spice">Spice</option>
+	            		<option value="everythingnice">Everything Nice</option>
+	            	</optgroup>
+	            	<optgroup label="Boys">
+	            		<option value="snips">Snips</option>
+	                    <option value="snail">Snails</option>
+	                    <option value="tail">Puppydog Tails</option>
+	            	</optgroup>
+	            </select>
 	        </div>
        		<div class="col-3_sm-12">
        			<label for="text">Text</label>
