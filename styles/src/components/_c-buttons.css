@@ -11,6 +11,7 @@
 	letter-spacing: 1px;
 	font-weight: var(--fontWeight-thin);
 	transition: background-color .05s, color .05s, border-color .05s;
+	position: relative;
 
 	@media (--screen-sm-max) {
 		font-size: var(--mobile-fontSize-2);
@@ -20,51 +21,53 @@
 	&:active {
 		outline: none;
 	}
+
+	&:focus {
+		box-shadow: 0 0 0px 2px var(--color-focus);
+	}
+
+	&:disabled::after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: var(--zIndex-1);
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: var(--color-gray-100);
+		opacity: .75;
+	}
 }
 
 /*  Color  */
 [class*="c-btn--"][class*="-primary"] {
-	border-color: var(--color-primary);
 	background-color: var(--color-primary);
 	color: var(--color-white);
+	border-width: 0;
 
-	&:hover {
-		border-color: var(--color-primary-dark);
+	&:not(:disabled):hover {
 		background-color: var(--color-primary-dark);
-	}
-
-	&:active {
-		color: var(--color-gray-100);
 	}
 }
 
 [class*="c-btn--"][class*="-secondary"] {
-	border-color: var(--color-secondary);
+	border-width: 0px;
 	background-color: var(--color-secondary);
 	color: var(--color-white);
 
-	&:hover {
-		border-color: var(--color-secondary-dark);
+	&:not(:disabled):hover {
 		background-color: var(--color-secondary-dark);
-	}
-
-	&:active {
-		color: var(--color-gray-100);
 	}
 }
 
 [class*="c-btn--"][class*="-tertiary"] {
-	border-color: var(--color-tertiary);
+	border-width: 0px;
 	background-color: var(--color-tertiary);
 	color: var(--color-white);
 
-	&:hover {
-		border-color: var(--color-tertiary-dark);
+	&:not(:disabled):hover {
 		background-color: var(--color-tertiary-dark);
-	}
-
-	&:active {
-		color: var(--color-gray-100);
 	}
 }
 
@@ -113,13 +116,23 @@
 
 	.c-btn,
 	[class*="c-btn--"] {
-		border-radius: 0;
 
-		&:first-child {
-			border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+		&:not(:first-child):not(:last-child) {
+			border-radius: 0;
 		}
-		&:last-child {
-			border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+
+		&:first-child:not(:last-child) {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		&:last-child:not(:first-child) {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		&:focus {
+			z-index: var(--zIndex-1);
 		}
 	}
 }

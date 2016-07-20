@@ -208,6 +208,7 @@ header {
 .color-text-light { color: var(--color-text-light); }
 .color-link { color: var(--color-link); }
 .color-link-hover { color: var(--color-link-hover); }
+.color-highlight { background: var(--color-highlight); }
 
 .theme-color {
 	text-align: center;

@@ -17,7 +17,8 @@
  	--color-code: #FFEDF4;
  	--color-link: #147BFF;
  	--color-link-hover: #147BFF;
- 	--color-focus: #49FF85;
+ 	--color-focus: var(--color-blue-300);
+ 	/*--color-focus: #00BBFF; */
 
  	/* 
  		Theme Colors

@@ -1,3 +1,17 @@
 :root {
 	--zIndex-spacing: 5;
+
+
+	--zIndex-0: 0;
+	--zIndex-1: calc(1 * var(--zIndex-spacing));
+	--zIndex-2: calc(2 * var(--zIndex-spacing));
+	--zIndex-3: calc(3 * var(--zIndex-spacing));
+	--zIndex-4: calc(4 * var(--zIndex-spacing));
+	--zIndex-5: calc(5 * var(--zIndex-spacing));
+
+	--zIndex-n1: calc(-1 * var(--zIndex-spacing));
+	--zIndex-n2: calc(-2 * var(--zIndex-spacing));
+	--zIndex-n3: calc(-3 * var(--zIndex-spacing));
+	--zIndex-n4: calc(-4 * var(--zIndex-spacing));
+	--zIndex-n5: calc(-5 * var(--zIndex-spacing));
 }
