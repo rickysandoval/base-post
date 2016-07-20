@@ -1,0 +1,338 @@
+/* Input */
+.c-form,
+[class*="c-form--"] {
+	input:not([type]) {
+		background: var(--color-red-500);
+	}
+	input:not([type]),
+	input[type="date"], 
+	input[type="email"],
+	input[type="month"], 
+	input[type="number"], 
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"], 
+	input[type="text"],
+	input[type="time"], 
+	input[type="url"],
+	textarea {
+		position: relative;
+		border: 2px solid var(--color-gray-500);
+		transition: border-color .1s;
+		padding-left: var(--spacing-half);
+		margin-top: 0;
+		display: block;
+		width: 100%;
+		height: calc(1em * var(--scale-3));
+		box-sizing: border-box;
+		color: var(--color-coolGray-900);
+		background: white;
+
+		&:focus {
+			outline: none;
+			border-color: var(--color-focus);
+			color: var(--color-nearBlack);
+		}
+
+		&:disabled {
+			background: var(--color-gray-100);
+		}
+	}
+
+	textarea { 
+		overflow: hidden;
+		resize: vertical;
+		height: auto;
+	}
+
+	::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+	  color: var(--color-coolGray-500);
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: var(--color-coolGray-500);
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: var(--color-coolGray-500);
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: var(--color-coolGray-500)
+	}
+	::-ms-input-placeholder { /* Edge */
+	  color: var(--color-coolGray-500)
+	}
+	:placeholder-shown { /* Standard one last! */
+	  color: var(--color-coolGray-500);
+	}
+}
+
+
+/* Check boxes */
+.checkbox-toggle, 
+.checkbox-round, 
+.checkbox-square {
+	height: calc(1em * var(--scale-3));
+	line-height: calc(1em * var(--scale-3));
+	display: inline-block;
+	vertical-align: top;
+	user-select: none;
+	padding: 0 .125em;
+	position: relative;
+}
+
+.checkbox-toggle input[type="checkbox"],
+.checkbox-round input[type="checkbox"],
+.checkbox-square input[type="checkbox"] {
+	position: absolute;
+	outline: none;
+	border-color: white;
+	outline: none;
+	-webkit-appearance: none;
+	-mox-appearance: none;
+	-o-appearance: none;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	& + label {
+		display: inline-block;
+		color: transparent;
+		position: relative;
+		width: 100%;
+		height: auto;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			background-color: var(--color-coolGray-900);
+			top: 50%;
+			transform: translateY(-50%);
+			transition: background-color .1s;
+		}
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			background-color: var(--color-focus);
+		}
+	}
+	:focus {
+		outline: none;
+	}
+}
+
+/* Toggle Checkbox*/
+.checkbox-toggle {
+	width: 3.5em;
+}
+
+.checkbox-toggle input[type="checkbox"] {
+
+	& + label {
+		&::before {
+			width: calc(100% - 10px);
+			height: 0;
+			padding-top: calc(100%/4);
+			left: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			border-radius: 500px;
+		}
+		&::after {
+			width: 45%;
+			height: 0;
+			padding-top: 45%;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%) translateX(0);
+			border-radius: 50%;
+			transition: left .2s ease-out, transform .2s ease-out;
+		}
+	}
+	&:checked + label {
+		&::after {
+			left: 100%;
+			transform: translateY(-50%) translateX(-100%);
+		}
+	}
+	&:focus + label::before {
+		background-color: var(--color-coolGray-700);
+	}
+}
+
+/* Round/Square Checkbox*/
+
+.checkbox-round, .checkbox-square {
+	width: 1.625em;
+}
+
+
+.checkbox-round input[type="checkbox"],
+.checkbox-square input[type="checkbox"] {
+
+	& + label {
+		&::before {
+			width: 100%;
+			height: 0;
+			padding-top: 100%;
+			left: 0;
+		}
+		&::after {
+			width: calc(100% - .25em);
+			height: 0;
+			padding-top: calc(100% - .25em);
+			left: 50%;
+			top: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			background-color: var(--color-coolGray-100);
+			transition: background-color .1s
+		}
+	}
+	&:checked + label {
+		&::after {
+			background-color: var(--color-focus);
+		}
+	}
+	&:focus + label::before {
+		background-color: var(--color-coolGray-500);
+	}
+}
+
+.checkbox-round input[type="checkbox"] + label {
+	&::before, &::after {
+		border-radius: 50%;
+	}
+}
+
+.checkbox-square input[type="checkbox"] + label {
+	&::before, &::after {
+		border-radius: 5%;
+	}
+}
+
+
+/* Sliders */
+input[type="range"] {
+	-webkit-appearance: none;
+	width: 100%;
+	height: calc(1em * var(--scale-3));
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.5em;
+  width: .5em;
+  border-radius: 500px;
+  background-color: var(--color-focus);
+  cursor: pointer;
+  margin-top: -.625em; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 1.5em;
+  width: .5em;
+  border-radius: 500px;
+  background-color: var(--color-focus);
+  cursor: pointer;
+  border: 0;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  height: 1.5em;
+  width: .5em;
+  border-radius: 500px;
+  background-color: var(--color-focus);
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: .25em;
+  cursor: pointer;
+  background-color: var(--color-coolGray-900);
+  transition: background-color .1s;
+  border-radius: 500px
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: var(--color-coolGray-700);
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background-color: var(--color-coolGray-900);
+  border-radius: 500px;
+}
+input[type=range]:focus::-moz-range-track {
+
+  background-color: var(--color-coolGray-700);
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background-color: var(--color-coolGray-900);
+}
+input[type=range]::-ms-fill-upper {
+  background-color: var(--color-coolGray-900);
+  border-radius: 2.6px;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: var(--color-coolGray-700);
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+
+/* Color input */
+input[type=color] {
+	width: 100%;
+	max-width: 500px;
+	height: calc(1em * var(--scale-3));
+	box-sizing: border-box;
+	background: white;
+	cursor: pointer;
+	margin-top: 0;
+	padding: var(--spacing-half);
+	border-radius: var(--borderRadius);
+	border: 2px solid var(--color-coolGray-700);
+	transition: border-color .1s;
+
+	&:focus {
+		outline: none;
+		border-color: var(--color-focus);
+	}
+}
+
