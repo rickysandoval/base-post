@@ -36,6 +36,7 @@
 .margin-r-5 		{ margin-right: var(--spacing-5) !important; }
 .margin-r-line 	{ margin-right: var(--spacing-line) !important; }
 
+.margin-b-0 		{ margin-bottom: 0 !important; }
 .margin-b-half 	{ margin-bottom: var(--spacing-half) !important; }
 .margin-b-1 		{ margin-bottom: var(--spacing-1) !important; }
 .margin-b-2 		{ margin-bottom: var(--spacing-2) !important; }

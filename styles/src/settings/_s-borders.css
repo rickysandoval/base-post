@@ -2,6 +2,6 @@
 	--borderWidth: 1px;
 	--borderColor: var(--color-text);
 	--borderColor-light: var(--color-text-light);
-	--borderRadius: 3px;
-	--borderRadius-button: 3px;
+	--borderRadius: 4px;
+	--borderRadius-button: 4px;
 }

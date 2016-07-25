@@ -11,8 +11,12 @@ body {
 	font-size: var(--mobile-base-font-rem);
 	line-height: var(--lineHeight);
 	color: var(--color-text);
+
 	@media (--screen-lg-min) {
 		font-size: var(--base-font-rem);
+	}
+	@media (--screen-xxl-min) {
+		font-size: calc(1.125 * var(--base-font-rem));
 	}
 }
 
@@ -108,7 +112,7 @@ input[type="reset"] {
 	margin: 0;
 
 	color: var(--color-text);
-	border: 1px solid var(--borderColor);
+	border: var(--borderWidth) solid var(--borderColor);
 	background: #E6E6E6;
 }
 
@@ -190,6 +194,7 @@ h5,
 h6 {
   text-rendering: optimizeLegibility;
   font-family: var(--fontFamily-heading);
+  line-height: 1.45;
 }
 
 h6 { font-size: var(--fontSize-n1); margin-bottom: var(--spacing-1); }

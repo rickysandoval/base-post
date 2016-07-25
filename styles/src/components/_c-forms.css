@@ -18,7 +18,7 @@
 	select,
 	textarea {
 		position: relative;
-		border: 2px solid var(--color-gray-500);
+		border: var(--borderWidth) solid var(--color-gray-500);
 		transition: border-color .1s;
 		padding-left: var(--spacing-half);
 		margin-top: 0;
@@ -28,6 +28,7 @@
 		box-sizing: border-box;
 		color: var(--color-coolGray-900);
 		background: white;
+		border-radius: var(--borderRadius);
 
 		&:focus {
 			outline: none;
@@ -209,21 +210,21 @@
 
 
 /* Sliders */
-input[type="range"] {
+input[type="range"].c-range {
 	-webkit-appearance: none;
 	width: 100%;
 	height: calc(1em * var(--scale-3));
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type=range].c-range::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 
-input[type=range]:focus {
+input[type=range].c-range:focus {
   outline: none; 
 }
 
-input[type=range]::-ms-track {
+input[type=range].c-range::-ms-track {
   width: 100%;
   cursor: pointer;
   background: transparent;
@@ -231,7 +232,7 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type=range].c-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 1.5em;
   width: .5em;
@@ -242,7 +243,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 /* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
+input[type=range].c-range::-moz-range-thumb {
   height: 1.5em;
   width: .5em;
   border-radius: 500px;
@@ -252,7 +253,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 /* All the same stuff for IE */
-input[type=range]::-ms-thumb {
+input[type=range].c-range::-ms-thumb {
   height: 1.5em;
   width: .5em;
   border-radius: 500px;
@@ -260,7 +261,7 @@ input[type=range]::-ms-thumb {
   cursor: pointer;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type=range].c-range::-webkit-slider-runnable-track {
   width: 100%;
   height: .25em;
   cursor: pointer;
@@ -269,23 +270,23 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 500px
 }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
+input[type=range].c-range:focus::-webkit-slider-runnable-track {
   background: var(--color-coolGray-700);
 }
 
-input[type=range]::-moz-range-track {
+input[type=range].c-range::-moz-range-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
   background-color: var(--color-coolGray-900);
   border-radius: 500px;
 }
-input[type=range]:focus::-moz-range-track {
+input[type=range].c-range:focus::-moz-range-track {
 
   background-color: var(--color-coolGray-700);
 }
 
-input[type=range]::-ms-track {
+input[type=range].c-range::-ms-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
@@ -295,24 +296,25 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 
-input[type=range]:focus::-ms-fill-lower {
+input[type=range].c-range:focus::-ms-fill-lower {
   background-color: var(--color-coolGray-900);
 }
-input[type=range]::-ms-fill-upper {
+input[type=range].c-range::-ms-fill-upper {
   background-color: var(--color-coolGray-900);
   border-radius: 2.6px;
 }
-input[type=range]:focus::-ms-fill-upper {
+input[type=range].c-range:focus::-ms-fill-upper {
   background: var(--color-coolGray-700);
 }
 
-input[type=range]::-moz-focus-outer {
+input[type=range].c-range::-moz-focus-outer {
     border: 0;
 }
 
 
 /* Color input */
-input[type=color] {
+.c-form input[type=color],
+[class*="c-form--"] input[type=color] {
 	width: 100%;
 	max-width: 500px;
 	height: calc(1em * var(--scale-3));
@@ -322,7 +324,7 @@ input[type=color] {
 	margin-top: 0;
 	padding: var(--spacing-half);
 	border-radius: var(--borderRadius);
-	border: 2px solid var(--color-coolGray-700);
+	border: var(--borderWidth) solid var(--color-coolGray-700);
 	transition: border-color .1s;
 
 	&:focus {

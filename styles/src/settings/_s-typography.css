@@ -7,11 +7,10 @@
 
 */
 :root {
-	--base-font-px: 16px;
-	--base-font-rem: calc(1.8 * 1rem);
-	--mobile-base-font-rem: calc(1.6 * 1rem);
+	--base-font-rem: calc(1.6 * 1rem);
+	--mobile-base-font-rem: calc(1.4 * 1rem);
 
-	--lineHeight: 1.45;
+	--lineHeight: 1.6;
 
 	--fontSize-n1: calc(var(--base-font-rem) * var(--scale-n1));
 	--fontSize-1:  calc(var(--base-font-rem) * var(--scale-0));

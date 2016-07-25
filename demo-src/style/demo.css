@@ -82,7 +82,12 @@ header {
 	font-weight: var(--fontWeight-thin);
 }
 .demo-title--2 {
-	border-bottom: 2px solid var(--borderColor);
+	padding-bottom: var(--spacing-half);
+}
+
+.demo-section {
+	padding-bottom: var(--spacing-5);
+	border-bottom: var(--borderWidth) solid var(--borderColor-light);
 }
 
 .demo-table-wrapper {
