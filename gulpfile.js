@@ -52,6 +52,7 @@ gulp.task('js', ['templates'], function() {
 gulp.task('vendor', function() {
   return gulp.src([
     'node_modules/angular/angular.js',
+    'node_modules/angular-route/angular-route.js',
     'node_modules/@angular/router/angular1/angular_1_router.js'
     ])
     .pipe(concat('vendor.js'))

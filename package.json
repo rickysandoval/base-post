@@ -16,6 +16,7 @@
   "devDependencies": {
     "@angular/router": "^0.2.0",
     "angular": "^1.5.6",
+    "angular-route": "^1.5.6",
     "autoprefixer": "^6.1.2",
     "browser-sync": "^2.10.0",
     "browserify": "^13.0.1",

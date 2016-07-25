@@ -1,9 +1,40 @@
-<h1 class="demo-title">Overview</h1>
 <section class="l-section-1 demo-section">
-	<p class="u-line-length">BasePost is intended to be used as a starting point for building the css for medium to large projects using PostCSS. It includes normalization/reset, sensible defaults, useful layout, utility, and override classes, and more optional modules to get a project up and running quickly. It is responsive by default and gives you the power to change a lot with just a few variables, while at the same time being neutral enough to get in the way.</p>
-	<p class="u-line-length">It's intended to be a tool to help <em>write</em> your css, not a catch-all framework to build a website with out-of-the-box.</p>
+	<h1 class="demo-title--2 h2">What is BasePost?</h1>
+	<p class="u-line-length margin-b-0">BasePost is intended to be used as a starting point for CSS developers building medium to large projects using PostCSS. It's not a UI framework, just a tool to help speed up the development process while still encouraging high quality, maintainable codebases.</p>
 </section>
 <section class="l-section-1 demo-section">
-    <h2 class="demo-title--1">Responsive</h2>
-    <p class="u-line-length">BasePost is built with responsiveness in mind. It responds not only to window size, but also base font size and allows a different modular type scale for mobile and desktop</p>
+	<div class="grid-3_xs-1">
+		<div class="col">
+			<h3 class="demo-callout__title">Flexible</h3>
+			<p class="margin-b-0">BasePost is made to mold to your wishes. Quickly tweak the feel of an entire project by changing a few variables.</p>
+		</div>
+		<div class="col">
+			<h3 class="demo-callout__title">Responsive</h3>
+			<p class="margin-b-0">Breakpoints respond to not only screen width, but also zooming and user-set font size. Type scales automatically adjust for smaller and larger screens.</p>
+		</div>
+		<div class="col">
+			<h3 class="demo-callout__title">Lightweight</h3>
+			<p class="margin-b-0"></p>
+		</div>
+	</div>
+</section>
+<section class="l-section-1 demo-section border-none">
+    <h2 class="demo-title--1">Structure</h2>
+    <p class="u-line-length">BasePost incorporates ideas from<a href="http://itcss.io/">ITCSS</a>, OOCSS, and BEM in it's organization. It's built with the CSS cascade, source order and specificity in mind. Although it comes pre-structured, it is still easy to chose what direction to take your project in, whether you feel more comfortable with OOCSS, Atomic CSS, SMACSS, or whatever else.</p>
+
+<pre class="fontSize-2"><code>src
+-- settings
+------ <span class="code-comment">/* Variable definitions */</span>
+-- base
+------ <span class="code-comment">/* Normalize, reset, and element styles */</span>
+-- layout
+------ <span class="code-comment">/* Grid, and layout specific classes */</span>
+-- components
+------ <span class="code-comment">/* Component classes (menus, buttons, etc) */</span>
+-- utilities
+------ <span class="code-comment">/* Classes that serve one well-defined purpose */</span>
+-- overrides
+------ <span class="code-comment">/* Classes that set one css property, usually using !important */</span>
+</code></pre>
+
 </section>

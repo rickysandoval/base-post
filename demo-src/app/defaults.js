@@ -1,3 +1,3 @@
-angular.module('demoApp').component('defaults', {
+angular.module('demoApp').component('base', {
 	templateUrl: 'defaults.html'
-});
+});;
