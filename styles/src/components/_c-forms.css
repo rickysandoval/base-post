@@ -111,14 +111,8 @@
 			content: '';
 			display: block;
 			position: absolute;
-			background-color: var(--color-coolGray-900);
-			transition: background-color .1s;
-		}
-		&::after {
-			content: '';
-			display: block;
-			position: absolute;
-			background-color: var(--color-focus);
+			background-color: var(--color-coolGray-300);
+			transition: background-color .1s, box-shadow .1s;
 		}
 	}
 	:focus {
@@ -142,8 +136,13 @@
 			transform: translateY(-50%);
 			left: 5px;
 			border-radius: 500px;
+			background-color: var(--color-coolGray-900);
 		}
 		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			background-color: var(--color-focus);
 			width: 45%;
 			height: 0;
 			padding-top: 45%;
@@ -167,11 +166,9 @@
 }
 
 /* Round/Square Checkbox*/
-
 .checkbox-round, .checkbox-square {
 	width: 1.625em;
 }
-
 
 .checkbox-round input[type="checkbox"],
 .checkbox-square input[type="checkbox"] {
@@ -184,25 +181,17 @@
 			left: 0;
 			top: 50%;
 			transform: translateY(-50%);
-		}
-		&::after {
-			width: calc(100% - .25em);
-			height: 0;
-			padding-top: calc(100% - .25em);
-			left: 50%;
-			top: 50%;
-			transform: translateY(-50%) translateX(-50%);
-			background-color: var(--color-coolGray-100);
-			transition: background-color .1s
+			box-shadow: 0px 0px 0px .15em var(--color-coolGray-900) inset;
 		}
 	}
 	&:checked + label {
-		&::after {
+		&::before {
 			background-color: var(--color-focus);
 		}
 	}
-	&:focus + label::before {
-		background-color: var(--color-coolGray-500);
+	&:focus + label::before,
+	&:active + label::before {
+		box-shadow: 0px 0px 0px .15em var(--color-coolGray-500) inset;
 	}
 }
 
