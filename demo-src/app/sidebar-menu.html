@@ -1,15 +1,16 @@
 <aside class="docs-sidebar">
 	<nav class="docs-menu">
 		<ul class="list--reset">
-			<li class="docs-menu__item" ng-class="{active: $ctrl.route == 'settings'}">
-				<a ng-link="['Settings']">Settings</a>
+			<li class="docs-menu__item" ui-sref-active="active">
+				<a ui-sref="settings" ng-click="$ctrl.scrollTo('')">Settings</a>
 				<ul class="list--reset docs-submenu">
-					<li>hello</li>
-					<li>hey</li>
+					<li ng-click="$ctrl.scrollTo('breakpoints')">Breakpoints</li>
+					<li ng-click="$ctrl.scrollTo('type-scale')">Type Scale</li>
+					<li ng-click="$ctrl.scrollTo('colors')">Colors</li>
 				</ul>
 			</li>
-	        <li class="docs-menu__item" ng-class="{active: $ctrl.route == 'base'}">
-	        	<a ng-link="['Base']">Base</a>
+	        <li class="docs-menu__item" ui-sref-active="active">
+	        	<a ui-sref="base">Base</a>
 	        </li>
 	    </ul>
 	</nav>

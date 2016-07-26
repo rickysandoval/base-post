@@ -2,7 +2,7 @@
     <h1 class="demo-title">Settings</h1>
     <p class="u-line-length margin-b-0">Files in the settings folder exist for the <strong>sole purpose</strong> of setting variables that are used in the rest of the codebase. There shouldn't be any code that is not a variable declaration.</p>
 </section>
-<section class="l-section-1 demo-section">
+<section class="l-section-1 demo-section" id="breakpoints">
     <h2 class="demo-title--2">_breakpoints.css</h2>
     <p class="u-line-length">There are 7 breakpoints built in and 12 custom media queries (6 min and 6 max) defined around them. They are defined in em units which allows them to adapt to users who set a different base font size in their browser, as long as there is no explicit (px) font size set for the body/html elements.
     </p>
@@ -34,13 +34,8 @@
         &nbsp;/* 1919px */<br>
     </code>
 </section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">_type-scale.css</h2>
-    <p class="u-line-length">The <code>--ratio</code> (default: 1.25) and <code>--mobile-ratio</code> (default: 1.2) variables defined here are used to define the typographic scale used in headings and font-size classes. These classes will adjust their type scale for mobile sizes to optimize for both.</p>
-    <p>Check out <a href="http://type-scale.com/">Type Scale</a> to learn more about modular scales and see them in action.</p>
-</section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">_colors.css</h2>
+<section class="l-section-1 demo-section" id="colors">
+    <h2 class="demo-title--2" id="colors">_colors.css</h2>
     <p class="u-line-length">There is a whole palet of general color variables (pulled from Gemma by Cole Peters) defined for use, as well as a number of variables for text, highlights, links, etc.</p>
     <div class="grid-5_sm-1 demo-colors">
             <div class="col red-1">--color-red-100<!-- <br>#ffbabf --></div>
@@ -134,4 +129,9 @@
             <div class="col-6_sm-12 theme-color color-white background-tertiary">--color-tertiary</div>
             <div class="col-6_sm-12 theme-color color-white background-tertiary-dark">--color-tertiary-dark</div>
     </div>
+</section>
+<section class="l-section-1 demo-section" id="type-scale">
+    <h2 class="demo-title--2">_type-scale.css</h2>
+    <p class="u-line-length">The <code>--ratio</code> (default: 1.25) and <code>--mobile-ratio</code> (default: 1.2) variables defined here are used to define the typographic scale used in headings and font-size classes. These classes will adjust their type scale for mobile sizes to optimize for both.</p>
+    <p>Check out <a href="http://type-scale.com/">Type Scale</a> to learn more about modular scales and see them in action.</p>
 </section>

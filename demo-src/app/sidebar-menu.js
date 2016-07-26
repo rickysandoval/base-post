@@ -1,11 +1,20 @@
 angular.module('demoApp').component('demoMenu', {
 	templateUrl: 'sidebar-menu.html',
-	bindings: { router: '<' },
-	controller: function($rootScope) {
+	controller: function($anchorScroll, $location, $timeout, $state, $rootScope) {
 		var $ctrl = this;
-		var router = this.router;
-		$rootScope.$on('$routeChangeSuccess', function() {
-			$ctrl.route = router.parent.lastNavigationAttempt.split('/').pop()
+
+		$ctrl.scrollTo = function(id) {
+			console.log(id);
+			$location.hash(id);
+			$anchorScroll();
+		};
+
+
+		$rootScope.$on('$locationChangeStart', function(e, to, from) {
+			if (from.split('#').pop() == $location.hash()) {
+				$location.hash('');
+			}
 		});
+
 	}
 });

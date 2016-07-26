@@ -13,7 +13,8 @@ const gulp = require('gulp'),
       clean = require('gulp-clean'),
       ngAnnotate = require('gulp-ng-annotate'),
       templateCache = require('gulp-angular-templatecache'),
-      modRewrite = require('connect-modrewrite');
+      modRewrite = require('connect-modrewrite')
+      gutil = require('gulp-util');
 
 gulp.task('clean', function(){
   del(['styles/dist']);
@@ -44,7 +45,9 @@ gulp.task('js', ['templates'], function() {
   gulp.src(['demo-src/app/main.js', 'demo-src/templates/templates.js', 'demo-src/app/**/*.js'])
     .pipe(sourcemaps.init())
       .pipe(concat('demo.js'))
+        .on('error', gutil.log)
       .pipe(ngAnnotate())
+      .on('error', gutil.log)
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('demo-build'));
 });
@@ -52,8 +55,7 @@ gulp.task('js', ['templates'], function() {
 gulp.task('vendor', function() {
   return gulp.src([
     'node_modules/angular/angular.js',
-    'node_modules/angular-route/angular-route.js',
-    'node_modules/@angular/router/angular1/angular_1_router.js'
+    'node_modules/angular-ui-router/release/angular-ui-router.js'
     ])
     .pipe(concat('vendor.js'))
     .pipe(ngAnnotate())

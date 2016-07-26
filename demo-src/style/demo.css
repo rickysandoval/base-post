@@ -286,3 +286,7 @@ header {
 	padding-left: var(--spacing-3);
 }
 
+.docs-submenu > li {
+	cursor: pointer;
+}
+
