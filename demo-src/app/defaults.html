@@ -1,93 +1,23 @@
 <section class="l-section-1 demo-section">
     <h1 class="demo-title">Base</h1>
-    <p class="u-line-length margin-b-0">BasePost includes a copy of <a href="https://github.com/necolas/normalize.css" alt="normalize css">noramlize.css</a>, a small reset file and default styles for many elements.</p>
+    <p class="u-line-length margin-b-0">BasePost includes a copy of <a href="https://github.com/necolas/normalize.css" alt="normalize css">noramlize.css</a>, a small reset file and default styles for many elements. This is how the some common elements will look with no classes applied.</p>
 </section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">Headings</h2>
-    <h1>&lt;h1&gt; Level 1</h1>
-    <h2>&lt;h2&gt; Level 2</h2>
-    <h3>&lt;h3&gt; Level 3</h3>
-    <h4>&lt;h4&gt; Level 4</h4>
-    <h5>&lt;h5&gt; Level 5</h5>
-    <h6>&lt;h6&gt; Level 6</h6>
-</section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">Paragraphs and Inline Elements</h2>
-    <p>
-        <strong>&lt;p&gt;</strong> Lorem ipsum dolor sit amet, &lt;strong&gt;<strong>consectetur</strong>&lt;/strong&gt; adipisicing elit. Quos odio error incidunt totam facilis necessitatibus <a href="">commodi ipsam</a> dolore sapiente magni nesciunt doloremque quis, &lt;em&gt;<em>ex adipisci</em>&lt;/em&gt;, aliquam eaque, veniam aperiam possimus. <strong>&lt;/p&gt;</strong>
-    </p>
-    <p>
-        <strong>&lt;p&gt;</strong> Lorem ipsum dolor sit amet, &lt;del&gt;
-        <del>consectetur adipisi cing
-        </del>&lt;/del&gt; elit. Adipisci doloremque repudiandae nulla tempora. Illum voluptatum, dignissimos, ipsum sint sunt tempore alias sed iure esse provident &lt;mark&gt;
-        <mark>labore officiis officia</mark>&lt;/mark&gt; non quam. <strong>&lt;/p&gt;</strong>
-    </p>
-    <p>
-        <strong>&lt;p&gt;</strong> Ok I'm not using ipsum for this one because it doesn't make sense. Umm... h<sub>2</sub>0 (<strong>&lt;sub&gt;</strong>)... and also e = mc<sup>2</sup> (<strong>&lt;sup&gt;</strong>). That is all. <strong>&lt;/p&gt;</strong>
-    </p>
-    <p>
-        <strong>&lt;p&gt;</strong> <strong>&lt;dfn&gt;</strong><dfn>amphisbaena</dfn><strong>&lt;/dfn&gt;</strong> - a mythical serpent with a head at each end.<strong>&lt;/p&gt;</strong>
-    </p>
-
-</section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">Lists</h2>
-    <div class="grid-3_xs-1">
-        <div class="col">
-            <h3 class="demo-title--3">&lt;ul&gt;</h3>
-            <ul>
-                <li>Bananas</li>
-                <li>Avocados</li>
-                <li>Pineapples</li>
-                <li>Beer</li>
-                <li>Peaches</li>
-            </ul>
-        </div>
-        <div class="col">
-            <h3 class="demo-title--3">&lt;ol&gt;</h3>
-            <ol>
-                <li>Flour</li>
-                <li>Shortening</li>
-                <li>Baking Powder</li>
-                <li>Salt</li>
-                <li>Water</li>
-            </ol>
-        </div>
-        <div class="col">
-            <h3 class="demo-title--3">&lt;dl&gt;</h3>
-            <dl>
-                <dt>Coffee</dt>
-                <dd>Black hot drink</dd>
-                <dt>Milk</dt>
-                <dd>White cold drink</dd>
-            </dl>
-        </div>
-    </div>
-</section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">Hr</h2>
-    <hr>
-</section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">Links</h2>
-    <p>You may encounter a <a href="javascript:;">Link</a> as you read along in a document and wish to <a href="javascript:;">Click</a> it.</p>
-</section>
-<section class="l-section-1 demo-section">
+<section class="l-section-1 demo-section" id="code">
     <h2 class="demo-title--2">Code</h2>
     <p>This applies to inline code like <code>git checkout -b beer</code> or code blocks.</p>
 <pre><code>function saltNPeppa(realGood) {
-	let action = 'Ah, push it';
+    let action = 'Ah, push it';
 
-	if (!realGood) {
-		action += ' - ' + 'push it good';
-	} else {
-		action += ' - ' + 'p-push it real good';
-	}
-		return action;
+    if (!realGood) {
+        action += ' - ' + 'push it good';
+    } else {
+        action += ' - ' + 'p-push it real good';
+    }
+        return action;
 }
 </code></pre>
 </section>
-<section class="l-section-1 demo-section">
+<section class="l-section-1 demo-section" id="embedded">
     <h2 class="demo-title--2">Embedded Content</h2>
     <div class="grid-3_sm-1">
         <div class="col">
@@ -149,7 +79,181 @@
         </div>
     </div>
 </section>
-<section class="l-section-1 demo-section">
+<section class="l-section-1 demo-section" id="forms">
+    <h2 class="demo-title--2">Forms</h2>
+    <div class="grid-3_sm-1">
+        <div class="col">
+            <label for="checkbox">Checkbox</label>
+            <input type="checkbox" id="checkbox">
+            <br>
+            <label for="color">Color</label>
+            <input type="color" name="color">
+            <br>
+            <label for="datalist">Datalist</label>
+            <input list="resorts" name="datalist">
+            <datalist id="resorts">
+                <option value="Arapahoe Basin">
+                <option value="Breckenridge">
+                <option value="Crested Butte">
+                <option value="Keystone">
+                <option value="Telluride">
+                <option value="Vail">
+            </datalist>
+            <br>
+            <label for="date">Date</label>
+            <input type="date" name="date">
+            <br>
+            <label for="file">File</label>
+            <input type="file" name="file">
+            <label for="image">Image</label>
+            <input type="image" name="image">
+            <br>
+            <label for="number">Number</label>
+            <input type="number" name="number">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+            <br>
+            <label for="radio">Radio</label>
+            <input type="radio" name="radio" value="1">1
+            <input type="radio" name="radio" value="2">2
+            <input type="radio" name="radio" value="2">3
+            <br>
+            <label for="range">Range</label>
+            <input type="range" name="range">
+            <br>
+            <label for="text">Text</label>
+            <input type="text" name="text">
+            <br>
+            <label for="textarea">Textarea</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="5">She sells sea shells by the sea shore.</textarea><br>
+            <label for="select">Select with groups</label>
+            <select name="select" id="select">
+                <optgroup label="Girls">
+                    <option value="sugar">Sugar</option>
+                    <option value="spice">Spice</option>
+                    <option value="everythingnice">Everything Nice</option>
+                </optgroup>
+                <optgroup label="Boys">
+                    <option value="snips">Snips</option>
+                    <option value="snail">Snails</option>
+                    <option value="tail">Puppydog Tails</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="col">
+            <fieldset>
+                <legend>Fieldset with legend:</legend>
+                Name:
+                <input type="text">
+                <br> Email:
+                <input type="text">
+                <br> Date of birth:
+                <input type="text">
+            </fieldset>
+            <br>
+            Submit, Input, and Regular Button<br>
+            <input type="submit" value="Submit">
+            <input type="button" value="Button">
+            <input type="reset" value="Reset">
+            <button>Submit</button>
+        </div>
+
+        <div class="col">
+        </div>
+    </div>
+</section>
+<section class="l-section-1 demo-section" id="headings">
+    <h2 class="demo-title--2">Headings</h2>
+    <h1>&lt;h1&gt; Level 1</h1>
+    <h2>&lt;h2&gt; Level 2</h2>
+    <h3>&lt;h3&gt; Level 3</h3>
+    <h4>&lt;h4&gt; Level 4</h4>
+    <h5>&lt;h5&gt; Level 5</h5>
+    <h6>&lt;h6&gt; Level 6</h6>
+</section>
+<section class="l-section-1 demo-section" id="hr">
+    <h2 class="demo-title--2">Hr</h2>
+    <hr>
+</section>
+<section class="l-section-1 demo-section" id="links">
+    <h2 class="demo-title--2">Links</h2>
+    <p>You may encounter a <a href="javascript:;">Link</a> as you read along in a document and wish to <a href="javascript:;">Click</a> it.</p>
+</section>
+<section class="l-section-1 demo-section" id="lists">
+    <h2 class="demo-title--2">Lists</h2>
+    <div class="grid-3_xs-1">
+        <div class="col">
+            <h3 class="demo-title--3">&lt;ul&gt;</h3>
+            <ul>
+                <li>Bananas</li>
+                <li>Avocados</li>
+                <li>Pineapples</li>
+                <li>Beer</li>
+                <li>Peaches</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3 class="demo-title--3">&lt;ol&gt;</h3>
+            <ol>
+                <li>Flour</li>
+                <li>Shortening</li>
+                <li>Baking Powder</li>
+                <li>Salt</li>
+                <li>Water</li>
+            </ol>
+        </div>
+        <div class="col">
+            <h3 class="demo-title--3">&lt;dl&gt;</h3>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+        </div>
+    </div>
+</section>
+<section class="l-section-1 demo-section" id="paragraphs">
+    <h2 class="demo-title--2">Paragraphs and Inline Elements</h2>
+    <p>
+        <strong>&lt;p&gt;</strong> Lorem ipsum dolor sit amet, &lt;strong&gt;<strong>consectetur</strong>&lt;/strong&gt; adipisicing elit. Quos odio error incidunt totam facilis necessitatibus <a href="">commodi ipsam</a> dolore sapiente magni nesciunt doloremque quis, &lt;em&gt;<em>ex adipisci</em>&lt;/em&gt;, aliquam eaque, veniam aperiam possimus. <strong>&lt;/p&gt;</strong>
+    </p>
+    <p>
+        <strong>&lt;p&gt;</strong> Lorem ipsum dolor sit amet, &lt;del&gt;
+        <del>consectetur adipisi cing
+        </del>&lt;/del&gt; elit. Adipisci doloremque repudiandae nulla tempora. Illum voluptatum, dignissimos, ipsum sint sunt tempore alias sed iure esse provident &lt;mark&gt;
+        <mark>labore officiis officia</mark>&lt;/mark&gt; non quam. <strong>&lt;/p&gt;</strong>
+    </p>
+    <p>
+        <strong>&lt;p&gt;</strong> Ok I'm not using ipsum for this one because it doesn't make sense. Umm... h<sub>2</sub>0 (<strong>&lt;sub&gt;</strong>)... and also e = mc<sup>2</sup> (<strong>&lt;sup&gt;</strong>). That is all. <strong>&lt;/p&gt;</strong>
+    </p>
+    <p>
+        <strong>&lt;p&gt;</strong> <strong>&lt;dfn&gt;</strong><dfn>amphisbaena</dfn><strong>&lt;/dfn&gt;</strong> - a mythical serpent with a head at each end.<strong>&lt;/p&gt;</strong>
+    </p>
+
+</section>
+<section class="l-section-1 demo-section" id="quotes">
+    <h2 class="demo-title--2">Quotes</h2>
+    <div class="grid-2_sm-1">
+        <div class="col">
+            <p>&lt;blockquote&gt;</p>
+            <blockquote>
+                <p>Have you ever noticed that anybody driving slower than you is an idiot, and anyone going faster than you is a maniac?</p>
+                <footer>-
+                    <cite><a href="https://www.youtube.com/watch?v=XWPCE2tTLZQ">George Carlin</a></cite>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="col"><pre><code>&lt;blockquote>
+    &lt;p>Have you ever noticed that anybody...&lt;/p>
+    &lt;footer>-
+        &lt;cite>&lt;a href="...">George Carlin&lt;/a>&lt;/cite>
+    &lt;/footer>
+&lt;/blockquote></code></pre></div>
+    </div>
+</section>
+<section class="l-section-1 demo-section" id="tables">
     <h2 class="demo-title--2">Tables</h2>
     <div class="demo-table-wrapper">
         <table>
@@ -185,114 +289,8 @@
         </table>
     </div>
 </section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">Quotes</h2>
-    <div class="grid-2_sm-1">
-        <div class="col">
-            <p>This is a paragraph above a blockquote. It's not a very interesting paragraph, it's just filling some space to give the block quote some context, isn't that fun? No, not really... I know.</p>
-            <blockquote>
-                <p>Have you ever noticed that anybody driving slower than you is an idiot, and anyone going faster than you is a maniac?</p>
-                <footer>-
-                    <cite><a href="https://www.youtube.com/watch?v=XWPCE2tTLZQ">George Carlin</a></cite>
-                </footer>
-            </blockquote>
-        </div>
-        <div class="col">
-            <p>Here is another paragraph above a blockquote, I'm not particularly sure why I'm writing a second one instead of just copying the first one. Some lorem ipsum would have dont just fine to be honest.</p>
-            <blockquote>
-                <p>I realize that humor isn't for everyone. It's only for people who want to have fun, enjoy life, and feel alive.</p>
-                <footer>-
-                    <cite>Anne Wilson Schaef</cite>
-                </footer>
-            </blockquote>
-        </div>
-    </div>
-</section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">Forms</h2>
-    <div class="grid-3_sm-1">
-        <div class="col">
-            <label for="checkbox">Checkbox</label>
-            <input type="checkbox" id="checkbox">
-            <br>
-            <label for="color">Color</label>
-            <input type="color" name="color">
-            <br>
-            <label for="datalist">Datalist</label>
-            <input list="resorts" name="datalist">
-            <datalist id="resorts">
-            	<option value="Arapahoe Basin">
-            	<option value="Breckenridge">
-            	<option value="Crested Butte">
-            	<option value="Keystone">
-            	<option value="Telluride">
-            	<option value="Vail">
-            </datalist>
-            <br>
-            <label for="date">Date</label>
-            <input type="date" name="date">
-            <br>
-            <label for="file">File</label>
-            <input type="file" name="file">
-            <label for="image">Image</label>
-            <input type="image" name="image">
-            <br>
-            <label for="number">Number</label>
-            <input type="number" name="number">
-            <br>
-            <label for="password">Password</label>
-            <input type="password" name="password">
-            <br>
-            <label for="radio">Radio</label>
-            <input type="radio" name="radio" value="1">1
-            <input type="radio" name="radio" value="2">2
-            <input type="radio" name="radio" value="2">3
-            <br>
-            <label for="range">Range</label>
-            <input type="range" name="range">
-            <br>
-            <label for="text">Text</label>
-            <input type="text" name="text">
-            <br>
-            <label for="textarea">Textarea</label>
-            <textarea name="textarea" id="textarea" cols="30" rows="5">She sells sea shells by the sea shore.</textarea><br>
-            <label for="select">Select with groups</label>
-            <select name="select" id="select">
-            	<optgroup label="Girls">
-            		<option value="sugar">Sugar</option>
-            		<option value="spice">Spice</option>
-            		<option value="everythingnice">Everything Nice</option>
-            	</optgroup>
-            	<optgroup label="Boys">
-            		<option value="snips">Snips</option>
-                    <option value="snail">Snails</option>
-                    <option value="tail">Puppydog Tails</option>
-            	</optgroup>
-            </select>
-        </div>
-        <div class="col">
-            <fieldset>
-                <legend>Personalia:</legend>
-                Name:
-                <input type="text">
-                <br> Email:
-                <input type="text">
-                <br> Date of birth:
-                <input type="text">
-            </fieldset>
-            Submit, Input, and Regular Button<br>
-            <input type="submit" value="Submit">
-            <input type="button" value="Button">
-            <input type="reset" value="Reset">
-            <button>Submit</button>
-        </div>
-
-        <div class="col">
-        </div>
-    </div>
-</section>
-<section class="l-section-1 demo-section">
-    <h2 class="demo-title--2">Miscelaneous</h2>
+<section class="l-section-1 demo-section border-none" id="other">
+    <h2 class="demo-title--2">Other</h2>
     <div class="grid-3_sm-1">
         <div class="col">
             <h3 class="demo-title--3">&lt;meter&gt;</h3>

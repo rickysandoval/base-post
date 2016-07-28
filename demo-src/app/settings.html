@@ -2,40 +2,40 @@
     <h1 class="demo-title">Settings</h1>
     <p class="u-line-length margin-b-0">Files in the settings folder exist for the <strong>sole purpose</strong> of setting variables that are used in the rest of the codebase. There shouldn't be any code that is not a variable declaration.</p>
 </section>
+<section class="l-section-1 demo-section" id="borders">
+    <h2 class="demo-title--2">_s-borders.css</h2>
+<pre><code>:root {
+    --borderWidth: 1px;
+    --borderColor: var(--color-text);             <span class="code-comment">/* #141515 */</span>
+    --borderColor-light: var(--color-text-light); <span class="code-comment">/* #81858B */</span>
+    --borderRadius: 4px;
+    --borderRadius-button: 4px;
+}</code></pre>
+</section>
 <section class="l-section-1 demo-section" id="breakpoints">
-    <h2 class="demo-title--2">_breakpoints.css</h2>
-    <p class="u-line-length">There are 7 breakpoints built in and 12 custom media queries (6 min and 6 max) defined around them. They are defined in em units which allows them to adapt to users who set a different base font size in their browser, as long as there is no explicit (px) font size set for the body/html elements.
+    <h2 class="demo-title--2">_s-breakpoints.css</h2>
+    <p class="u-line-length">There are 7 breakpoints built in and 13 custom media queries (6 min and 6 max and one for the site-container width) defined around them. They are defined in em units which allows them to adapt to users who set a different base font size in their browser or zoom in/out, as long as there is no explicit (px) font size set for the body/html elements.
     </p>
-    <code class="breakpoint-list">
-        @custom-media --screen-xs-min (min-width: 25em);
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 400px  &nbsp;*/<br>
-        @custom-media --screen-sm-min (min-width: 32em);
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 512px  &nbsp;*/<br>
-        @custom-media --screen-md-min (min-width: 48em);
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 768px  &nbsp;*/<br>
-        @custom-media --screen-lg-min (min-width: 64em);
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 1024px */<br>
-        @custom-media --screen-xl-min (min-width: 90em);
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 1440px */<br>
-        @custom-media --screen-xxl-min (min-width: 120em);
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 1920px */<br>
-        <br>
-        @custom-media --screen-xxs-max (max-width: 24.9375em);  
-        &nbsp;/* 399px  &nbsp;*/<br>
-        @custom-media --screen-xs-max (max-width: 31.9375em);   
-        &nbsp;&nbsp;/* 511px  &nbsp;*/<br>
-        @custom-media --screen-sm-max (max-width: 47.9375em);   
-        &nbsp;&nbsp;/* 767px  &nbsp;*/<br>
-        @custom-media --screen-md-max (max-width: 63.9375em);   
-        &nbsp;&nbsp;/* 1023px */<br>
-        @custom-media --screen-lg-max (max-width: 89.9375em);   
-        &nbsp;&nbsp;/* 1439px */<br>
-        @custom-media --screen-xl-max (max-width: 119.9375em);  
-        &nbsp;/* 1919px */<br>
+<pre><code class="breakpoint-list">@custom-media --screen-xs-min (min-width: 25em);        <span class="code-comment">/* 400px  */</span>
+@custom-media --screen-sm-min (min-width: 32em);        <span class="code-comment">/* 512px  */</span>
+@custom-media --screen-md-min (min-width: 48em);        <span class="code-comment">/* 768px  */</span>
+@custom-media --screen-lg-min (min-width: 64em);        <span class="code-comment">/* 1024px */</span>
+@custom-media --screen-xl-min (min-width: 90em);        <span class="code-comment">/* 1440px */</span>
+@custom-media --screen-xxl-min (min-width: 120em);      <span class="code-comment">/* 1920px */</span>
+
+@custom-media --screen-xxs-max (max-width: 24.9375em);  <span class="code-comment">/* 399px  */</span>
+@custom-media --screen-xs-max (max-width: 31.9375em);   <span class="code-comment">/* 511px  */</span>
+@custom-media --screen-sm-max (max-width: 47.9375em);   <span class="code-comment">/* 767px  */</span>
+@custom-media --screen-md-max (max-width: 63.9375em);   <span class="code-comment">/* 1023px */</span>
+@custom-media --screen-lg-max (max-width: 89.9375em);   <span class="code-comment">/* 1439px */</span>
+@custom-media --screen-xl-max (max-width: 119.9375em);  <span class="code-comment">/* 1919px */</span>
+
+<span class="code-comment">/* calc(var(--wrapper-width) + var(--spacing-2))) */</span>
+@custom-media --screen-site-container (max-width: 104.4rem); <span class="code-comment">/* 1024px */</span>
     </code>
 </section>
 <section class="l-section-1 demo-section" id="colors">
-    <h2 class="demo-title--2" id="colors">_colors.css</h2>
+    <h2 class="demo-title--2" id="colors">_s-colors.css</h2>
     <p class="u-line-length">There is a whole palet of general color variables (pulled from Gemma by Cole Peters) defined for use, as well as a number of variables for text, highlights, links, etc.</p>
     <div class="grid-5_sm-1 demo-colors">
             <div class="col red-1">--color-red-100<!-- <br>#ffbabf --></div>
@@ -121,6 +121,9 @@
             <div class="col color-link-hover">--color-link-hover</div>
             
             <div class="col-12 margin-v-2"></div>
+        </div>
+        <p class="line-length">There are also variables defined for theme colors.</p>
+        <div class="grid-5_sm-1 demo-colors">
 
             <div class="col-6_sm-12 theme-color color-white background-primary">--color-primary</div>
             <div class="col-6_sm-12 theme-color color-white background-primary-dark">--color-primary-dark</div>
@@ -130,8 +133,92 @@
             <div class="col-6_sm-12 theme-color color-white background-tertiary-dark">--color-tertiary-dark</div>
     </div>
 </section>
+<section class="l-section-1 demo-section" id="shadows">
+    <h2 class="demo-title--2">_s-shadows.css</h2>
+    <p class="u-line-length">There are 5 box-shadow variables that are made to compliment each other. They come originally from <a href="https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d#.9qvljj1jf">this medium post</a> but the values were tweaked a bit.</p>
+<pre><code>:root {
+    --boxShadow-1: 0 2px 4px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.24);
+    --boxShadow-2: 0 3px 6px rgba(0,0,0,0.18), 0 3px 6px rgba(0,0,0,0.23);
+    --boxShadow-3: 0 9px 16px -2px rgba(0,0,0,0.20), 0 4px 6px -2px rgba(0,0,0,0.23);
+    --boxShadow-4: 0 10px 22px -4px rgba(0,0,0,0.22), 0 10px 12px -4px rgba(0,0,0,0.22);
+    --boxShadow-5: 0 14px 28px -8px rgba(0,0,0,0.25), 0 14px 16px -8px rgba(0,0,0,0.19);
+}</code></pre>
+</section>
+<section class="l-section-1 demo-section" id="spacing">
+    <h2 class="demo-title--2">_s-spacing.css</h2>
+<pre><code>:root {
+    --spacing-half: .5rem;      /* 5px   */
+    --spacing-1: 1rem;          /* 10px  */
+    --spacing-2: 2rem;          /* 20px  */
+    --spacing-3: 3rem;          /* 30px  */
+    --spacing-4: 4rem;          /* 40px  */
+    --spacing-5: 5rem;          /* 50px  */
+    --spacing-line: calc(1em * var(--lineHeight));  /* Whatever font size on element is times the line-height */
+
+    --site-container-width: 102.4rem;  /* 1024px */
+    --gutter-width: 1.5rem;            /* 15px */
+}</code></pre>
+</section>
 <section class="l-section-1 demo-section" id="type-scale">
     <h2 class="demo-title--2">_type-scale.css</h2>
-    <p class="u-line-length">The <code>--ratio</code> (default: 1.25) and <code>--mobile-ratio</code> (default: 1.2) variables defined here are used to define the typographic scale used in headings and font-size classes. These classes will adjust their type scale for mobile sizes to optimize for both.</p>
+    <p class="u-line-length">The variables <code>--ratio</code> (default: 1.25) and <code>--mobile-ratio</code> (default: 1.2) are used to define the typographic scale used in headings and font-size classes. These classes will adjust their type scale for mobile sizes to optimize for all screen sizes.</p>
     <p>Check out <a href="http://type-scale.com/">Type Scale</a> to learn more about modular scales and see them in action.</p>
+</section>
+<section class="l-section-1 demo-section" id="typography">
+    <h2 class="demo-title--2">_s-typography.css</h2>
+    <p class="u-line-length">All font-size variables are based off of <code>--base-font-rem</code> <code>--mobile-base-font-rem</code> and the variables from _s-type-scale.css and assume that the font-size is set to 62.5% on the html tag. </p>
+<pre><code>:root {
+    --base-font-rem: calc(1.6 * 1rem);
+    --mobile-base-font-rem: calc(1.4 * 1rem);
+
+    --lineHeight: 1.6;
+
+    --fontSize-n1: calc(var(--base-font-rem) * var(--scale-n1));
+    --fontSize-1:  calc(var(--base-font-rem) * var(--scale-0));
+    --fontSize-2:  calc(var(--base-font-rem) * var(--scale-1));
+    --fontSize-3:  calc(var(--base-font-rem) * var(--scale-2));
+    --fontSize-4:  calc(var(--base-font-rem) * var(--scale-3));
+    --fontSize-5:  calc(var(--base-font-rem) * var(--scale-4));
+    --fontSize-6:  calc(var(--base-font-rem) * var(--scale-5));
+    --fontSize-7:  calc(var(--base-font-rem) * var(--scale-6));
+    --fontSize-8:  calc(var(--base-font-rem) * var(--scale-7));
+
+    --mobile-fontSize-n1: calc(var(--mobile-base-font-rem) * var(--mobile-scale-n1));
+    --mobile-fontSize-1:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-0));
+    --mobile-fontSize-2:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-1));
+    --mobile-fontSize-3:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-2));
+    --mobile-fontSize-4:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-3));
+    --mobile-fontSize-5:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-4));
+    --mobile-fontSize-6:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-5));
+    --mobile-fontSize-7:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-6));
+    --mobile-fontSize-8:  calc(var(--mobile-base-font-rem) * var(--mobile-scale-7));
+
+    --fontWeight-thin: 300;
+    --fontWeight-normal: 400;
+    --fontWeight-bold: 600;
+
+    --fontFamily-sans: Helvetica, Arial, sans-serif;
+    --fontFamily-serif: Georgia, Cambria, Times, serif;
+    --fontFamily-mono: Consolas, Courier, monospace;
+    --fontFamily-heading: var(--fontFamily-sans);
+}</code></pre>
+</section>
+<section class="l-section-1 demo-section border-none" id="zIndex">
+    <h2 class="demo-title--2">_s-z-index.css</h2>
+<pre><code>:root {
+    --zIndex-spacing: 5;
+
+    --zIndex-0: 0;
+    --zIndex-1: calc(1 * var(--zIndex-spacing));    <span class="code-comment">/* 5  */</span>
+    --zIndex-2: calc(2 * var(--zIndex-spacing));    <span class="code-comment">/* 10 */</span>
+    --zIndex-3: calc(3 * var(--zIndex-spacing));    <span class="code-comment">/* 15 */</span>
+    --zIndex-4: calc(4 * var(--zIndex-spacing));    <span class="code-comment">/* 20 */</span>
+    --zIndex-5: calc(5 * var(--zIndex-spacing));    <span class="code-comment">/* 25 */</span>
+
+    --zIndex-n1: calc(-1 * var(--zIndex-spacing));  <span class="code-comment">/* -5  */</span>
+    --zIndex-n2: calc(-2 * var(--zIndex-spacing));  <span class="code-comment">/* -10 */</span>
+    --zIndex-n3: calc(-3 * var(--zIndex-spacing));  <span class="code-comment">/* -15 */</span>
+    --zIndex-n4: calc(-4 * var(--zIndex-spacing));  <span class="code-comment">/* -20 */</span>
+    --zIndex-n5: calc(-5 * var(--zIndex-spacing));  <span class="code-comment">/* -25 */</span>
+}</code></pre>
 </section>

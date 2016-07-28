@@ -4,6 +4,7 @@ angular.module('docs', ['ui.router'])
 	$urlRouterProvider.when('/docs', function($state) {
 		$state.transitionTo('settings');
 	});
+
 	$stateProvider
 		.state('settings', {
 			parent: 'docs',
@@ -14,18 +15,31 @@ angular.module('docs', ['ui.router'])
 			parent: 'docs',
 			url: '/base',
 			component: 'base'
+		})
+		.state('layout', {
+			parent: 'docs',
+			url: '/layout',
+			component: 'layout'
+		})
+		.state('components', {
+			parent: 'docs',
+			url: '/components',
+			component: 'components'
+		})
+		.state('utilities', {
+			parent: 'docs',
+			url: '/utilities',
+			component: 'utilities'
+		})
+		.state('overrides', {
+			parent: 'docs',
+			url: '/overrides',
+			component: 'overrides'
 		});
 
 })
 .component('docs', {
 	templateUrl: 'docs.html',
 	controller: function() {
-	},
-	$routeConfig: [
-		{path: '/base', name: 'Base', component: 'base'},
-		{path: '/layout', name: 'Layout', component: 'layout'},
-		{path: '/overrides', name: 'Overrides', component: 'overrides'},
-		{path: '/utilities', name: 'Utilities', component: 'utilities'},
-		{path: '/components', name: 'Components', component: 'components'}
-	]
+	}
 });

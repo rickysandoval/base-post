@@ -1,16 +1,55 @@
 <aside class="docs-sidebar">
-	<nav class="docs-menu">
+	<nav class="docs-menu" ng-class="{'stickied': stickied}">
 		<ul class="list--reset">
 			<li class="docs-menu__item" ui-sref-active="active">
-				<a ui-sref="settings" ng-click="$ctrl.scrollTo('')">Settings</a>
+				<a ui-sref="settings({})" ui-sref-opts="{ inherit: false }">Settings</a>
 				<ul class="list--reset docs-submenu">
+					<li ng-click="$ctrl.scrollTo('borders')">Borders</li>
 					<li ng-click="$ctrl.scrollTo('breakpoints')">Breakpoints</li>
-					<li ng-click="$ctrl.scrollTo('type-scale')">Type Scale</li>
 					<li ng-click="$ctrl.scrollTo('colors')">Colors</li>
+					<li ng-click="$ctrl.scrollTo('shadows')">Shadows</li>
+					<li ng-click="$ctrl.scrollTo('spacing')">Spacing</li>
+					<li ng-click="$ctrl.scrollTo('type-scale')">Type Scale</li>
+					<li ng-click="$ctrl.scrollTo('typography')">Typography</li>
+					<li ng-click="$ctrl.scrollTo('zIndex')">Z-index</li>
 				</ul>
 			</li>
 	        <li class="docs-menu__item" ui-sref-active="active">
-	        	<a ui-sref="base">Base</a>
+	        	<a ui-sref="base({})" ui-sref-opts="{ inherit: false }">Base</a>
+	        	<ul class="list--reset docs-submenu">
+					<li ng-click="$ctrl.scrollTo('code')">Code</li>
+					<li ng-click="$ctrl.scrollTo('embedded')">Embedded</li>
+					<li ng-click="$ctrl.scrollTo('forms')">Forms</li>
+					<li ng-click="$ctrl.scrollTo('headings')">Headings</li>
+					<li ng-click="$ctrl.scrollTo('hr')">Hr</li>
+					<li ng-click="$ctrl.scrollTo('links')">Links</li>
+					<li ng-click="$ctrl.scrollTo('lists')">Lists</li>
+					<li ng-click="$ctrl.scrollTo('paragraphs')">Paragraphs <br>& Inline</li>
+					<li ng-click="$ctrl.scrollTo('quotes')">Quotes</li>
+					<li ng-click="$ctrl.scrollTo('tables')">Tables</li>
+					<li ng-click="$ctrl.scrollTo('other')">Other</li>
+				</ul>
+	        </li>
+	        <li class="docs-menu__item" ui-sref-active="active">
+				<a ui-sref="layout({})" ui-sref-opts="{ inherit: false }">Layout</a>
+				<ul class="list--reset docs-submenu">
+					<li ng-click="$ctrl.scrollTo('containers')">Containers</li>
+					<li ng-click="$ctrl.scrollTo('grid')">Grid</li>
+					<li ng-click="$ctrl.scrollTo('sections')">Sections</li>
+				</ul>
+			</li>
+			<li class="docs-menu__item" ui-sref-active="active">
+				<a ui-sref="components({})" ui-sref-opts="{ inherit: false }">Components</a>
+				<ul class="list--reset docs-submenu">
+					<li ng-click="$ctrl.scrollTo('buttons')">Buttons</li>
+					<li ng-click="$ctrl.scrollTo('forms')">Forms</li>
+				</ul>
+			</li>
+			<li class="docs-menu__item" ui-sref-active="active">
+	        	<a ui-sref="utilities({})" ui-sref-opts="{ inherit: false }">Utilities</a>
+	        </li>
+	        <li class="docs-menu__item" ui-sref-active="active">
+	        	<a ui-sref="overrides({})" ui-sref-opts="{ inherit: false }">Overrides</a>
 	        </li>
 	    </ul>
 	</nav>

@@ -239,7 +239,6 @@ header {
 
 .code-comment {
 	color: var(--color-text-light);
-	font-size: var(--fontSize-1);
 }
 
 .docs-wrapper {
@@ -247,12 +246,21 @@ header {
 }
 
 .docs-sidebar {
+	width: 150px;
 	padding: var(--spacing-1);
-	margin-right: var(--spacing-3);
+	margin-right: var(--spacing-5);
 }
 
 .docs-menu {
-	margin-top: 5px;
+	width: 150px;
+	background: rgba(255,255,255,.9);
+}
+.docs-menu.stickied {
+	position: fixed;
+	top: 0;
+	margin-top: 0;
+	padding-top: 5px;
+	border-radius: 0 0 var(--borderRadius) var(--borderRadius);
 }
 
 .docs-menu__item {
