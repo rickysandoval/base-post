@@ -33,5 +33,10 @@
 @custom-media --screen-lg-max (max-width: 89.9375em);
 @custom-media --screen-xl-max (max-width: 119.9375em);
 
-/* calc(var(--wrapper-width) + var(--spacing-2))) */
-@custom-media --screen-site-container (max-width: 104.4rem);
+/* 
+	Note: if you change this value, you should change the value of the
+		--site-container-width as well, found in _s-spacing.css
+
+	--screen-site-container = --site-container-width + (2 * --spacing--1)
+*/
+@custom-media --screen-site-container (max-width: 66em);

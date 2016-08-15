@@ -3,16 +3,21 @@
 }
 
 .l-section-2 {
-	margin-bottom: var(--spacing-3);
+	margin-bottom: var(--spacing-2);
 }
 
 .l-section-3 {
-	margin-bottom: var(--spacing-2);
+	margin-bottom: var(--spacing-1);
 }
 
 @media (--screen-md-min) {
 	.l-section-1 {
 		margin-bottom: var(--spacing-4);
 	}
-
+	.l-section-2 {
+		margin-bottom: var(--spacing-3);
+	}
+	.l-section-3 {
+		margin-bottom: var(--spacing-2);
+	}
 }

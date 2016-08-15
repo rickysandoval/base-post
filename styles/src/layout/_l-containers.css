@@ -1,6 +1,7 @@
 .site-container {
 	max-width: var(--site-container-width);
 	margin: 0 auto;
+	padding: 0;
 
 	@media (--screen-site-container) {
 		padding: 0 var(--spacing-1);

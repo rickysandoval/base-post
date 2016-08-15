@@ -20,7 +20,7 @@
   font-family: var(--fontFamily-heading);
 }
 
-.h6 { font-size: var(--fontSize-n1); margin-bottom: var(--spacing-1); }
+.h6 { font-size: var(--fontSize-n1); margin-bottom: var(--spacing-half); }
 .h5 { font-size: var(--fontSize-1); margin-bottom: var(--spacing-1); }
 .h4 { font-size: var(--fontSize-2); margin-bottom: var(--spacing-1); }
 .h3 { font-size: var(--fontSize-3); margin-bottom: var(--spacing-1); }
@@ -28,9 +28,7 @@
 .h1 { font-size: var(--fontSize-6); margin-bottom: var(--spacing-1); }
 
 @media (--screen-md-min) {
-	.h3 { margin-bottom: var(--spacing-2); }
 	.h2 { margin-bottom: var(--spacing-2); }
-	.h1 { margin-bottom: var(--spacing-2); }
 }
 
 @media (--screen-sm-max) {

@@ -25,7 +25,7 @@ body {
 */
 code, samp {
 	display: inline-block;
-	padding: 0 var(--spacing-1);
+	padding: 0 var(--spacing-half);
 
 	font-family: var(--fontFamily-mono);
 	font-size: .9em;
@@ -41,6 +41,10 @@ pre, samp {
 
 pre {
 	tab-size: 3;
+
+	code {
+		padding: var(--spacing-half) var(--spacing-1);
+	}
 }
 
 
@@ -194,18 +198,19 @@ h5,
 h6 {
   text-rendering: optimizeLegibility;
   font-family: var(--fontFamily-heading);
+  font-weight: var(--fontWeight-normal);
   line-height: 1.45;
 }
 
-h6 { font-size: var(--fontSize-n1); margin-bottom: var(--spacing-1); }
-h5 { font-size: var(--fontSize-1); margin-bottom: var(--spacing-2); }
-h4 { font-size: var(--fontSize-2); margin-bottom: var(--spacing-2); }
-h3 { font-size: var(--fontSize-3); margin-bottom: var(--spacing-2); }
-h2 { font-size: var(--fontSize-4); margin-bottom: var(--spacing-2); }
-h1 { font-size: var(--fontSize-5); margin-bottom: var(--spacing-3); }
+h6 { font-size: var(--fontSize-n1); margin-bottom: var(--spacing-half); }
+h5 { font-size: var(--fontSize-1); margin-bottom: var(--spacing-1); }
+h4 { font-size: var(--fontSize-2); margin-bottom: var(--spacing-1); }
+h3 { font-size: var(--fontSize-3); margin-bottom: var(--spacing-1); }
+h2 { font-size: var(--fontSize-4); margin-bottom: var(--spacing-1); }
+h1 { font-size: var(--fontSize-5); margin-bottom: var(--spacing-2); }
 
 @media (--screen-md-min) {
-	h2 { margin-bottom: var(--spacing-3); }
+	h2 { margin-bottom: var(--spacing-2); }
 }
 
 @media (--screen-sm-max) {
@@ -243,11 +248,11 @@ summary {
 */
 
 ul, ol {
-	margin-bottom: var(--spacing-2);
-	padding-left: var(--spacing-2);
+	margin-bottom: var(--spacing-1);
+	padding-left: var(--spacing-1);
 }
 dd {
-	padding-left: var(--spacing-2)
+	padding-left: var(--spacing-1)
 }
 
 /*
@@ -302,10 +307,14 @@ mark {
 
 */
 blockquote {
-	margin: var(--spacing-2) 0;
-	padding: 0 var(--spacing-1);
+	margin: var(--spacing-1) 0;
+	padding: 0 var(--spacing-half);
+
+	p {
+		margin-bottom: calc(var(--spacing-line)/2);
+	}
 	@media (--screen-sm-min) {
-		padding: 0 calc(var(--spacing-2));
+		padding: 0 calc(var(--spacing-1));
 	}
 }
 
