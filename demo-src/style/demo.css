@@ -228,9 +228,9 @@ header {
 
 .docs-sidebar {
 	width: 150px;
-	padding: var(--spacing-1);
+	padding-right: var(--spacing-1);
 	padding-top: var(--spacing-half);
-	margin-right: var(--spacing-4);
+	margin-right: var(--spacing-3);
 }
 
 .docs-menu {
@@ -253,7 +253,7 @@ header {
 
 	& > a {
 		display: block;
-		padding: 0 var(--spacing-1);
+		padding-right: var(--spacing-1);
 		border-right: 2px solid white;
 		@extend .link--reset;
 
@@ -280,3 +280,7 @@ header {
 	cursor: pointer;
 }
 
+.demo-title--4 {
+	font-size: var(--fontSize-1);
+	margin-bottom: var(--spacing-half);
+}
